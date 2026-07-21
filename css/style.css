@@ -1256,7 +1256,7 @@ a.contact-row:hover {
     }
 
     .hero-visual {
-        order: -1;
+        order: 2;
         width: min(100%, 42vw, 280px);
         max-width: 280px;
         height: auto;
@@ -1273,6 +1273,7 @@ a.contact-row:hover {
     }
 
     .hero-copy {
+        order: 1;
         padding-top: 0;
         align-items: center;
         text-align: center;
