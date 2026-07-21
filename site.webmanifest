@@ -1,0 +1,23 @@
+{
+  "name": "PapiLAB — Paulo Teodoro Pinto Júnior",
+  "short_name": "PapiLAB",
+  "description": "Engenharia de Software, integração de sistemas e soluções sob medida.",
+  "start_url": "/papi-site2026/",
+  "scope": "/papi-site2026/",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#132038",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/papi-site2026/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/papi-site2026/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

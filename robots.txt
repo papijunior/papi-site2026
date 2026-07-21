@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://papijunior.github.io/papi-site2026/sitemap.xml
