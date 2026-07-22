@@ -2,7 +2,7 @@
 
 Código-fonte da landing page institucional do **PapiLAB**, com soluções em engenharia de software, sistemas sob medida e banco de dados.
 
-**Site ativo:** [https://papijunior.github.io/papi-site2026/](https://papijunior.github.io/papi-site2026/)
+**Site ativo:** [https://www.papijunior.com.br/](https://www.papijunior.com.br/)
 
 ---
 
@@ -29,7 +29,7 @@ papi-site2026/
 
 ## GitHub Pages
 
-O site usa `<base href="/papi-site2026/">` e caminhos relativos (`css/`, `js/`, `assets/`), para funcionar no Pages e no XAMPP no mesmo path.
+O `<base href>` é definido dinamicamente: `/` em `www.papijunior.com.br` e `/papi-site2026/` no GitHub Pages/XAMPP.
 
 ## Idiomas
 
