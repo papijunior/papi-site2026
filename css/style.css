@@ -258,6 +258,28 @@ main {
     animation: fadeUp 0.55s var(--ease) both;
 }
 
+.tab-content.active.tab-from-next,
+#tab-inicio.active.tab-from-next,
+#tab-publica.active.tab-from-next,
+#tab-privada.active.tab-from-next,
+#tab-academico.active.tab-from-next,
+#tab-cv.active.tab-from-next,
+#tab-capoeira.active.tab-from-next,
+#tab-contato.active.tab-from-next {
+    animation: tabSlideInDown 0.7s var(--ease) both;
+}
+
+.tab-content.active.tab-from-prev,
+#tab-inicio.active.tab-from-prev,
+#tab-publica.active.tab-from-prev,
+#tab-privada.active.tab-from-prev,
+#tab-academico.active.tab-from-prev,
+#tab-cv.active.tab-from-prev,
+#tab-capoeira.active.tab-from-prev,
+#tab-contato.active.tab-from-prev {
+    animation: tabSlideInUp 0.7s var(--ease) both;
+}
+
 /* Home fills the viewport — no vertical scroll */
 body:has(#tab-inicio.active) {
     height: 100svh;
@@ -350,8 +372,12 @@ body:has(#tab-publica.active) main {
 
 #tab-publica.active .card h3 {
     font-size: clamp(0.88rem, 1.1vw, 1rem);
-    margin-bottom: 0.35rem;
-    -webkit-text-stroke-width: 0.028em;
+    margin-bottom: 0.2rem;
+}
+
+#tab-publica.active .card-illustration {
+    height: 44px;
+    margin: 0.1rem 0 0.3rem;
 }
 
 #tab-publica.active .card p {
@@ -436,8 +462,12 @@ body:has(#tab-privada.active) main {
 
 #tab-privada.active .card h3 {
     font-size: clamp(0.88rem, 1.1vw, 1rem);
-    margin-bottom: 0.35rem;
-    -webkit-text-stroke-width: 0.028em;
+    margin-bottom: 0.2rem;
+}
+
+#tab-privada.active .card-illustration {
+    height: 44px;
+    margin: 0.1rem 0 0.3rem;
 }
 
 #tab-privada.active .card p {
@@ -578,8 +608,13 @@ body:has(#tab-academico.active) main {
 
 #tab-academico.active .timeline-item h3 {
     font-size: clamp(0.92rem, 1.15vw, 1.05rem);
-    margin-bottom: 0.2rem;
-    -webkit-text-stroke-width: 0.028em;
+    margin-bottom: 0.15rem;
+}
+
+#tab-academico.active .timeline-item .card-illustration {
+    height: 38px;
+    margin: 0.05rem 0 0.25rem;
+    justify-content: flex-start;
 }
 
 #tab-academico.active .institution {
@@ -865,7 +900,55 @@ body:has(#tab-contato.active) main {
 
 /* Letras no estilo PJ: face escura + borda prata 3D */
 .chrome-letter,
-.hero-copy h1,
+.hero-copy h1 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--logo-face);
+    -webkit-text-stroke: 0.045em var(--logo-silver);
+    paint-order: stroke fill;
+    text-shadow:
+        0.5px 0.5px 0 var(--logo-silver-soft),
+        1px 1px 0 var(--logo-silver-mid),
+        1.5px 2px 0 #6d7684,
+        2px 3px 0 #4a5260,
+        3px 5px 10px rgba(8, 12, 20, 0.28);
+}
+
+/* Abas de portfólio: texto limpo, sem sombra 3D */
+#tab-publica .page-header h2,
+#tab-publica .card h3,
+#tab-privada .page-header h2,
+#tab-privada .card h3,
+#tab-academico .page-header h2,
+#tab-academico .timeline-item h3,
+#tab-cv .page-header h2,
+#tab-capoeira .page-header h2,
+#tab-contato .page-header h2 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--navy);
+    -webkit-text-stroke: 0;
+    paint-order: normal;
+    text-shadow: none;
+}
+
+.card-illustration {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.15rem 0 0.45rem;
+    height: 56px;
+}
+
+.card-illustration img {
+    width: auto;
+    height: 100%;
+    max-width: 96px;
+    object-fit: contain;
+    opacity: 0.95;
+}
+
 .page-header h2,
 .card h3,
 .timeline-item h3,
@@ -1074,8 +1157,7 @@ body:has(#tab-contato.active) main {
 .card h3 {
     font-size: 1.05rem;
     letter-spacing: 0.01em;
-    margin-bottom: 0.55rem;
-    -webkit-text-stroke-width: 0.035em;
+    margin-bottom: 0.35rem;
 }
 
 .card p {
@@ -1110,8 +1192,7 @@ a.timeline-item:hover {
 
 .timeline-item h3 {
     font-size: 1.05rem;
-    margin-bottom: 0.35rem;
-    -webkit-text-stroke-width: 0.035em;
+    margin-bottom: 0.25rem;
 }
 
 .institution {
@@ -1444,6 +1525,16 @@ a.contact-row:hover {
 
 @keyframes fadeUp {
     from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes tabSlideInDown {
+    from { opacity: 0; transform: translateY(36px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes tabSlideInUp {
+    from { opacity: 0; transform: translateY(-36px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
