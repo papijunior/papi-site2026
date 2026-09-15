@@ -1359,6 +1359,13 @@ a.timeline-item:hover {
     margin-bottom: 0;
 }
 
+.cv-extra {
+    margin: 0.28rem 0 0;
+    font-size: clamp(0.78rem, 1.05vw, 0.9rem);
+    line-height: 1.35;
+    color: var(--ink-soft);
+}
+
 .cv-download {
     display: inline-flex;
     align-items: center;
