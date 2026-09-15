@@ -45,7 +45,7 @@
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#132038">
-    <link rel="stylesheet" href="css/style.css?v=3d22">
+    <link rel="stylesheet" href="css/style.css?v=3d23">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Orbitron:wght@600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -190,9 +190,9 @@
                 </div>
                 <div class="hero-visual">
                     <picture>
-                        <source srcset="assets/FotoSite.webp?v=aula" type="image/webp">
+                        <source srcset="assets/FotoSite.webp?v=aula2" type="image/webp">
                         <img
-                            src="assets/FotoSite.jpg?v=aula"
+                            src="assets/FotoSite.jpg?v=aula2"
                             alt="Paulo Teodoro Pinto Júnior (Papijunior) — aula de gestão de projetos com cronograma Gantt no PapiLAB"
                             width="720"
                             height="1280"
@@ -382,19 +382,34 @@
         <!-- C.V. -->
         <section id="tab-cv" class="tab-content">
             <div class="page-shell cv-shell">
-                <header class="page-header">
-                    <p class="eyebrow">Experiência</p>
-                    <h2>Curriculum Vitae</h2>
-                    <p class="page-lead page-lead-oneline">Especialista em Engenharia de Software, Analista de Sistemas, Perito Judicial e Consultor de TI.</p>
+                <header class="page-header cv-header">
+                    <div class="cv-header-copy">
+                        <p class="eyebrow">Experiência</p>
+                        <h2>Curriculum Vitae</h2>
+                        <p class="page-lead page-lead-oneline">Especialista em Engenharia de Software · Analista de Sistemas · Perito Judicial · Consultor de TI. Perito Judicial credenciado no e-proc desde 2025 · Presidente de Sessão Eleitoral desde 2010.</p>
+                    </div>
+                    <a
+                        class="btn btn-primary cv-download"
+                        href="https://drive.google.com/uc?export=download&amp;id=1DGfJ5zmEKjgq3rw2zCj8Mdz6zhZFpxI6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <svg class="cv-download-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M12 3v10.2m0 0 3.6-3.6M12 13.2 8.4 9.6M5 18.5h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Download
+                    </a>
                 </header>
-                <div class="cv-frame-wrap">
-                    <iframe
-                        class="cv-frame"
-                        title="Curriculum Vitae — PapiLAB"
-                        src="https://drive.google.com/file/d/1KLTS-Nr6vB_72UZZjHIiaTYIbXYHM4Dg/preview"
-                        allow="autoplay"
-                        loading="lazy"
-                    ></iframe>
+                <div class="cv-viewer">
+                    <div class="cv-frame-wrap">
+                        <iframe
+                            class="cv-frame"
+                            title="Curriculum Vitae — PapiLAB"
+                            src="https://drive.google.com/file/d/1DGfJ5zmEKjgq3rw2zCj8Mdz6zhZFpxI6/preview"
+                            allow="autoplay; fullscreen"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
                 </div>
             </div>
         </section>
