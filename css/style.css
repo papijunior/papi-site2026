@@ -466,7 +466,7 @@ body:has(#tab-privada.active) main {
 #tab-privada.active .grid-cards {
     flex: 1 1 auto;
     min-height: 0;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
     gap: 0.7rem;
     align-content: stretch;
