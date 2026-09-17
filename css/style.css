@@ -205,22 +205,42 @@ nav a.active {
 
 .lang-switch a {
     text-decoration: none;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    color: var(--ink-soft);
-    padding: 0.4rem 0.65rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.28rem 0.38rem;
     border-radius: 999px;
-    transition: background 0.25s var(--ease), color 0.25s var(--ease);
+    line-height: 0;
+    opacity: 0.72;
+    transition: background 0.25s var(--ease), opacity 0.25s var(--ease);
 }
 
 .lang-switch a:hover {
-    color: var(--navy);
+    opacity: 1;
 }
 
 .lang-switch a.active {
     background: var(--navy);
-    color: var(--white);
+    opacity: 1;
+}
+
+.lang-switch img {
+    display: block;
+    width: 1.35rem;
+    height: auto;
+    border-radius: 2px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .menu-toggle span {
