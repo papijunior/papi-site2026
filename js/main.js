@@ -1,4 +1,9 @@
-const TAB_ORDER = ['inicio', 'publica', 'privada', 'academico', 'cv', 'capoeira', 'contato'];
+const TAB_ORDER = ['inicio', 'publica', 'privada', 'academico', 'cv', 'capoeira', 'sistemas', 'contato'];
+
+/* Endereço público do PC do PapiLAB (Cloudflare Tunnel → Apache/XAMPP). */
+const SISTEMAS_HOST = 'https://casa.papijunior.com.br';
+const SISTEMAS_TIMEOUT_MS = 5000;
+const SISTEMAS_RECHECK_MS = 60000;
 const WHEEL_COOLDOWN_MS = 850;
 const WHEEL_THRESHOLD = 28;
 
@@ -50,13 +55,28 @@ function showTab(tabId, triggerEl, transitionDir) {
     if (window.matchMedia('(max-width: 980px)').matches) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    requestAnimationFrame(() => fitHomeToViewport());
+}
+
+function fitHomeToViewport() {
+    // Home no longer uses transform scaling — layout is flex-based.
+    document.querySelectorAll('.home-fit').forEach((el) => {
+        el.style.transform = '';
+        el.style.width = '';
+        el.style.marginInline = '';
+        el.style.height = '';
+    });
 }
 
 function navigateTab(step) {
     const currentIndex = TAB_ORDER.indexOf(getCurrentTabId());
     if (currentIndex === -1) return false;
 
-    const nextIndex = currentIndex + step;
+    let nextIndex = currentIndex + step;
+    while (TAB_ORDER[nextIndex] && document.querySelector(`nav a[data-tab="${TAB_ORDER[nextIndex]}"]`)?.closest('li')?.hidden) {
+        nextIndex += step;
+    }
     if (nextIndex < 0 || nextIndex >= TAB_ORDER.length) return false;
 
     const dir = step > 0 ? 'next' : 'prev';
@@ -239,4 +259,96 @@ initWheelNavigation();
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && !lightbox.hidden) close();
     });
+})();
+
+/* Sistemas: índice lido ao vivo do PC do PapiLAB; aba só aparece se o PC estiver online */
+(function initSistemas() {
+    const navItem = document.getElementById('nav-sistemas');
+    const status = document.getElementById('sistemas-status');
+    const lista = document.getElementById('sistemas-lista');
+    if (!navItem || !status || !lista) return;
+
+    const isEn = document.documentElement.lang?.toLowerCase().startsWith('en');
+    const isLocal = /^(localhost|127\.0\.0\.1|192\.168\.\d+\.\d+|10\.\d+\.\d+\.\d+)$/.test(location.hostname);
+    const apiUrl = (isLocal ? '' : SISTEMAS_HOST) + '/sistemas/api.php';
+
+    const text = {
+        offline: isEn
+            ? 'Systems are offline right now. Please try again later or get in touch.'
+            : 'Os sistemas estão offline no momento. Tente novamente mais tarde ou entre em contato.',
+        empty: isEn ? 'No systems available at the moment.' : 'Nenhum sistema disponível no momento.',
+        online: (n) => isEn
+            ? `${n} system${n === 1 ? '' : 's'} online`
+            : `${n} sistema${n === 1 ? '' : 's'} online`,
+        open: isEn ? 'Open system' : 'Abrir sistema',
+    };
+
+    const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+    }[c]));
+
+    const setOffline = () => {
+        navItem.hidden = true;
+        lista.innerHTML = '';
+        status.textContent = text.offline;
+        status.dataset.state = 'offline';
+    };
+
+    const render = (sistemas) => {
+        navItem.hidden = false;
+        status.dataset.state = 'online';
+        status.textContent = sistemas.length ? text.online(sistemas.length) : text.empty;
+        lista.innerHTML = sistemas.map((s) => {
+            if (!/^https?:\/\//.test(s.url || '')) return '';
+            const desc = isEn ? (s.descricao_en || s.descricao) : s.descricao;
+            return `
+                <a class="card sistema-card" href="${escapeHtml(s.url)}" target="_blank" rel="noopener">
+                    <span class="sistema-cat">${escapeHtml(s.categoria)}</span>
+                    <h3>${escapeHtml(s.nome)}</h3>
+                    <p>${escapeHtml(desc)}</p>
+                    <span class="sistema-open">${text.open} &rarr;</span>
+                </a>`;
+        }).join('');
+    };
+
+    const check = async () => {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), SISTEMAS_TIMEOUT_MS);
+        try {
+            const res = await fetch(apiUrl, { cache: 'no-store', signal: controller.signal });
+            const data = res.ok ? await res.json() : null;
+            if (data?.online && Array.isArray(data.sistemas)) render(data.sistemas);
+            else setOffline();
+        } catch {
+            setOffline();
+        } finally {
+            clearTimeout(timer);
+        }
+    };
+
+    if (location.hash === '#sistemas') showTab('sistemas');
+
+    check();
+    setInterval(check, SISTEMAS_RECHECK_MS);
+})();
+
+/* Home: scale content to fit viewport at 100% zoom */
+(function initHomeFit() {
+    let timer = 0;
+    const schedule = () => {
+        clearTimeout(timer);
+        timer = setTimeout(fitHomeToViewport, 40);
+    };
+
+    window.addEventListener('resize', schedule);
+    window.addEventListener('load', schedule);
+    document.querySelectorAll('#tab-inicio img').forEach((img) => {
+        if (!img.complete) img.addEventListener('load', schedule, { once: true });
+    });
+
+    if (document.fonts?.ready) {
+        document.fonts.ready.then(schedule).catch(() => {});
+    }
+
+    schedule();
 })();
