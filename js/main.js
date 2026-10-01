@@ -57,6 +57,14 @@ function showTab(tabId, triggerEl, transitionDir) {
     }
 
     requestAnimationFrame(() => fitHomeToViewport());
+
+    if (currentTabId !== tabId && typeof gtag === 'function') {
+        gtag('event', 'page_view', {
+            page_title: document.title + ' — ' + tabId,
+            page_path: location.pathname + '#' + tabId,
+            page_location: location.origin + location.pathname + '#' + tabId
+        });
+    }
 }
 
 function fitHomeToViewport() {
