@@ -1,0 +1,29 @@
+:root{--azul:#0b3d6e;--azul2:#1f6fb2;--fundo:#f3f6fa;--borda:#d7dee8;--texto:#1d2733;--suave:#5b6b7d}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--fundo);color:var(--texto);line-height:1.5}
+a{color:var(--azul2)}
+.topo{background:var(--azul);display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;padding:.6rem 1.2rem}
+.marca{display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none;font-weight:700;font-size:1.15rem}
+.marca img{background:#fff;border-radius:6px;padding:2px}
+.topo nav{display:flex;gap:1rem;flex-wrap:wrap}.topo nav a{color:#fff;text-decoration:none}
+.topo nav a.destaque{background:#f59e0b;color:#1d2733;border-radius:999px;padding:.2rem .8rem;font-weight:600}
+main{max-width:1000px;margin:0 auto;padding:1.2rem}
+h1{font-size:1.5rem;margin:.2rem 0 .3rem}.meta{color:var(--suave);font-size:.9rem;margin:0 0 1rem}
+.cta{background:#fff;border:1px solid var(--borda);border-left:4px solid #f59e0b;border-radius:10px;padding:1rem 1.2rem;margin-bottom:1rem}
+.cta .botao{margin-top:.6rem}
+.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.6rem}
+.filtros input{flex:1 1 280px}.filtros input,.filtros select{padding:.55rem .65rem;border:1px solid var(--borda);border-radius:6px;font-size:1rem;background:#fff}
+.contagem{color:var(--suave);font-size:.9rem}
+.concurso{background:#fff;border:1px solid var(--borda);border-radius:10px;padding:1rem 1.2rem;margin-bottom:.8rem}
+.concurso h2{font-size:1.05rem;margin:0 0 .3rem}.concurso p{margin:.25rem 0}.linha{color:var(--suave)}
+.prazo{font-weight:600;color:var(--azul)}.prazo.urgente{color:#b42318}
+.tags span{display:inline-block;background:#e6f0fa;color:var(--azul);border-radius:999px;padding:.05rem .55rem;font-size:.8rem;margin:0 .25rem .25rem 0}
+.acoes{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.6rem}
+.botao{display:inline-block;background:var(--azul2);color:#fff;text-decoration:none;border-radius:6px;padding:.5rem 1rem}
+.botao.secundario{background:#e6ecf3;color:var(--azul)}
+.fora{background:#eceff3!important;color:var(--suave)!important;cursor:default}
+.anuncio{margin:1rem 0;text-align:center}.anuncio span{display:block;font-size:.7rem;color:var(--suave);text-transform:uppercase;letter-spacing:.05em}
+.estados{margin-top:2rem}.estados h2{font-size:1.1rem}.estados div{display:flex;flex-wrap:wrap;gap:.4rem}
+.estados a{background:#fff;border:1px solid var(--borda);border-radius:999px;padding:.25rem .8rem;text-decoration:none;font-size:.9rem}
+.estados small{color:var(--suave)}
+.texto{background:#fff;border:1px solid var(--borda);border-radius:10px;margin-top:1.2rem}.texto h2{font-size:1.1rem}
+.rodape{text-align:center;color:var(--suave);font-size:.9rem;padding:1rem;border-top:1px solid var(--borda);background:#fff;margin-top:2rem}

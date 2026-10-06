@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Papi_AlertaConcurso | PapiLAB</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://www.papijunior.com.br/concursos/abertos/">
+<link rel="icon" href="abertos/logo.png">
+</head>
+<body style="font-family:system-ui,sans-serif;text-align:center;padding:3rem;color:#1d2733">
+<p><img src="abertos/logo.png" alt="PapiLAB" width="80" height="80"></p>
+<p>Abrindo o Papi_AlertaConcurso…</p>
+<noscript><p><a href="abertos/">Ver concursos abertos</a></p></noscript>
+<script>
+(function(){
+  var feito=false,ir=function(u){if(!feito){feito=true;location.replace(u);}};
+  var c=window.AbortController?new AbortController():null;
+  setTimeout(function(){if(c)c.abort();ir('abertos/');},3000);
+  fetch('https://casa.papijunior.com.br/papi-alertaconcurso/ping.php',{cache:'no-store',signal:c&&c.signal})
+    .then(function(r){return r.ok?r.json():null;})
+    .then(function(j){ir(j&&j.ok?'https://casa.papijunior.com.br/concursos/':'abertos/');})
+    .catch(function(){ir('abertos/');});
+})();
+</script>
+</body>
+</html>

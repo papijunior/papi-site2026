@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.papijunior.com.br/sitemap.xml
+
+Sitemap: https://www.papijunior.com.br/concursos/abertos/sitemap.xml
