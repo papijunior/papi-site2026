@@ -74,8 +74,9 @@
                 <li><a href="../#academico">Acadêmico</a></li>
                 <li><a href="../#cv">C.V.</a></li>
                 <li><a href="../#capoeira">Capoeira</a></li>
-                <li><a href="../concursos/abertos/">Concursos</a></li>
-                <li><a href="https://vagas.papijunior.com.br/">Vagas</a></li>
+                <li><a href="../#sistemas">Sistemas</a></li>
+                <li class="so-com-pc" hidden><a href="../concursos/abertos/">Concursos</a></li>
+                <li class="so-com-pc" hidden><a href="https://vagas.papijunior.com.br/">Vagas</a></li>
                 <li><a href="../#contato">Contato</a></li>
             </ul>
         </nav>
@@ -150,6 +151,14 @@
             var aberto = nav.classList.toggle('open');
             botao.setAttribute('aria-expanded', aberto ? 'true' : 'false');
         });
+        var controle = new AbortController();
+        setTimeout(function () { controle.abort(); }, 5000);
+        fetch('https://casa.papijunior.com.br/sistemas/api.php', { cache: 'no-store', signal: controle.signal })
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (d) {
+                if (d && d.online) document.querySelectorAll('.so-com-pc').forEach(function (li) { li.hidden = false; });
+            })
+            .catch(function () {});
     })();
     </script>
 </body>

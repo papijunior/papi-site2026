@@ -4,10 +4,6 @@ const TAB_ORDER = ['inicio', 'publica', 'privada', 'academico', 'cv', 'capoeira'
 const SISTEMAS_HOST = 'https://casa.papijunior.com.br';
 const SISTEMAS_TIMEOUT_MS = 5000;
 const SISTEMAS_RECHECK_MS = 60000;
-const WHEEL_COOLDOWN_MS = 850;
-const WHEEL_THRESHOLD = 28;
-
-let wheelLocked = false;
 
 function getCurrentTabId() {
     const active = document.querySelector('.tab-content.active');
@@ -77,87 +73,6 @@ function fitHomeToViewport() {
     });
 }
 
-function navigateTab(step) {
-    const currentIndex = TAB_ORDER.indexOf(getCurrentTabId());
-    if (currentIndex === -1) return false;
-
-    let nextIndex = currentIndex + step;
-    while (TAB_ORDER[nextIndex] && document.querySelector(`nav a[data-tab="${TAB_ORDER[nextIndex]}"]`)?.closest('li')?.hidden) {
-        nextIndex += step;
-    }
-    if (nextIndex < 0 || nextIndex >= TAB_ORDER.length) return false;
-
-    const dir = step > 0 ? 'next' : 'prev';
-    showTab(TAB_ORDER[nextIndex], null, dir);
-    return true;
-}
-
-function canUseWheelNavigation() {
-    return window.matchMedia('(min-width: 981px)').matches;
-}
-
-function shouldIgnoreWheelNavigation(event) {
-    const lightbox = document.getElementById('lightbox');
-    if (lightbox && !lightbox.hidden) return true;
-
-    const nav = document.querySelector('nav');
-    if (nav?.classList.contains('open')) return true;
-
-    const target = event.target;
-    if (!(target instanceof Element)) return false;
-
-    if (target.closest('textarea, select, [contenteditable="true"], iframe, .lightbox')) {
-        return true;
-    }
-
-    if (target.closest('input:not([type="hidden"])')) return true;
-
-    return false;
-}
-
-function initWheelNavigation() {
-    window.addEventListener('wheel', (event) => {
-        if (!canUseWheelNavigation() || wheelLocked || shouldIgnoreWheelNavigation(event)) {
-            return;
-        }
-
-        if (Math.abs(event.deltaY) < WHEEL_THRESHOLD) return;
-
-        event.preventDefault();
-
-        const moved = navigateTab(event.deltaY > 0 ? 1 : -1);
-        if (!moved) return;
-
-        wheelLocked = true;
-        window.setTimeout(() => {
-            wheelLocked = false;
-        }, WHEEL_COOLDOWN_MS);
-    }, { passive: false });
-
-    window.addEventListener('keydown', (event) => {
-        if (!canUseWheelNavigation() || wheelLocked || shouldIgnoreWheelNavigation(event)) {
-            return;
-        }
-
-        let step = 0;
-        if (event.key === 'ArrowDown' || event.key === 'PageDown') step = 1;
-        if (event.key === 'ArrowUp' || event.key === 'PageUp') step = -1;
-        if (!step) return;
-
-        const tag = document.activeElement?.tagName;
-        if (tag === 'TEXTAREA' || tag === 'INPUT' || tag === 'SELECT') return;
-
-        event.preventDefault();
-        const moved = navigateTab(step);
-        if (!moved) return;
-
-        wheelLocked = true;
-        window.setTimeout(() => {
-            wheelLocked = false;
-        }, WHEEL_COOLDOWN_MS);
-    });
-}
-
 document.querySelectorAll('[data-tab]').forEach((el) => {
     el.addEventListener('click', (event) => {
         event.preventDefault();
@@ -172,12 +87,10 @@ mobileMenu?.addEventListener('click', () => {
     mobileMenu.setAttribute('aria-expanded', String(open));
 });
 
-initWheelNavigation();
-
-/* Links de outras páginas (concursos, vagas) abrem a aba pelo endereço: /#publica, /#contato... */
+/* Links de outras páginas (concursos, vagas) abrem a aba pelo endereço: /#publica, /#sistemas... */
 (function abrirAbaDoEndereco() {
     const aba = location.hash.slice(1);
-    if (TAB_ORDER.includes(aba) && aba !== 'sistemas') showTab(aba);
+    if (TAB_ORDER.includes(aba)) showTab(aba);
 })();
 
 /* Contato: estrelas + validação antes do envio */
@@ -275,12 +188,13 @@ initWheelNavigation();
     });
 })();
 
-/* Sistemas: índice lido ao vivo do PC do PapiLAB; aba só aparece se o PC estiver online */
+/* Sistemas: índice lido ao vivo do PC do PapiLAB. A aba fica sempre no menu; a lista e os links
+   de Concursos e Vagas só aparecem com o PC online. */
 (function initSistemas() {
-    const navItem = document.getElementById('nav-sistemas');
     const status = document.getElementById('sistemas-status');
     const lista = document.getElementById('sistemas-lista');
-    if (!navItem || !status || !lista) return;
+    const soComPc = document.querySelectorAll('.so-com-pc');
+    if (!status || !lista) return;
 
     const isEn = document.documentElement.lang?.toLowerCase().startsWith('en');
     const isLocal = /^(localhost|127\.0\.0\.1|192\.168\.\d+\.\d+|10\.\d+\.\d+\.\d+)$/.test(location.hostname);
@@ -302,14 +216,14 @@ initWheelNavigation();
     }[c]));
 
     const setOffline = () => {
-        navItem.hidden = true;
+        soComPc.forEach((li) => { li.hidden = true; });
         lista.innerHTML = '';
         status.textContent = text.offline;
         status.dataset.state = 'offline';
     };
 
     const render = (sistemas) => {
-        navItem.hidden = false;
+        soComPc.forEach((li) => { li.hidden = false; });
         status.dataset.state = 'online';
         status.textContent = sistemas.length ? text.online(sistemas.length) : text.empty;
         lista.innerHTML = sistemas.map((s) => {
@@ -339,8 +253,6 @@ initWheelNavigation();
             clearTimeout(timer);
         }
     };
-
-    if (location.hash === '#sistemas') showTab('sistemas');
 
     check();
     setInterval(check, SISTEMAS_RECHECK_MS);
