@@ -174,6 +174,12 @@ mobileMenu?.addEventListener('click', () => {
 
 initWheelNavigation();
 
+/* Links de outras páginas (concursos, vagas) abrem a aba pelo endereço: /#publica, /#contato... */
+(function abrirAbaDoEndereco() {
+    const aba = location.hash.slice(1);
+    if (TAB_ORDER.includes(aba) && aba !== 'sistemas') showTab(aba);
+})();
+
 /* Contato: estrelas + validação antes do envio */
 (function initContactForm() {
     const form = document.getElementById('contact-form');
