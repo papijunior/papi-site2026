@@ -19,4 +19,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.papijunior.com.br/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.papijunior.com.br/"/>
   </url>
+  <url>
+    <loc>https://www.papijunior.com.br/pomodoro/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

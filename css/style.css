@@ -1210,6 +1210,23 @@ body:has(#tab-contato.active) main {
     white-space: nowrap;
 }
 
+.link-app {
+    display: inline-block;
+    margin-left: 0.6rem;
+    padding: 0.15rem 0.75rem;
+    border-radius: 999px;
+    background: var(--navy);
+    color: var(--white);
+    font-size: 0.85em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.25s var(--ease);
+}
+
+.link-app:hover {
+    background: var(--gold-bright);
+}
+
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
