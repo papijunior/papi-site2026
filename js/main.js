@@ -202,22 +202,52 @@ mobileMenu?.addEventListener('click', () => {
 
     const text = {
         offline: isEn
-            ? 'Systems are offline right now. Please try again later or get in touch.'
-            : 'Os sistemas estão offline no momento. Tente novamente mais tarde ou entre em contato.',
-        empty: isEn ? 'No systems available at the moment.' : 'Nenhum sistema disponível no momento.',
+            ? 'The other systems are offline right now. Please try again later or get in touch.'
+            : 'Os demais sistemas estão offline no momento. Tente novamente mais tarde ou entre em contato.',
         online: (n) => isEn
             ? `${n} system${n === 1 ? '' : 's'} online`
             : `${n} sistema${n === 1 ? '' : 's'} online`,
         open: isEn ? 'Open system' : 'Abrir sistema',
     };
 
+    /* Ficam no ar sem o PC: hospedados no GitHub junto com o site. */
+    const fixos = [{
+        nome: 'Papi-Pomodoro',
+        categoria: isEn ? 'Android app' : 'App Android',
+        descricao: 'Foco pela técnica Pomodoro: 25 minutos de foco e pausas, alarme no fim de cada fase e widget na tela inicial. Integrado ao Google Agenda: escolha a tarefa entre seus eventos e tarefas, e cada pomodoro concluído é registrado na sua agenda.',
+        descricao_en: 'Focus with the Pomodoro technique: 25-minute focus sessions and breaks, an alarm at the end of each phase and a home-screen widget. Integrated with Google Calendar: pick the task from your events and tasks, and every completed pomodoro is logged to your calendar.',
+        url: 'pomodoro/',
+        acao: isEn ? 'Download for your phone' : 'Baixar no celular',
+        mesmaAba: true,
+    }];
+
     const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({
         '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
     }[c]));
 
+    const chaveOrdem = (nome) => String(nome).toLowerCase().normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
+    const desenhar = (sistemas) => {
+        lista.innerHTML = [...fixos, ...sistemas]
+            .filter((s) => s.mesmaAba || /^https?:\/\//.test(s.url || ''))
+            .sort((a, b) => chaveOrdem(a.nome).localeCompare(chaveOrdem(b.nome)))
+            .map((s) => {
+                const desc = isEn ? (s.descricao_en || s.descricao) : s.descricao;
+                const alvo = s.mesmaAba ? '' : ' target="_blank" rel="noopener"';
+                return `
+                <a class="card sistema-card" href="${escapeHtml(s.url)}"${alvo}>
+                    <span class="sistema-cat">${escapeHtml(s.categoria)}</span>
+                    <h3>${escapeHtml(s.nome)}</h3>
+                    <p>${escapeHtml(desc)}</p>
+                    <span class="sistema-open">${escapeHtml(s.acao || text.open)} &rarr;</span>
+                </a>`;
+            }).join('');
+    };
+
     const setOffline = () => {
         soComPc.forEach((li) => { li.hidden = true; });
-        lista.innerHTML = '';
+        desenhar([]);
         status.textContent = text.offline;
         status.dataset.state = 'offline';
     };
@@ -225,19 +255,11 @@ mobileMenu?.addEventListener('click', () => {
     const render = (sistemas) => {
         soComPc.forEach((li) => { li.hidden = false; });
         status.dataset.state = 'online';
-        status.textContent = sistemas.length ? text.online(sistemas.length) : text.empty;
-        lista.innerHTML = sistemas.map((s) => {
-            if (!/^https?:\/\//.test(s.url || '')) return '';
-            const desc = isEn ? (s.descricao_en || s.descricao) : s.descricao;
-            return `
-                <a class="card sistema-card" href="${escapeHtml(s.url)}" target="_blank" rel="noopener">
-                    <span class="sistema-cat">${escapeHtml(s.categoria)}</span>
-                    <h3>${escapeHtml(s.nome)}</h3>
-                    <p>${escapeHtml(desc)}</p>
-                    <span class="sistema-open">${text.open} &rarr;</span>
-                </a>`;
-        }).join('');
+        status.textContent = text.online(sistemas.length + fixos.length);
+        desenhar(sistemas);
     };
+
+    desenhar([]);
 
     const check = async () => {
         const controller = new AbortController();
