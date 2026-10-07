@@ -1,6 +1,9 @@
 :root{--azul:#0b3d6e;--azul2:#1f6fb2;--fundo:#f3f6fa;--borda:#d7dee8;--texto:#1d2733;--suave:#5b6b7d}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--fundo);color:var(--texto);line-height:1.5}
 a{color:var(--azul2)}
+.menu-site{display:flex;gap:1.1rem;overflow-x:auto;white-space:nowrap;scrollbar-width:none;background:#0f1724;padding:.45rem 1.2rem;font-size:.9rem}
+.menu-site a{color:#cfd8e3;text-decoration:none}.menu-site a:hover{color:#fff}
+.menu-site a[aria-current]{color:#fff;font-weight:600;border-bottom:2px solid #f59e0b}
 .topo{background:var(--azul);display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;padding:.6rem 1.2rem}
 .marca{display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none;font-weight:700;font-size:1.15rem}
 .marca img{background:#fff;border-radius:6px;padding:2px}
