@@ -1210,6 +1210,10 @@ body:has(#tab-contato.active) main {
     white-space: nowrap;
 }
 
+.grid-cards-sistemas {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
 .link-app {
     display: inline-block;
     margin-left: 0.6rem;
