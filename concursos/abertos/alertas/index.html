@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Receber alertas grátis de concursos | PapiLAB</title>
+<meta name="description" content="Cadastre-se para receber concursos públicos no e-mail e no WhatsApp, de graça: escolha os cargos e a sua região.">
+<link rel="canonical" href="https://www.papijunior.com.br/concursos/abertos/alertas/">
+<meta name="google-adsense-account" content="ca-pub-4417338446280476">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Receber alertas grátis de concursos">
+<meta property="og:description" content="Cadastre-se para receber concursos públicos no e-mail e no WhatsApp, de graça: escolha os cargos e a sua região.">
+<meta property="og:url" content="https://www.papijunior.com.br/concursos/abertos/alertas/">
+<meta property="og:image" content="https://www.papijunior.com.br/concursos/abertos/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+<link rel="icon" href="../logo.png">
+<link rel="stylesheet" href="../concursos.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND4MJMTMH6"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ND4MJMTMH6');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4417338446280476" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+<a class="logo" href="https://www.papijunior.com.br/" aria-label="PapiLAB — início"><img src="https://www.papijunior.com.br/assets/papilab-logo.png?v=3d2" width="280" height="118" alt="PapiLAB — Paulo Teodoro Pinto Júnior (papijunior)"></a>
+<input type="checkbox" id="menu-abre" class="menu-abre" hidden>
+<label for="menu-abre" class="menu-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></label>
+<nav class="menu-site" aria-label="PapiLAB"><ul><li><a href="https://www.papijunior.com.br/">Início</a></li><li><a href="https://www.papijunior.com.br/#publica">Gestão Pública</a></li><li><a href="https://www.papijunior.com.br/#privada">Iniciativa Privada</a></li><li><a href="https://www.papijunior.com.br/#academico">Acadêmico</a></li><li><a href="https://www.papijunior.com.br/#cv">C.V.</a></li><li><a href="https://www.papijunior.com.br/#capoeira">Capoeira</a></li><li><a href="https://www.papijunior.com.br/#sistemas">Sistemas</a></li><li><a href="https://www.papijunior.com.br/concursos/abertos/" aria-current="page">Concursos</a></li><li><a href="https://vagas.papijunior.com.br/">Vagas</a></li><li><a href="https://licitacoes.papijunior.com.br/">Licitações</a></li><li><a href="https://www.papijunior.com.br/#contato">Contato</a></li></ul></nav>
+</header>
+<header class="topo">
+  <a class="marca" href="../"><img src="../logo.png" alt="" width="40" height="40"><span>Concursos públicos</span></a>
+  <nav><a href="../">Todos os concursos</a><a href="../guia/">Guia</a><a href="https://www.papijunior.com.br/concursos/abertos/alertas/" class="destaque" data-casa="Alertas indisponíveis">Receber alertas grátis</a></nav>
+</header><main class="quadro-cadastro">
+<iframe id="cadastro" title="Cadastro de alertas de concursos" data-src="https://casa.papijunior.com.br/papi-alertaconcurso/cadastro.php"></iframe>
+<p class="meta" id="cadastro-fora" hidden>O cadastro de alertas está fora do ar agora. Tente de novo mais tarde.</p>
+<noscript><p><a href="https://casa.papijunior.com.br/papi-alertaconcurso/cadastro.php">Abrir o cadastro</a></p></noscript>
+</main>
+<script>
+(function(){
+var CASA='https://casa.papijunior.com.br',BASE='/papi-alertaconcurso/',f=document.getElementById('cadastro'),src=f.getAttribute('data-src');
+var m=/[#&]p=([^&]*)/.exec(location.hash);
+if(m){try{var u=new URL(decodeURIComponent(m[1]),CASA+BASE);if(u.origin===CASA&&u.pathname.indexOf(BASE)===0)src=u.href;}catch(e){}history.replaceState(null,'',location.pathname+location.search);}
+f.src=src;
+window.addEventListener('message',function(ev){if(ev.origin===CASA&&ev.source===f.contentWindow&&ev.data&&ev.data.papiAltura>0)f.style.height=Math.ceil(ev.data.papiAltura)+'px';});
+var carregou=false;f.addEventListener('load',function(){var y=f.getBoundingClientRect().top;if(carregou&&y<0)window.scrollTo(0,y+window.pageYOffset-80);carregou=true;});
+var c=window.AbortController?new AbortController():null;setTimeout(function(){if(c)c.abort();},5000);
+fetch(CASA+'/papi-alertaconcurso/ping.php',{cache:'no-store',signal:c&&c.signal}).then(function(r){if(!r.ok)throw 0;}).catch(function(){f.hidden=true;document.getElementById('cadastro-fora').hidden=false;});
+})();
+</script><footer class="rodape">PapiLAB · <a href="https://www.papijunior.com.br/">www.papijunior.com.br</a> · <a href="mailto:paulo@papijunior.com.br">paulo@papijunior.com.br</a> · <a href="../sobre.html">Sobre</a> · <a href="../privacidade.html">Política de privacidade</a></footer>
+<script src="../concursos.js" defer></script>
+</body>
+</html>

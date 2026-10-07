@@ -38,3 +38,6 @@ h1{font-size:1.5rem;margin:.2rem 0 .3rem}.meta{color:var(--suave);font-size:.9re
 .intro{background:#fff;border:1px solid var(--borda);border-radius:10px;padding:.2rem 1.2rem;margin-bottom:1rem}
 .texto{padding:1rem 1.6rem;background:#fff;border:1px solid var(--borda);border-radius:10px;margin-top:1.2rem}.texto h2{font-size:1.1rem}
 .rodape{text-align:center;color:var(--suave);font-size:.9rem;padding:1rem;border-top:1px solid var(--borda);background:#fff;margin-top:2rem}
+.quadro-cadastro{padding:0 0 1rem}
+#cadastro{display:block;width:100%;height:900px;border:0}
+#cadastro-fora{padding:2rem 1.2rem;text-align:center}
