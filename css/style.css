@@ -175,6 +175,18 @@ nav a.active {
     background: var(--gold-soft);
 }
 
+@media (min-width: 981px) {
+    nav a { white-space: nowrap; }
+}
+
+@media (min-width: 981px) and (max-width: 1440px) {
+    nav a { padding: 0.5rem 0.5rem; font-size: 0.84rem; }
+}
+
+@media (min-width: 981px) and (max-width: 1200px) {
+    nav a { padding: 0.45rem 0.35rem; font-size: 0.78rem; }
+}
+
 .menu-toggle {
     display: none;
     width: 2.5rem;
