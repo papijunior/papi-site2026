@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 88" role="img" aria-label="PapiLAB">
+  <rect width="340" height="88" rx="10" fill="#0a0c10"/>
+  <text x="22" y="56" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" font-weight="400" letter-spacing="0.5">
+    <tspan fill="#ffffff" stroke="#c8d0d8" stroke-width="1.1" paint-order="stroke fill">Papi</tspan><tspan fill="#2e5aa8" stroke="#122a5a" stroke-width="1.2" paint-order="stroke fill">LAB</tspan>
+  </text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" width="100%" height="auto" style="background: transparent;">
+  <!-- Estilos e Fontes -->
+  <style>
+    .bg-box { fill: #111111; rx: 12px; }
+    .icon-box { fill: #0d0d0d; stroke: #333333; stroke-width: 2; rx: 14px; }
+    .text-papi { font-family: 'Space Grotesk', 'Arial Black', sans-serif; font-weight: 900; fill: #FFFFFF; font-size: 58px; letter-spacing: -1px; }
+    .text-lab { font-family: 'Space Grotesk', 'Arial Black', sans-serif; font-weight: 900; fill: #A5C2FF; font-size: 58px; letter-spacing: -1px; }
+    .pj-letter { fill: #FFFFFF; font-family: 'Arial Black', sans-serif; font-weight: 900; }
+  </style>
+
+  <defs>
+    <!-- Gradiente suave no nome LAB -->
+    <linearGradient id="labGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B4CDFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B9EE8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container Geral Escuro -->
+  <rect x="5" y="10" width="510" height="80" class="bg-box" />
+
+  <!-- Ícone Monograma PJ (Esquerda) -->
+  <g transform="translate(15, 15)">
+    <!-- Borda do Ícone -->
+    <rect x="0" y="0" width="70" height="70" class="icon-box" />
+    
+    <!-- Moldura interna fina -->
+    <rect x="5" y="5" width="60" height="60" rx="8" fill="none" stroke="#555555" stroke-width="1.5" />
+    
+    <!-- Monograma PJ Sobreposto -->
+    <!-- Letra P -->
+    <path d="M 22 15 L 42 15 C 49 15 52 19 52 26 C 52 33 49 37 42 37 L 31 37 L 31 55 L 22 55 Z M 31 23 L 31 30 L 40 30 C 43 30 44 29 44 26.5 C 44 24 43 23 40 23 Z" fill="#FFFFFF" />
+    
+    <!-- Letra J (Intercalada) -->
+    <path d="M 33 34 L 41 34 L 41 48 C 41 53 38 56 31 56 C 25 56 22 53 22 48 L 29 48 C 29 50 30 51 31.5 51 C 33 51 34 50 34 48 Z" fill="#E0E0E0" opacity="0.95" />
+  </g>
+
+  <!-- Texto PapiLAB (Direita) -->
+  <g transform="translate(105, 68)">
+    <text class="text-papi" x="0" y="0">Papi</text>
+    <text class="text-lab" x="145" y="0" fill="url(#labGradient)">LAB</text>
+  </g>
+</svg>
