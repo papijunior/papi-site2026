@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="PB" data-areas="juridico programacao redes seguranca" data-texto="dpe - defensoria publica do estado da paraiba varios cargos analista da defensoria - assistente juridico analista da defensoria - assistente social analista da defensoria - auditor interno analista da defensoria - desenvolvimento de sistemas analista da defensoria - psicologo analista da defensoria - seguranca da informacao analista da defensoria - sem especialidade analista da defensoria - suporte e infraestrutura de redes tecnico da defensoria - sem especialidade dpe - pb abre concurso publico com salarios de ate r$ 5.197,50">
+  <div id="lista"><article class="concurso" data-uf="PB" data-areas="juridico programacao redes seguranca" data-salario="5197.5" data-texto="dpe - defensoria publica do estado da paraiba varios cargos analista da defensoria - assistente juridico analista da defensoria - assistente social analista da defensoria - auditor interno analista da defensoria - desenvolvimento de sistemas analista da defensoria - psicologo analista da defensoria - seguranca da informacao analista da defensoria - sem especialidade analista da defensoria - suporte e infraestrutura de redes tecnico da defensoria - sem especialidade dpe - pb abre concurso publico com salarios de ate r$ 5.197,50">
   <h2>DPE - Defensoria Pública do Estado da Paraíba</h2>
   <p class="linha">PB · 20 vagas até R$ 5.197,50 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-texto="prefeitura de natuba varios cargos agente administrativo agente de vigilancia sanitaria assistente social atendente de consultorio dentario auxiliar administrativo auxiliar de servicos gerais bioquimico condutor de ambulancia eletricista enfermeiro enfermeiro plantonista farmaceutico fisioterapeuta fonoaudiologo gari prefeitura de natuba - pb abre concurso publico para diversos cargos">
+<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-salario="3988.96" data-texto="prefeitura de natuba varios cargos agente administrativo agente de vigilancia sanitaria assistente social atendente de consultorio dentario auxiliar administrativo auxiliar de servicos gerais bioquimico condutor de ambulancia eletricista enfermeiro enfermeiro plantonista farmaceutico fisioterapeuta fonoaudiologo gari prefeitura de natuba - pb abre concurso publico para diversos cargos">
   <h2>Prefeitura de Natuba</h2>
   <p class="linha">PB · 141 vagas até R$ 3.988,96 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-texto="prefeitura de parari varios cargos agente administrativo agente de vigilancia sanitaria assistente social auxiliar de limpeza de vias publicas educador fisico enfermeiro farmaceutico fiscal de tributos e arrecadacao fisioterapeuta fonoaudiologo medico - clinica geral motorista d motorista d ambulancia nutricionista odontologo prefeitura de parari - pb abre concurso publico com salarios de ate r$ 10.000,00">
+<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-salario="10000" data-texto="prefeitura de parari varios cargos agente administrativo agente de vigilancia sanitaria assistente social auxiliar de limpeza de vias publicas educador fisico enfermeiro farmaceutico fiscal de tributos e arrecadacao fisioterapeuta fonoaudiologo medico - clinica geral motorista d motorista d ambulancia nutricionista odontologo prefeitura de parari - pb abre concurso publico com salarios de ate r$ 10.000,00">
   <h2>Prefeitura de Parari</h2>
   <p class="linha">PB · 29 vagas até R$ 10.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-texto="prefeitura de itapororoca varios cargos enfermeiro prefeitura de itapororoca - pb abre concurso com salarios de ate r$ 10.000,00">
+<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-salario="10000" data-texto="prefeitura de itapororoca varios cargos enfermeiro prefeitura de itapororoca - pb abre concurso com salarios de ate r$ 10.000,00">
   <h2>Prefeitura de Itapororoca</h2>
   <p class="linha">PB · 175 vagas até R$ 10.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>

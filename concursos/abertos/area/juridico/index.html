@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     <select id="uf" aria-label="Estado"><option value="">Todos os estados</option><option value="AC">AC — Acre</option><option value="AP">AP — Amapá</option><option value="BA">BA — Bahia</option><option value="CE">CE — Ceará</option><option value="DF">DF — Distrito Federal</option><option value="ES">ES — Espírito Santo</option><option value="GO">GO — Goiás</option><option value="MA">MA — Maranhão</option><option value="MT">MT — Mato Grosso</option><option value="MS">MS — Mato Grosso do Sul</option><option value="MG">MG — Minas Gerais</option><option value="PA">PA — Pará</option><option value="PB">PB — Paraíba</option><option value="PR">PR — Paraná</option><option value="PE">PE — Pernambuco</option><option value="PI">PI — Piauí</option><option value="RJ">RJ — Rio de Janeiro</option><option value="RN">RN — Rio Grande do Norte</option><option value="RS">RS — Rio Grande do Sul</option><option value="RO">RO — Rondônia</option><option value="SC">SC — Santa Catarina</option><option value="SP">SP — São Paulo</option><option value="SE">SE — Sergipe</option><option value="TO">TO — Tocantins</option><option value="BR">Nacionais</option></select>
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="SP" data-areas="advogado analise_sistemas enfermeiro ti" data-texto="prefeitura de leme varios cargos advogado do suas analista de tecnologia da informacao biologo biomedico enfermeiro - 180h engenheiro agrimensor engenheiro de seguranca do trabalho fiscal de rendas medico - psiquiatra medico - sanitarista medico do trabalho medico horista medico horista - ginecologista e obstetra medico horista - oftalmologista medico horista - psiquiatra infantil prefeitura de leme - sp abre concurso publico com salarios de ate r$ 13.359,44">
+  <div id="lista"><article class="concurso" data-uf="SP" data-areas="advogado analise_sistemas enfermeiro ti" data-salario="13359.44" data-texto="prefeitura de leme varios cargos advogado do suas analista de tecnologia da informacao biologo biomedico enfermeiro - 180h engenheiro agrimensor engenheiro de seguranca do trabalho fiscal de rendas medico - psiquiatra medico - sanitarista medico do trabalho medico horista medico horista - ginecologista e obstetra medico horista - oftalmologista medico horista - psiquiatra infantil prefeitura de leme - sp abre concurso publico com salarios de ate r$ 13.359,44">
   <h2>Prefeitura de Leme</h2>
   <p class="linha">SP · 29 vagas até R$ 13.359,44 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="analista_judiciario trt" data-texto="trt 4 - tribunal regional do trabalho da 4ª regiao analista judiciario, tecnico judiciario analista judiciario analista judiciario - area administrativa analista judiciario - area judiciaria analista judiciario - arquitetura analista judiciario - biblioteconomia analista judiciario - comunicacao social analista judiciario - contabilidade analista judiciario - engenharia civil analista judiciario - engenharia de seguranca do trabalho analista judiciario - engenharia eletrica analista judiciario - estatistica analista judiciario - medicina (cardiologia) analista judiciario - medicina (psiquiatria) analista judiciario - medicina - clinica geral analista judiciario - medicina do trabalho trt4 - rs abre concurso publico para analistas e tecnicos judiciarios">
+<article class="concurso" data-uf="RS" data-areas="analista_judiciario trt" data-salario="16040.88" data-texto="trt 4 - tribunal regional do trabalho da 4ª regiao analista judiciario, tecnico judiciario analista judiciario analista judiciario - area administrativa analista judiciario - area judiciaria analista judiciario - arquitetura analista judiciario - biblioteconomia analista judiciario - comunicacao social analista judiciario - contabilidade analista judiciario - engenharia civil analista judiciario - engenharia de seguranca do trabalho analista judiciario - engenharia eletrica analista judiciario - estatistica analista judiciario - medicina (cardiologia) analista judiciario - medicina (psiquiatria) analista judiciario - medicina - clinica geral analista judiciario - medicina do trabalho trt4 - rs abre concurso publico para analistas e tecnicos judiciarios">
   <h2>TRT 4 - Tribunal Regional do Trabalho da 4ª Região</h2>
   <p class="linha">RS · Cadastro de reserva até R$ 16.040,88 · Superior</p>
   <p><strong>Cargos:</strong> Analista Judiciário, Técnico Judiciário</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="tjsp - tribunal de justica do estado de sao paulo oficial de justica, escrevente tecnico judiciario escrevente tecnico judiciario oficial de justica tjsp abre concursos para oficial de justica e escrevente tecnico judiciario">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="9856.95" data-texto="tjsp - tribunal de justica do estado de sao paulo oficial de justica, escrevente tecnico judiciario escrevente tecnico judiciario oficial de justica tjsp abre concursos para oficial de justica e escrevente tecnico judiciario">
   <h2>TJSP - Tribunal de Justiça do Estado de São Paulo</h2>
   <p class="linha">SP · 132 vagas até R$ 9.856,95 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Oficial de Justiça, Escrevente Técnico Judiciário</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="juridico programacao redes seguranca" data-texto="dpe - defensoria publica do estado da paraiba varios cargos analista da defensoria - assistente juridico analista da defensoria - assistente social analista da defensoria - auditor interno analista da defensoria - desenvolvimento de sistemas analista da defensoria - psicologo analista da defensoria - seguranca da informacao analista da defensoria - sem especialidade analista da defensoria - suporte e infraestrutura de redes tecnico da defensoria - sem especialidade dpe - pb abre concurso publico com salarios de ate r$ 5.197,50">
+<article class="concurso" data-uf="PB" data-areas="juridico programacao redes seguranca" data-salario="5197.5" data-texto="dpe - defensoria publica do estado da paraiba varios cargos analista da defensoria - assistente juridico analista da defensoria - assistente social analista da defensoria - auditor interno analista da defensoria - desenvolvimento de sistemas analista da defensoria - psicologo analista da defensoria - seguranca da informacao analista da defensoria - sem especialidade analista da defensoria - suporte e infraestrutura de redes tecnico da defensoria - sem especialidade dpe - pb abre concurso publico com salarios de ate r$ 5.197,50">
   <h2>DPE - Defensoria Pública do Estado da Paraíba</h2>
   <p class="linha">PB · 20 vagas até R$ 5.197,50 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
+<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-salario="6000" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
   <h2>Prefeitura de Pedra Branca do Amapari</h2>
   <p class="linha">AP · 171 vagas até R$ 6.000,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PA" data-areas="advogado suporte ti" data-texto="camara de portel varios cargos advogado legislativo agente de copa e cozinha assistente administrativo assistente de plenario assistente social auxiliar de servicos gerais auxiliar tecnico de audio, video e sistemas condutor maritimo controlador interno guarda legislativo interprete de libras motorista ouvidor tecnico de informatica tecnico legislativo camara de portel - pa retifica edital de concurso publico">
+<article class="concurso" data-uf="PA" data-areas="advogado suporte ti" data-salario="4723.31" data-texto="camara de portel varios cargos advogado legislativo agente de copa e cozinha assistente administrativo assistente de plenario assistente social auxiliar de servicos gerais auxiliar tecnico de audio, video e sistemas condutor maritimo controlador interno guarda legislativo interprete de libras motorista ouvidor tecnico de informatica tecnico legislativo camara de portel - pa retifica edital de concurso publico">
   <h2>Câmara de Portel</h2>
   <p class="linha">PA · 27 vagas até R$ 4.723,31 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="AP" data-areas="" data-texto="tjap - tribunal de justica do estado do amapa juiz de direito substituto juiz de direito substituto tjap - ap abre concurso publico para o cargo de juiz de direito substituto">
+<article class="concurso" data-uf="AP" data-areas="" data-salario="35877.27" data-texto="tjap - tribunal de justica do estado do amapa juiz de direito substituto juiz de direito substituto tjap - ap abre concurso publico para o cargo de juiz de direito substituto">
   <h2>TJAP - Tribunal de Justiça do Estado do Amapá</h2>
   <p class="linha">AP · 15 vagas até R$ 35.877,27 · Superior</p>
   <p><strong>Cargos:</strong> Juiz de Direito Substituto</p>
@@ -131,7 +137,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PE" data-areas="procurador ti" data-texto="camara de petrolina analista legislativo, procurador, tecnico legislativo analista legislativo - produtor multimidia analista legislativo - redator de atas e termos analista legislativo - revisor de textos analista legislativo - tecnologia da informacao analista legislativo - tradutor e interprete de libras procurador tecnico legislativo - area administrativa tecnico legislativo - area legislativa camara de petrolina - pe abre concurso publico com salarios de ate r$ 8.561,42">
+<article class="concurso" data-uf="PE" data-areas="procurador ti" data-salario="8561.42" data-texto="camara de petrolina analista legislativo, procurador, tecnico legislativo analista legislativo - produtor multimidia analista legislativo - redator de atas e termos analista legislativo - revisor de textos analista legislativo - tecnologia da informacao analista legislativo - tradutor e interprete de libras procurador tecnico legislativo - area administrativa tecnico legislativo - area legislativa camara de petrolina - pe abre concurso publico com salarios de ate r$ 8.561,42">
   <h2>Câmara de Petrolina</h2>
   <p class="linha">PE · 17 vagas até R$ 8.561,42 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Analista Legislativo, Procurador, Técnico Legislativo</p>
@@ -143,7 +149,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="administrador advogado" data-texto="prefeitura de boa viagem varios cargos administrador advogado agente administrativo agente fiscal de tributos agente municipal de transito agente sanitarista analista ambiental analista de controle interno arquiteto assistente social assistente tecnico auxiliar de administracao auxiliar de gesso auxiliar de servicos gerais auxiliar em saude bucal prefeitura de boa viagem - ce abre concurso publico com vagas para diversas areas de atuacao">
+<article class="concurso" data-uf="CE" data-areas="administrador advogado" data-salario="14718.92" data-texto="prefeitura de boa viagem varios cargos administrador advogado agente administrativo agente fiscal de tributos agente municipal de transito agente sanitarista analista ambiental analista de controle interno arquiteto assistente social assistente tecnico auxiliar de administracao auxiliar de gesso auxiliar de servicos gerais auxiliar em saude bucal prefeitura de boa viagem - ce abre concurso publico com vagas para diversas areas de atuacao">
   <h2>Prefeitura de Boa Viagem</h2>
   <p class="linha">CE · 1001 vagas até R$ 14.718,92 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -155,7 +161,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="procurador" data-texto="conscensul - consorcio publico da regiao sertao centro sul varios cargos analista fiscal tecnico ambiental gestor procurador autarquico conscensul - ce abre concurso publico com vagas de nivel superior em lavras da mangabeira">
+<article class="concurso" data-uf="CE" data-areas="procurador" data-salario="5500" data-texto="conscensul - consorcio publico da regiao sertao centro sul varios cargos analista fiscal tecnico ambiental gestor procurador autarquico conscensul - ce abre concurso publico com vagas de nivel superior em lavras da mangabeira">
   <h2>CONSCENSUL - Consórcio Público da Região Sertão Centro Sul</h2>
   <p class="linha">CE · 9 vagas até R$ 5.500,00 · Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -168,7 +174,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MT" data-areas="advogado enfermeiro" data-texto="prefeitura de mirassol d&#39;oeste varios cargos advogado - 20h agente administrativo arquiteto e urbanista assistente social atendente de farmacia auxiliar administrativo auxiliar de desenvolvimento infantil auxiliar de inspecao auxiliar de inspetoria de produtos de origem animal auxiliar de laboratorio auxiliar de manutencao bioquimico educador social para idosos eletricista enfermeiro prefeitura de mirassol d&#39;oeste - mt abre processo seletivo com salarios de ate r$ 27.645,05">
+<article class="concurso" data-uf="MT" data-areas="advogado enfermeiro" data-salario="27645.05" data-texto="prefeitura de mirassol d&#39;oeste varios cargos advogado - 20h agente administrativo arquiteto e urbanista assistente social atendente de farmacia auxiliar administrativo auxiliar de desenvolvimento infantil auxiliar de inspecao auxiliar de inspetoria de produtos de origem animal auxiliar de laboratorio auxiliar de manutencao bioquimico educador social para idosos eletricista enfermeiro prefeitura de mirassol d&#39;oeste - mt abre processo seletivo com salarios de ate r$ 27.645,05">
   <h2>Prefeitura de Mirassol d&#39;Oeste</h2>
   <p class="linha">MT · 205 vagas até R$ 27.645,05 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -180,7 +186,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="advogado" data-texto="camara de colider varios cargos advogado publico agente administrativo assistente tecnico - administrativo assistente tecnico legislativo auxiliar administrativo de pessoal auxiliar de copa e limpeza recepcionista tecnico arquivista telefonista camara de colider - mt abre concurso publico com salarios de ate r$ 4.778,09">
+<article class="concurso" data-uf="MT" data-areas="advogado" data-salario="4778.09" data-texto="camara de colider varios cargos advogado publico agente administrativo assistente tecnico - administrativo assistente tecnico legislativo auxiliar administrativo de pessoal auxiliar de copa e limpeza recepcionista tecnico arquivista telefonista camara de colider - mt abre concurso publico com salarios de ate r$ 4.778,09">
   <h2>Câmara de Colíder</h2>
   <p class="linha">MT · 1 vaga e CR até R$ 4.778,09 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -192,7 +198,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="procurador" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
+<article class="concurso" data-uf="SP" data-areas="procurador" data-salario="5217.7" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
   <h2>Prefeitura de Uru</h2>
   <p class="linha">SP · 6 vagas até R$ 5.217,70 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -204,7 +210,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="advogado" data-texto="cau - conselho de arquitetura e urbanismo de santa catarina varios cargos advogado analista administrativo e financeiro analista de compras, contratos e licitacoes arquiteto e urbanista assistente administrativo tecnico em secretariado cau - sc abre concurso publico para cadastro de reserva em florianopolis">
+<article class="concurso" data-uf="SC" data-areas="advogado" data-salario="12383.88" data-texto="cau - conselho de arquitetura e urbanismo de santa catarina varios cargos advogado analista administrativo e financeiro analista de compras, contratos e licitacoes arquiteto e urbanista assistente administrativo tecnico em secretariado cau - sc abre concurso publico para cadastro de reserva em florianopolis">
   <h2>CAU - Conselho de Arquitetura e Urbanismo de Santa Catarina</h2>
   <p class="linha">SC · Vagas até R$ 12.383,88 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -216,7 +222,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="BR" data-areas="analise_sistemas analista_judiciario" data-texto="trf3 - tribunal regional federal da 3ª regiao analista judiciario, tecnico judiciario analista judiciario - analise de sistemas de informacao trf3 - sp/ms retifica concurso publico para analistas e tecnicos judiciarios">
+<article class="concurso" data-uf="BR" data-areas="analise_sistemas analista_judiciario" data-salario="20013.11" data-texto="trf3 - tribunal regional federal da 3ª regiao analista judiciario, tecnico judiciario analista judiciario - analise de sistemas de informacao trf3 - sp/ms retifica concurso publico para analistas e tecnicos judiciarios">
   <h2>TRF3 - Tribunal Regional Federal da 3ª Região</h2>
   <p class="linha">Nacional · 11 vagas até R$ 20.013,11 · Técnico / Superior</p>
   <p><strong>Cargos:</strong> Analista Judiciário, Técnico Judiciário</p>
@@ -228,7 +234,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="analista_judiciario seguranca ti" data-texto="tjpb - tribunal de justica do estado da paraiba analista judiciario, contabilidade analista judiciario - ti seguranca da informacao tjpb retifica concurso publico para analistas judiciarios">
+<article class="concurso" data-uf="PB" data-areas="analista_judiciario seguranca ti" data-salario="7526.14" data-texto="tjpb - tribunal de justica do estado da paraiba analista judiciario, contabilidade analista judiciario - ti seguranca da informacao tjpb retifica concurso publico para analistas judiciarios">
   <h2>TJPB - Tribunal de Justiça do Estado da Paraíba</h2>
   <p class="linha">PB · 50 vagas até R$ 7.526,14 · Superior</p>
   <p><strong>Cargos:</strong> Analista Judiciário, Contabilidade</p>
@@ -240,7 +246,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="procurador" data-texto="setec - servicos tecnicos gerais procurador procurador setec campinas - sp abre concurso publico para o cargo de procurador">
+<article class="concurso" data-uf="SP" data-areas="procurador" data-salario="11427.98" data-texto="setec - servicos tecnicos gerais procurador procurador setec campinas - sp abre concurso publico para o cargo de procurador">
   <h2>SETEC - Serviços Técnicos Gerais</h2>
   <p class="linha">SP · 1 vaga + CR até R$ 11.427,98 · Superior</p>
   <p><strong>Cargos:</strong> Procurador</p>
@@ -252,7 +258,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
+<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-salario="7991.27" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
   <h2>Prefeitura de Tapiraí</h2>
   <p class="linha">SP · 24 vagas até R$ 7.991,27 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -264,7 +270,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-salario="6464.59" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
   <h2>Prefeitura de Pirapozinho</h2>
   <p class="linha">SP · Cadastro de reserva até R$ 6.464,59 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -276,7 +282,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="assessor_juridico juridico" data-texto="camara de sete barras varios cargos assessor juridico camara de sete barras - sp abre concurso publico com salarios de ate r$ 7.434,85">
+<article class="concurso" data-uf="SP" data-areas="assessor_juridico juridico" data-salario="7434.85" data-texto="camara de sete barras varios cargos assessor juridico camara de sete barras - sp abre concurso publico com salarios de ate r$ 7.434,85">
   <h2>Câmara de Sete Barras</h2>
   <p class="linha">SP · 3 vagas até R$ 7.434,85 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -289,7 +295,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MG" data-areas="assessor_juridico juridico procurador" data-texto="camara de tupaciguara varios cargos assessor juridico parlamentar procurador juridico camara de tupaciguara - mg abre concurso publico com 10 vagas">
+<article class="concurso" data-uf="MG" data-areas="assessor_juridico juridico procurador" data-salario="5627.27" data-texto="camara de tupaciguara varios cargos assessor juridico parlamentar procurador juridico camara de tupaciguara - mg abre concurso publico com 10 vagas">
   <h2>Câmara de Tupaciguara</h2>
   <p class="linha">MG · 10 vagas até R$ 5.627,27 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -301,7 +307,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="juridico procurador" data-texto="prefeitura de cubatao procurador juridico administrativo i procurador juridico administrativo prefeitura de cubatao - sp abre concurso publico para procurador juridico administrativo i">
+<article class="concurso" data-uf="SP" data-areas="juridico procurador" data-salario="5565" data-texto="prefeitura de cubatao procurador juridico administrativo i procurador juridico administrativo prefeitura de cubatao - sp abre concurso publico para procurador juridico administrativo i">
   <h2>Prefeitura de Cubatão</h2>
   <p class="linha">SP · 1 vaga até R$ 5.565,00 · Superior</p>
   <p><strong>Cargos:</strong> Procurador Jurídico Administrativo I</p>
@@ -313,7 +319,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PR" data-areas="juridico procurador" data-texto="prefeitura de realeza controlador interno, procurador juridico procurador juridico prefeitura de realeza - pr abre concurso publico para controlador interno e procurador juridico">
+<article class="concurso" data-uf="PR" data-areas="juridico procurador" data-salario="8800" data-texto="prefeitura de realeza controlador interno, procurador juridico procurador juridico prefeitura de realeza - pr abre concurso publico para controlador interno e procurador juridico">
   <h2>Prefeitura de Realeza</h2>
   <p class="linha">PR · 2 vagas até R$ 8.800,00 · Superior</p>
   <p><strong>Cargos:</strong> Controlador Interno, Procurador Jurídico</p>
@@ -325,7 +331,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="juridico procurador" data-texto="camara de tambau procurador juridico, auxiliar de limpeza e servicos externos procurador juridico camara de tambau - sp abre concurso publico com salarios de ate r$ 6.423,46">
+<article class="concurso" data-uf="SP" data-areas="juridico procurador" data-salario="6423.46" data-texto="camara de tambau procurador juridico, auxiliar de limpeza e servicos externos procurador juridico camara de tambau - sp abre concurso publico com salarios de ate r$ 6.423,46">
   <h2>Câmara de Tambaú</h2>
   <p class="linha">SP · 1 vaga até R$ 6.423,46 · Fundamental / Superior</p>
   <p><strong>Cargos:</strong> Procurador Jurídico, Auxiliar de Limpeza e Serviços Externos</p>
@@ -337,7 +343,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="assessor_juridico juridico" data-texto="prefeitura de cerro negro varios cargos assessor juridico prefeitura de cerro negro - sc abre concurso publico com salarios de ate r$ 7.660,98">
+<article class="concurso" data-uf="SC" data-areas="assessor_juridico juridico" data-salario="7660.98" data-texto="prefeitura de cerro negro varios cargos assessor juridico prefeitura de cerro negro - sc abre concurso publico com salarios de ate r$ 7.660,98">
   <h2>Prefeitura de Cerro Negro</h2>
   <p class="linha">SC · 11 vagas até R$ 7.660,98 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -349,7 +355,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="juridico procurador" data-texto="camara da estancia turistica de paraguacu paulista varios cargos procurador juridico camara de paraguacu paulista - sp abre concurso publico com salarios de ate r$ 11.065,27">
+<article class="concurso" data-uf="SP" data-areas="juridico procurador" data-salario="11065.27" data-texto="camara da estancia turistica de paraguacu paulista varios cargos procurador juridico camara de paraguacu paulista - sp abre concurso publico com salarios de ate r$ 11.065,27">
   <h2>Câmara da Estância Turística de Paraguaçu Paulista</h2>
   <p class="linha">SP · Cadastro de reserva até R$ 11.065,27 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -361,7 +367,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="ES" data-areas="procurador" data-texto="camara de cachoeiro de itapemirim varios cargos procurador legislativo camara de cachoeiro de itapemirim - es abre concurso publico com salarios de ate r$ 7.046,62">
+<article class="concurso" data-uf="ES" data-areas="procurador" data-salario="7046.62" data-texto="camara de cachoeiro de itapemirim varios cargos procurador legislativo camara de cachoeiro de itapemirim - es abre concurso publico com salarios de ate r$ 7.046,62">
   <h2>Câmara de Cachoeiro de Itapemirim</h2>
   <p class="linha">ES · 15 vagas até R$ 7.046,62 · Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -373,7 +379,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PE" data-areas="procurador" data-texto="prefeitura de sao caetano varios cargos procurador do municipio prefeitura de sao caetano - pe abre concurso publico com salarios de ate r$ 3.242,00">
+<article class="concurso" data-uf="PE" data-areas="procurador" data-salario="3242" data-texto="prefeitura de sao caetano varios cargos procurador do municipio prefeitura de sao caetano - pe abre concurso publico com salarios de ate r$ 3.242,00">
   <h2>Prefeitura de São Caetano</h2>
   <p class="linha">PE · 46 vagas até R$ 3.242,00 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -385,7 +391,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="procurador" data-texto="prefeitura de caxias do sul varios cargos procurador prefeitura de caxias do sul - rs divulga editais de concurso publico">
+<article class="concurso" data-uf="RS" data-areas="procurador" data-salario="19787.77" data-texto="prefeitura de caxias do sul varios cargos procurador prefeitura de caxias do sul - rs divulga editais de concurso publico">
   <h2>Prefeitura de Caxias do Sul</h2>
   <p class="linha">RS · 24 vagas até R$ 19.787,77 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -397,7 +403,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="procurador" data-texto="camara de torre de pedra procurador legislativo procurador legislativo camara de torre de pedra - sp abre concurso publico para procurador legislativo">
+<article class="concurso" data-uf="SP" data-areas="procurador" data-salario="5015.07" data-texto="camara de torre de pedra procurador legislativo procurador legislativo camara de torre de pedra - sp abre concurso publico para procurador legislativo">
   <h2>Câmara de Torre de Pedra</h2>
   <p class="linha">SP · 1 vaga até R$ 5.015,07 · Superior</p>
   <p><strong>Cargos:</strong> Procurador Legislativo</p>
@@ -410,7 +416,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="ES" data-areas="procurador" data-texto="camara de piuma varios cargos procurador legislativo camara de piuma - es abre concurso publico com salarios de ate r$ 9.018,78">
+<article class="concurso" data-uf="ES" data-areas="procurador" data-salario="9018.78" data-texto="camara de piuma varios cargos procurador legislativo camara de piuma - es abre concurso publico com salarios de ate r$ 9.018,78">
   <h2>Câmara de Piúma</h2>
   <p class="linha">ES · 7 vagas até R$ 9.018,78 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -422,7 +428,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="procurador" data-texto="camara de joca marques varios cargos procurador camara de joca marques - pi abre concurso publico com oito vagas imediatas">
+<article class="concurso" data-uf="PI" data-areas="procurador" data-salario="3800" data-texto="camara de joca marques varios cargos procurador camara de joca marques - pi abre concurso publico com oito vagas imediatas">
   <h2>Câmara de Joca Marques</h2>
   <p class="linha">PI · 8 vagas até R$ 3.800,00 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -434,7 +440,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="procurador" data-texto="camara de dom inocencio varios cargos procurador legislativo camara de dom inocencio - pi abre concurso publico com salarios de ate r$ 6.000,00">
+<article class="concurso" data-uf="PI" data-areas="procurador" data-salario="6000" data-texto="camara de dom inocencio varios cargos procurador legislativo camara de dom inocencio - pi abre concurso publico com salarios de ate r$ 6.000,00">
   <h2>Câmara de Dom Inocêncio</h2>
   <p class="linha">PI · 6 vagas até R$ 6.000,00 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -446,7 +452,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="advogado" data-texto="prefeitura de santa branca varios cargos advogado prefeitura de santa branca - sp abre concurso publico com salarios de ate r$ 6.892,33">
+<article class="concurso" data-uf="SP" data-areas="advogado" data-salario="6892.33" data-texto="prefeitura de santa branca varios cargos advogado prefeitura de santa branca - sp abre concurso publico com salarios de ate r$ 6.892,33">
   <h2>Prefeitura de Santa Branca</h2>
   <p class="linha">SP · 6 vagas até R$ 6.892,33 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -458,7 +464,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="advogado" data-texto="camara de sao francisco do sul varios cargos advogado camara de sao francisco do sul - sc retifica edital de concurso publico">
+<article class="concurso" data-uf="SC" data-areas="advogado" data-salario="10924.72" data-texto="camara de sao francisco do sul varios cargos advogado camara de sao francisco do sul - sc retifica edital de concurso publico">
   <h2>Câmara de São Francisco do Sul</h2>
   <p class="linha">SC · 17 vagas até R$ 10.924,72 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -470,7 +476,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PR" data-areas="advogado" data-texto="camara de quatro barras varios cargos advogado camara de quatro barras - pr reabre inscricoes para concurso publico">
+<article class="concurso" data-uf="PR" data-areas="advogado" data-salario="5403.69" data-texto="camara de quatro barras varios cargos advogado camara de quatro barras - pr reabre inscricoes para concurso publico">
   <h2>Câmara de Quatro Barras</h2>
   <p class="linha">PR · 17 vagas até R$ 5.403,69 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -482,7 +488,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="advogado" data-texto="saae - servico autonomo de agua e esgoto do municipio de pirapora varios cargos advogado saae de pirapora - mg abre concurso publico com salarios de ate r$ 4.848,48">
+<article class="concurso" data-uf="MG" data-areas="advogado" data-salario="4848.48" data-texto="saae - servico autonomo de agua e esgoto do municipio de pirapora varios cargos advogado saae de pirapora - mg abre concurso publico com salarios de ate r$ 4.848,48">
   <h2>SAAE - Serviço Autônomo de Água e Esgoto do Município de Pirapora</h2>
   <p class="linha">MG · 9 vagas até R$ 4.848,48 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -494,7 +500,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="advogado" data-texto="prefeitura de paiva varios cargos advogado prefeitura de paiva - mg abre concurso publico com salarios de ate r$ 11.715,84">
+<article class="concurso" data-uf="MG" data-areas="advogado" data-salario="11715.84" data-texto="prefeitura de paiva varios cargos advogado prefeitura de paiva - mg abre concurso publico com salarios de ate r$ 11.715,84">
   <h2>Prefeitura de Paiva</h2>
   <p class="linha">MG · 13 vagas até R$ 11.715,84 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -506,7 +512,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RN" data-areas="advogado" data-texto="cref16/rn - conselho regional de educacao fisica da 16ª regiao advogado, contador, agente de licitacoes e contratos advogado cref16 - rn abre concurso publico para profissionais de nivel superior">
+<article class="concurso" data-uf="RN" data-areas="advogado" data-salario="4169.55" data-texto="cref16/rn - conselho regional de educacao fisica da 16ª regiao advogado, contador, agente de licitacoes e contratos advogado cref16 - rn abre concurso publico para profissionais de nivel superior">
   <h2>CREF16/RN - Conselho Regional de Educação Física da 16ª Região</h2>
   <p class="linha">RN · 3 vagas até R$ 4.169,55 · Superior</p>
   <p><strong>Cargos:</strong> Advogado, Contador, Agente de Licitações e Contratos</p>
@@ -518,7 +524,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="advogado" data-texto="prefeitura de jaragua do sul varios cargos advogado do creas/suas prefeitura de jaragua do sul - sc abre processos seletivos com salarios de ate r$ 15.606,92">
+<article class="concurso" data-uf="SC" data-areas="advogado" data-salario="15606.92" data-texto="prefeitura de jaragua do sul varios cargos advogado do creas/suas prefeitura de jaragua do sul - sc abre processos seletivos com salarios de ate r$ 15.606,92">
   <h2>Prefeitura de Jaraguá do Sul</h2>
   <p class="linha">SC · 10 vagas até R$ 15.606,92 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>

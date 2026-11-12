@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     <select id="uf" aria-label="Estado"><option value="">Todos os estados</option><option value="AC">AC — Acre</option><option value="AP">AP — Amapá</option><option value="BA">BA — Bahia</option><option value="CE">CE — Ceará</option><option value="DF">DF — Distrito Federal</option><option value="ES">ES — Espírito Santo</option><option value="GO">GO — Goiás</option><option value="MA">MA — Maranhão</option><option value="MT">MT — Mato Grosso</option><option value="MS">MS — Mato Grosso do Sul</option><option value="MG">MG — Minas Gerais</option><option value="PA">PA — Pará</option><option value="PB">PB — Paraíba</option><option value="PR">PR — Paraná</option><option value="PE">PE — Pernambuco</option><option value="PI">PI — Piauí</option><option value="RJ">RJ — Rio de Janeiro</option><option value="RN">RN — Rio Grande do Norte</option><option value="RS">RS — Rio Grande do Sul</option><option value="RO">RO — Rondônia</option><option value="SC">SC — Santa Catarina</option><option value="SP">SP — São Paulo</option><option value="SE">SE — Sergipe</option><option value="TO">TO — Tocantins</option><option value="BR">Nacionais</option></select>
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de votorantim auxiliar de servicos infantis, inspetor de alunos, peb i - professor de educacao basica i, peb ii - professor de educacao basica ii - educacao especial em classes multifuncionais, peb ii - professor de educacao basica ii - educacao fisica auxiliar de servicos infantis inspetor de alunos peb i - professor de educacao basica i peb ii - professor de educacao basica ii - educacao especial em classes multifuncionais peb ii - professor de educacao basica ii - educacao fisica concurso publico - 01/2026 - prefeitura municipal de votorantim">
+  <div id="lista"><article class="concurso" data-uf="SP" data-areas="" data-salario="2455.45" data-texto="prefeitura de votorantim auxiliar de servicos infantis, inspetor de alunos, peb i - professor de educacao basica i, peb ii - professor de educacao basica ii - educacao especial em classes multifuncionais, peb ii - professor de educacao basica ii - educacao fisica auxiliar de servicos infantis inspetor de alunos peb i - professor de educacao basica i peb ii - professor de educacao basica ii - educacao especial em classes multifuncionais peb ii - professor de educacao basica ii - educacao fisica concurso publico - 01/2026 - prefeitura municipal de votorantim">
   <h2>Prefeitura de Votorantim</h2>
   <p class="linha">SP · 32 vagas até R$ 2.455,45 · Médio / Fundamental Completo / Superior</p>
   <p><strong>Cargos:</strong> Auxiliar de Serviços Infantis, Inspetor de Alunos, PEB I - Professor de Educação Básica I, PEB II - Professor de Educação Básica II - Educação Especial em Classes Multifuncionais, PEB II - Professor de Educação Básica II - Educação Física</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de votorantim coordenador pedagogico, diretor de escola coordenador pedagogico diretor de escola concurso publico - 02/2026 - prefeitura municipal de votorantim">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="8377.33" data-texto="prefeitura de votorantim coordenador pedagogico, diretor de escola coordenador pedagogico diretor de escola concurso publico - 02/2026 - prefeitura municipal de votorantim">
   <h2>Prefeitura de Votorantim</h2>
   <p class="linha">SP · 5 vagas até R$ 8.377,33 · Superior</p>
   <p><strong>Cargos:</strong> Coordenador Pedagógico, Diretor de Escola</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PR" data-areas="enfermeiro" data-texto="prefeitura de quedas do iguacu varios cargos assistente social auxiliar de saude bucal biologo contador cuidador social enfermeiro farmaceutico fisioterapeuta fonoaudiologo medico - ginecologista e obstetra nutricionista odontologo professor professor - educacao fisica professor - educacao infantil prefeitura de quedas do iguacu - pr retifica edital de concurso publico">
+<article class="concurso" data-uf="PR" data-areas="enfermeiro" data-salario="11998.88" data-texto="prefeitura de quedas do iguacu varios cargos assistente social auxiliar de saude bucal biologo contador cuidador social enfermeiro farmaceutico fisioterapeuta fonoaudiologo medico - ginecologista e obstetra nutricionista odontologo professor professor - educacao fisica professor - educacao infantil prefeitura de quedas do iguacu - pr retifica edital de concurso publico">
   <h2>Prefeitura de Quedas do Iguaçu</h2>
   <p class="linha">PR · 140 vagas até R$ 11.998,88 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="administrador enfermeiro" data-texto="prefeitura de lages - secretaria da saude varios cargos administrador de programas da saude artesao de programas da saude assistente social de programas da saude cirurgiao dentista de programas da saude educador fisico de programas da saude enfermeiro de programas da saude enfermeiro especialista em saude mental fisioterapeuta de programas da saude motorista socorrista de programas da saude nutricionista em programas da saude psicologo em programas da saude tecnico de enfermagem em programas da saude tecnico de enfermagem socorrista terapeuta ocupacional em programas da saude prefeitura de lages - sc abre selecao para diversos cargos na secretaria da saude">
+<article class="concurso" data-uf="SC" data-areas="administrador enfermeiro" data-salario="5883.29" data-texto="prefeitura de lages - secretaria da saude varios cargos administrador de programas da saude artesao de programas da saude assistente social de programas da saude cirurgiao dentista de programas da saude educador fisico de programas da saude enfermeiro de programas da saude enfermeiro especialista em saude mental fisioterapeuta de programas da saude motorista socorrista de programas da saude nutricionista em programas da saude psicologo em programas da saude tecnico de enfermagem em programas da saude tecnico de enfermagem socorrista terapeuta ocupacional em programas da saude prefeitura de lages - sc abre selecao para diversos cargos na secretaria da saude">
   <h2>Prefeitura de Lages - Secretaria da Saúde</h2>
   <p class="linha">SC · 14 vagas até R$ 5.883,29 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
+<article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-salario="16210" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
   <h2>Prefeitura de Canto do Buriti</h2>
   <p class="linha">PI · 257 vagas até R$ 16.210,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="juridico" data-texto="prefeitura de louveira varios cargos assistente juridico contador escriturario fiscal municipal professor - artes professor - educacao fisica professor - ensino basico professor - ingles prefeitura de louveira - sp abre concursos com vagas imediatas e cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="juridico" data-salario="8738" data-texto="prefeitura de louveira varios cargos assistente juridico contador escriturario fiscal municipal professor - artes professor - educacao fisica professor - ensino basico professor - ingles prefeitura de louveira - sp abre concursos com vagas imediatas e cadastro de reserva">
   <h2>Prefeitura de Louveira</h2>
   <p class="linha">SP · 19 vagas até R$ 8.738,00 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="GO" data-areas="" data-texto="prefeitura de aparecida de goiania varios cargos agente educativo auxiliar de secretaria profissional da educacao - artes profissional da educacao - ciencias profissional da educacao - educacao fisica profissional da educacao - geografia profissional da educacao - historia profissional da educacao - ingles profissional da educacao - lingua portuguesa profissional da educacao - matematica profissional da educacao - pedagogia prefeitura de aparecida de goiania - go abre concurso publico com vagas na area da educacao">
+<article class="concurso" data-uf="GO" data-areas="" data-salario="4508.28" data-texto="prefeitura de aparecida de goiania varios cargos agente educativo auxiliar de secretaria profissional da educacao - artes profissional da educacao - ciencias profissional da educacao - educacao fisica profissional da educacao - geografia profissional da educacao - historia profissional da educacao - ingles profissional da educacao - lingua portuguesa profissional da educacao - matematica profissional da educacao - pedagogia prefeitura de aparecida de goiania - go abre concurso publico com vagas na area da educacao">
   <h2>Prefeitura de Aparecida de Goiânia</h2>
   <p class="linha">GO · 2956 vagas até R$ 4.508,28 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -131,7 +137,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
+<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-salario="6000" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
   <h2>Prefeitura de Pedra Branca do Amapari</h2>
   <p class="linha">AP · 171 vagas até R$ 6.000,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -143,7 +149,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PA" data-areas="" data-texto="ifpa - instituto federal de educacao, ciencia e tecnologia do para professor substituto professor substituto - engenharia eletrica professor substituto - engenharia mecanica ifpa abre selecao para professores substitutos de engenharia eletrica e engenharia mecanica">
+<article class="concurso" data-uf="PA" data-areas="" data-salario="6526.73" data-texto="ifpa - instituto federal de educacao, ciencia e tecnologia do para professor substituto professor substituto - engenharia eletrica professor substituto - engenharia mecanica ifpa abre selecao para professores substitutos de engenharia eletrica e engenharia mecanica">
   <h2>IFPA - Instituto Federal de Educação, Ciência e Tecnologia do Pará</h2>
   <p class="linha">PA · 2 vagas até R$ 6.526,73 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -155,7 +161,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="BA" data-areas="" data-texto="prefeitura de barreiras varios cargos auxiliar de desenvolvimento infantil auxiliar de servicos gerais cuidador inspetor de alunos instrutor de fanfarra escolar interprete de libras monitor de braille monitor de creche oficineiro de artesanato oficineiro de capoeira oficineiro de danca oficineiro de musica oficineiro de teatro professor - anos iniciais professor - educacao fisica prefeitura de barreiras - ba abre processo seletivo com vagas para a secretaria de educacao">
+<article class="concurso" data-uf="BA" data-areas="" data-salario="2585.35" data-texto="prefeitura de barreiras varios cargos auxiliar de desenvolvimento infantil auxiliar de servicos gerais cuidador inspetor de alunos instrutor de fanfarra escolar interprete de libras monitor de braille monitor de creche oficineiro de artesanato oficineiro de capoeira oficineiro de danca oficineiro de musica oficineiro de teatro professor - anos iniciais professor - educacao fisica prefeitura de barreiras - ba abre processo seletivo com vagas para a secretaria de educacao">
   <h2>Prefeitura de Barreiras</h2>
   <p class="linha">BA · 1054 vagas até R$ 2.585,35 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -168,7 +174,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="BA" data-areas="" data-texto="prefeitura de tucano varios cargos engenheiro ambiental fiscal de meio ambiente geologo professor prefeitura de tucano - ba abre processo seletivo com 83 vagas">
+<article class="concurso" data-uf="BA" data-areas="" data-salario="3000" data-texto="prefeitura de tucano varios cargos engenheiro ambiental fiscal de meio ambiente geologo professor prefeitura de tucano - ba abre processo seletivo com 83 vagas">
   <h2>Prefeitura de Tucano</h2>
   <p class="linha">BA · 83 vagas até R$ 3.000,00 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -180,7 +186,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="" data-texto="unilab - universidade da integracao internacional da lusofonia afro-brasileira professor do magisterio superior professor do magisterio superior - anatomia humana professor do magisterio superior - bases biologicas, neurociencias e linguagem aplicadas a fonoaudiologia professor do magisterio superior - bases morfofuncionais e oncologia professor do magisterio superior - biologia celular e molecular, histologia e imunologia basica professor do magisterio superior - bioquimica professor do magisterio superior - circuitos eletroeletronicos e sistemas digitais professor do magisterio superior - contabilidade societaria professor do magisterio superior - contabilidade tributaria e pratica contabil professor do magisterio superior - fisiologia humana professor do magisterio superior - fundamentos do servico social, instrumentalidade e processo de trabalho professor do magisterio superior - histologia e embriologia humana professor do magisterio superior - metodos de imagem professor do magisterio superior - neurociencias, cinesiologia e biomecanica aplicadas a terapia ocupacional professor do magisterio superior - nutricao em saude coletiva e comportamento alimentar unilab - ce abre concurso publico com vagas para professores do magisterio superior">
+<article class="concurso" data-uf="CE" data-areas="" data-salario="13753.96" data-texto="unilab - universidade da integracao internacional da lusofonia afro-brasileira professor do magisterio superior professor do magisterio superior - anatomia humana professor do magisterio superior - bases biologicas, neurociencias e linguagem aplicadas a fonoaudiologia professor do magisterio superior - bases morfofuncionais e oncologia professor do magisterio superior - biologia celular e molecular, histologia e imunologia basica professor do magisterio superior - bioquimica professor do magisterio superior - circuitos eletroeletronicos e sistemas digitais professor do magisterio superior - contabilidade societaria professor do magisterio superior - contabilidade tributaria e pratica contabil professor do magisterio superior - fisiologia humana professor do magisterio superior - fundamentos do servico social, instrumentalidade e processo de trabalho professor do magisterio superior - histologia e embriologia humana professor do magisterio superior - metodos de imagem professor do magisterio superior - neurociencias, cinesiologia e biomecanica aplicadas a terapia ocupacional professor do magisterio superior - nutricao em saude coletiva e comportamento alimentar unilab - ce abre concurso publico com vagas para professores do magisterio superior">
   <h2>Unilab - Universidade da Integração Internacional da Lusofonia Afro-Brasileira</h2>
   <p class="linha">CE · 16 vagas até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Magistério Superior</p>
@@ -192,7 +198,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-texto="prefeitura de parari varios cargos agente administrativo agente de vigilancia sanitaria assistente social auxiliar de limpeza de vias publicas educador fisico enfermeiro farmaceutico fiscal de tributos e arrecadacao fisioterapeuta fonoaudiologo medico - clinica geral motorista d motorista d ambulancia nutricionista odontologo prefeitura de parari - pb abre concurso publico com salarios de ate r$ 10.000,00">
+<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-salario="10000" data-texto="prefeitura de parari varios cargos agente administrativo agente de vigilancia sanitaria assistente social auxiliar de limpeza de vias publicas educador fisico enfermeiro farmaceutico fiscal de tributos e arrecadacao fisioterapeuta fonoaudiologo medico - clinica geral motorista d motorista d ambulancia nutricionista odontologo prefeitura de parari - pb abre concurso publico com salarios de ate r$ 10.000,00">
   <h2>Prefeitura de Parari</h2>
   <p class="linha">PB · 29 vagas até R$ 10.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -204,7 +210,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MA" data-areas="" data-texto="uema - universidade estadual do maranhao professor substituto professor substituto - educacao - fundamentos da educacao professor substituto - educacao/ensino-aprendizagem professor substituto - educacao: topicos especificos da educacao professor substituto - fisica professor substituto - fisica: areas classicas de fenomenologia e suas aplicacoes professor substituto - psicologia: psicologia do ensino e da aprendizagem uema abre selecoes para professores substitutos no campus sao luis">
+<article class="concurso" data-uf="MA" data-areas="" data-salario="3624.64" data-texto="uema - universidade estadual do maranhao professor substituto professor substituto - educacao - fundamentos da educacao professor substituto - educacao/ensino-aprendizagem professor substituto - educacao: topicos especificos da educacao professor substituto - fisica professor substituto - fisica: areas classicas de fenomenologia e suas aplicacoes professor substituto - psicologia: psicologia do ensino e da aprendizagem uema abre selecoes para professores substitutos no campus sao luis">
   <h2>UEMA - Universidade Estadual do Maranhão</h2>
   <p class="linha">MA · 11 vagas até R$ 3.624,64 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -216,7 +222,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="" data-texto="prefeitura de itapipoca varios cargos monitor de apoio a aprendizagem escolar monitor de apoio a pessoa com deficiencia professor de educacao basica - anos iniciais professor de educacao basica - ciencias da natureza professor de educacao basica - ciencias humanas professor de educacao basica - educacao fisica professor de educacao basica - educacao infantil professor de educacao basica - lingua portuguesa/ingles professor de educacao basica - matematica prefeitura de itapipoca - ce abre processo seletivo para a educacao">
+<article class="concurso" data-uf="CE" data-areas="" data-salario="2565.32" data-texto="prefeitura de itapipoca varios cargos monitor de apoio a aprendizagem escolar monitor de apoio a pessoa com deficiencia professor de educacao basica - anos iniciais professor de educacao basica - ciencias da natureza professor de educacao basica - ciencias humanas professor de educacao basica - educacao fisica professor de educacao basica - educacao infantil professor de educacao basica - lingua portuguesa/ingles professor de educacao basica - matematica prefeitura de itapipoca - ce abre processo seletivo para a educacao">
   <h2>Prefeitura de Itapipoca</h2>
   <p class="linha">CE · 688 vagas até R$ 2.565,32 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -228,7 +234,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MA" data-areas="" data-texto="uema - universidade estadual do maranhao professor substituto professor substituto - ensino e aprendizagem professor substituto - geografia fisica professor substituto - geografia fisica (geocartografia) professor substituto - geografia humana professor substituto - geografia regional uema abre selecao para professores substitutos no departamento de geografia em sao luis">
+<article class="concurso" data-uf="MA" data-areas="" data-salario="6886.82" data-texto="uema - universidade estadual do maranhao professor substituto professor substituto - ensino e aprendizagem professor substituto - geografia fisica professor substituto - geografia fisica (geocartografia) professor substituto - geografia humana professor substituto - geografia regional uema abre selecao para professores substitutos no departamento de geografia em sao luis">
   <h2>UEMA - Universidade Estadual do Maranhão</h2>
   <p class="linha">MA · 5 vagas até R$ 6.886,82 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -240,7 +246,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MA" data-areas="" data-texto="uema - universidade estadual do maranhao professor substituto professor substituto - administracao/ciencias contabeis professor substituto - artes musica professor substituto - educacao professor substituto - educacao - fundamentos da educacao professor substituto - educacao/ensino e aprendizagem professor substituto - farmacia professor substituto - fenomenos de transportes e engenharia termica professor substituto - fisioterapia e terapia ocupacional professor substituto - fundamentos e medidas da psicologia professor substituto - letras/teoria literaria professor substituto - matematica professor substituto - matematica - algebra professor substituto - matematica: calculo diferencial integral professor substituto - mecanica dos solidos e projetos de maquinas professor substituto - processos de fabricacao uema abre 9 processos seletivos para professores substitutos">
+<article class="concurso" data-uf="MA" data-areas="" data-salario="6886.82" data-texto="uema - universidade estadual do maranhao professor substituto professor substituto - administracao/ciencias contabeis professor substituto - artes musica professor substituto - educacao professor substituto - educacao - fundamentos da educacao professor substituto - educacao/ensino e aprendizagem professor substituto - farmacia professor substituto - fenomenos de transportes e engenharia termica professor substituto - fisioterapia e terapia ocupacional professor substituto - fundamentos e medidas da psicologia professor substituto - letras/teoria literaria professor substituto - matematica professor substituto - matematica - algebra professor substituto - matematica: calculo diferencial integral professor substituto - mecanica dos solidos e projetos de maquinas professor substituto - processos de fabricacao uema abre 9 processos seletivos para professores substitutos">
   <h2>UEMA - Universidade Estadual do Maranhão</h2>
   <p class="linha">MA · 29 vagas até R$ 6.886,82 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -252,7 +258,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MA" data-areas="" data-texto="uema - universidade estadual do maranhao professor substituto professor substituto - ciencias humanas professor substituto - educacao professor substituto - educacao especial uema abre processo seletivo para professores substitutos em balsas">
+<article class="concurso" data-uf="MA" data-areas="" data-salario="6886.82" data-texto="uema - universidade estadual do maranhao professor substituto professor substituto - ciencias humanas professor substituto - educacao professor substituto - educacao especial uema abre processo seletivo para professores substitutos em balsas">
   <h2>UEMA - Universidade Estadual do Maranhão</h2>
   <p class="linha">MA · 3 vagas até R$ 6.886,82 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -264,7 +270,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="" data-texto="ifce - instituto federal de educacao, ciencia e tecnologia do ceara professor substituto professor substituto - aquicultura ifce abre processo seletivo para professor substituto de aquicultura em acarau">
+<article class="concurso" data-uf="CE" data-areas="" data-salario="8340.33" data-texto="ifce - instituto federal de educacao, ciencia e tecnologia do ceara professor substituto professor substituto - aquicultura ifce abre processo seletivo para professor substituto de aquicultura em acarau">
   <h2>IFCE - Instituto Federal de Educação, Ciência e Tecnologia do Ceará</h2>
   <p class="linha">CE · 1 vaga até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -276,7 +282,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="" data-texto="prefeitura de oros varios cargos agente de transito auxiliar de auditoria interna auxiliar de servicos gerais eletricista engenheiro de pesca fiscal de tributos guarda municipal medico veterinario pedreiro pintor professor - anos iniciais professor - artes professor - ciencias professor - educacao fisica professor - geografia prefeitura de oros - ce abre concurso publico com vagas para diversas areas">
+<article class="concurso" data-uf="CE" data-areas="" data-salario="3606.93" data-texto="prefeitura de oros varios cargos agente de transito auxiliar de auditoria interna auxiliar de servicos gerais eletricista engenheiro de pesca fiscal de tributos guarda municipal medico veterinario pedreiro pintor professor - anos iniciais professor - artes professor - ciencias professor - educacao fisica professor - geografia prefeitura de oros - ce abre concurso publico com vagas para diversas areas">
   <h2>Prefeitura de Orós</h2>
   <p class="linha">CE · 95 vagas até R$ 3.606,93 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -289,7 +295,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MS" data-areas="" data-texto="secretaria municipal de educacao, esporte e cultura de eldorado professor, profissional de apoio escolar, monitor escolar monitor escolar professor - apoio especializado professor - artes professor - ciencias professor - educacao fisica professor - educacao indigena professor - educacao infantil professor - ensino fundamental professor - geografia professor - historia professor - lingua inglesa professor - lingua portuguesa professor - matematica professor - pedagogia professor - producao interativa prefeitura de eldorado - ms abre selecao para profissionais da educacao">
+<article class="concurso" data-uf="MS" data-areas="" data-salario="0" data-texto="secretaria municipal de educacao, esporte e cultura de eldorado professor, profissional de apoio escolar, monitor escolar monitor escolar professor - apoio especializado professor - artes professor - ciencias professor - educacao fisica professor - educacao indigena professor - educacao infantil professor - ensino fundamental professor - geografia professor - historia professor - lingua inglesa professor - lingua portuguesa professor - matematica professor - pedagogia professor - producao interativa prefeitura de eldorado - ms abre selecao para profissionais da educacao">
   <h2>Secretaria Municipal de Educação, Esporte e Cultura de Eldorado</h2>
   <p class="linha">MS · Cadastro de reserva · Médio / Superior</p>
   <p><strong>Cargos:</strong> Professor, Profissional de Apoio Escolar, Monitor Escolar</p>
@@ -301,7 +307,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="GO" data-areas="" data-texto="prefeitura de goianira varios cargos agente de apoio educacional agente de apoio educacional - interprete de libras assistente social auxiliar administrativo auxiliar de servicos gerais merendeiro monitor - cmei motorista de transporte escolar professor prefeitura de goianira - go abre selecao com remuneracoes de ate r$ 3.203,66">
+<article class="concurso" data-uf="GO" data-areas="" data-salario="3203.66" data-texto="prefeitura de goianira varios cargos agente de apoio educacional agente de apoio educacional - interprete de libras assistente social auxiliar administrativo auxiliar de servicos gerais merendeiro monitor - cmei motorista de transporte escolar professor prefeitura de goianira - go abre selecao com remuneracoes de ate r$ 3.203,66">
   <h2>Prefeitura de Goianira</h2>
   <p class="linha">GO · 140 vagas até R$ 3.203,66 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -313,7 +319,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="advogado enfermeiro" data-texto="prefeitura de mirassol d&#39;oeste varios cargos advogado - 20h agente administrativo arquiteto e urbanista assistente social atendente de farmacia auxiliar administrativo auxiliar de desenvolvimento infantil auxiliar de inspecao auxiliar de inspetoria de produtos de origem animal auxiliar de laboratorio auxiliar de manutencao bioquimico educador social para idosos eletricista enfermeiro prefeitura de mirassol d&#39;oeste - mt abre processo seletivo com salarios de ate r$ 27.645,05">
+<article class="concurso" data-uf="MT" data-areas="advogado enfermeiro" data-salario="27645.05" data-texto="prefeitura de mirassol d&#39;oeste varios cargos advogado - 20h agente administrativo arquiteto e urbanista assistente social atendente de farmacia auxiliar administrativo auxiliar de desenvolvimento infantil auxiliar de inspecao auxiliar de inspetoria de produtos de origem animal auxiliar de laboratorio auxiliar de manutencao bioquimico educador social para idosos eletricista enfermeiro prefeitura de mirassol d&#39;oeste - mt abre processo seletivo com salarios de ate r$ 27.645,05">
   <h2>Prefeitura de Mirassol d&#39;Oeste</h2>
   <p class="linha">MT · 205 vagas até R$ 27.645,05 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -325,7 +331,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="" data-texto="unemat - universidade do estado de mato grosso professor da educacao superior professor da educacao superior - agroecologia professor da educacao superior - construcoes rurais professor da educacao superior - entomologia geral professor da educacao superior - fertilidade do solo e nutricao de plantas professor da educacao superior - fitopatologia geral professor da educacao superior - floricultura, paisagismo e parque professor da educacao superior - geoprocessamento professor da educacao superior - hidrologia e hidraulica professor da educacao superior - maquinas e mecanizacao professor da educacao superior - melhoramento genetico professor da educacao superior - meteorologia e climatologia professor da educacao superior - zootecnia geral unemat abre processo seletivo para professores de nivel superior em nova monte verde">
+<article class="concurso" data-uf="MT" data-areas="" data-salario="0" data-texto="unemat - universidade do estado de mato grosso professor da educacao superior professor da educacao superior - agroecologia professor da educacao superior - construcoes rurais professor da educacao superior - entomologia geral professor da educacao superior - fertilidade do solo e nutricao de plantas professor da educacao superior - fitopatologia geral professor da educacao superior - floricultura, paisagismo e parque professor da educacao superior - geoprocessamento professor da educacao superior - hidrologia e hidraulica professor da educacao superior - maquinas e mecanizacao professor da educacao superior - melhoramento genetico professor da educacao superior - meteorologia e climatologia professor da educacao superior - zootecnia geral unemat abre processo seletivo para professores de nivel superior em nova monte verde">
   <h2>UNEMAT - Universidade do Estado de Mato Grosso</h2>
   <p class="linha">MT · 12 vagas · Superior</p>
   <p><strong>Cargos:</strong> Professor da Educação Superior</p>
@@ -337,7 +343,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MS" data-areas="" data-texto="secretaria municipal de educacao de sonora professor professor - anos iniciais - pedagogia professor - arte professor - ciencias professor - educacao fisica professor - educacao infantil professor - geografia professor - historia professor - ingles professor - lingua portuguesa professor - matematica secretaria municipal de educacao de sonora - ms abre selecao para professores com salario de r$ 3.538,85">
+<article class="concurso" data-uf="MS" data-areas="" data-salario="3538.85" data-texto="secretaria municipal de educacao de sonora professor professor - anos iniciais - pedagogia professor - arte professor - ciencias professor - educacao fisica professor - educacao infantil professor - geografia professor - historia professor - ingles professor - lingua portuguesa professor - matematica secretaria municipal de educacao de sonora - ms abre selecao para professores com salario de r$ 3.538,85">
   <h2>Secretaria Municipal de Educação de Sonora</h2>
   <p class="linha">MS · 41 vagas até R$ 3.538,85 · Superior</p>
   <p><strong>Cargos:</strong> Professor</p>
@@ -349,7 +355,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MS" data-areas="administrador analise_sistemas programacao redes ti web" data-texto="ufms - fundacao universidade federal de mato grosso do sul varios cargos administrador analista de tecnologia da informacao - desenvolvimento de software analista de tecnologia da informacao - gestao de projetos de software analista de tecnologia da informacao - governanca, seguranca, operacoes e infraestrutura de redes analista de tecnologia da informacao - inteligencia artificial analista de tecnologia da informacao - sistemas embarcados e iot analista de tecnologia da informacao - web designer analista em educacao - biblioteconomia analista em educacao - comunicacao digital analista em educacao - comunicacao social analista em educacao - educacao fisica analista em educacao - engenharia ambiental analista em educacao - engenharia mecanica analista em educacao - gestao publica analista em educacao - pedagogia ufms abre concurso publico para cargos tecnico-administrativos em educacao">
+<article class="concurso" data-uf="MS" data-areas="administrador analise_sistemas programacao redes ti web" data-salario="5215.39" data-texto="ufms - fundacao universidade federal de mato grosso do sul varios cargos administrador analista de tecnologia da informacao - desenvolvimento de software analista de tecnologia da informacao - gestao de projetos de software analista de tecnologia da informacao - governanca, seguranca, operacoes e infraestrutura de redes analista de tecnologia da informacao - inteligencia artificial analista de tecnologia da informacao - sistemas embarcados e iot analista de tecnologia da informacao - web designer analista em educacao - biblioteconomia analista em educacao - comunicacao digital analista em educacao - comunicacao social analista em educacao - educacao fisica analista em educacao - engenharia ambiental analista em educacao - engenharia mecanica analista em educacao - gestao publica analista em educacao - pedagogia ufms abre concurso publico para cargos tecnico-administrativos em educacao">
   <h2>UFMS - Fundação Universidade Federal de Mato Grosso do Sul</h2>
   <p class="linha">MS · 154 vagas até R$ 5.215,39 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -361,7 +367,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="programacao" data-texto="seciteci - secretaria de estado de ciencia, tecnologia e inovacao de mato grosso varios cargos professor - administracao e gestao professor - agricultura professor - agrimensura professor - agroecologia e producao vegetal professor - agroindustria professor - analise e desenvolvimento de sistemas professor - apicultura e meliponicultura professor - aquicultura professor - arquitetura e urbanismo professor - artes professor - automacao professor - biologia professor - biomedicina professor - bioquimica professor - comercio e marketing seciteci - mt abre selecao para formacao de cadastro de reserva">
+<article class="concurso" data-uf="MT" data-areas="programacao" data-salario="12937.29" data-texto="seciteci - secretaria de estado de ciencia, tecnologia e inovacao de mato grosso varios cargos professor - administracao e gestao professor - agricultura professor - agrimensura professor - agroecologia e producao vegetal professor - agroindustria professor - analise e desenvolvimento de sistemas professor - apicultura e meliponicultura professor - aquicultura professor - arquitetura e urbanismo professor - artes professor - automacao professor - biologia professor - biomedicina professor - bioquimica professor - comercio e marketing seciteci - mt abre selecao para formacao de cadastro de reserva">
   <h2>SECITECI - Secretaria de Estado de Ciência, Tecnologia e Inovação de Mato Grosso</h2>
   <p class="linha">MT · Cadastro de Reserva até R$ 12.937,29 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -373,7 +379,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="GO" data-areas="" data-texto="ufj - universidade federal de jatai professor do magisterio superior professor do magisterio superior - audiologia e estagio supervisionado professor do magisterio superior - comunicacao e midias professor do magisterio superior - comunicacao social professor do magisterio superior - didatica e educacao especial inclusiva professor do magisterio superior - ensino, fundamentos socio-historicos e pedagogias das artes visuais na educacao e pesquisa, estagio e pratica pedagogica em artes visuais professor do magisterio superior - ensino, producao e criacao artistico-visual e fundamentacao historica e sociocultural em artes visuais professor do magisterio superior - fisica computacional, metodos numericos e de inteligencia artificial professor do magisterio superior - formacao de professores e politicas educacionais inclusivas professor do magisterio superior - introducao a fonoaudiologia, linguagem oral e escrita, fala e fluencia e estagio supervisionado professor do magisterio superior - materiais polimericos professor do magisterio superior - morfofisiologia, introducao a terapia ocupacional e estagio supervisionado professor do magisterio superior - morfofisiologia, voz e motricidade orofacial e cervical e estagio supervisionado professor do magisterio superior - processamento de dados em inteligencia artificial professor do magisterio superior - processos industriais professor do magisterio superior - terapia ocupacional nos contextos educacionais, do trabalho e ao longo do ciclo da vida e estagio supervisionado ufj - go abre concurso publico para professores do magisterio superior">
+<article class="concurso" data-uf="GO" data-areas="" data-salario="13854.96" data-texto="ufj - universidade federal de jatai professor do magisterio superior professor do magisterio superior - audiologia e estagio supervisionado professor do magisterio superior - comunicacao e midias professor do magisterio superior - comunicacao social professor do magisterio superior - didatica e educacao especial inclusiva professor do magisterio superior - ensino, fundamentos socio-historicos e pedagogias das artes visuais na educacao e pesquisa, estagio e pratica pedagogica em artes visuais professor do magisterio superior - ensino, producao e criacao artistico-visual e fundamentacao historica e sociocultural em artes visuais professor do magisterio superior - fisica computacional, metodos numericos e de inteligencia artificial professor do magisterio superior - formacao de professores e politicas educacionais inclusivas professor do magisterio superior - introducao a fonoaudiologia, linguagem oral e escrita, fala e fluencia e estagio supervisionado professor do magisterio superior - materiais polimericos professor do magisterio superior - morfofisiologia, introducao a terapia ocupacional e estagio supervisionado professor do magisterio superior - morfofisiologia, voz e motricidade orofacial e cervical e estagio supervisionado professor do magisterio superior - processamento de dados em inteligencia artificial professor do magisterio superior - processos industriais professor do magisterio superior - terapia ocupacional nos contextos educacionais, do trabalho e ao longo do ciclo da vida e estagio supervisionado ufj - go abre concurso publico para professores do magisterio superior">
   <h2>UFJ - Universidade Federal de Jataí</h2>
   <p class="linha">GO · 22 vagas até R$ 13.854,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Magistério Superior</p>
@@ -385,7 +391,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="enfermeiro" data-texto="prefeitura de pontes e lacerda varios cargos assistente administrativo assistente social assistente social educacional auxiliar de consultorio dentario bioquimico/farmaceutico enfermeiro enfermeiro zona rural fisioterapeuta fonoaudiologo medico 20h medico 40h nutricionista odontologo pedagogo professor - anos iniciais prefeitura de pontes e lacerda - mt abre processo seletivo com salarios de ate r$ 11.308,36">
+<article class="concurso" data-uf="MT" data-areas="enfermeiro" data-salario="11308.36" data-texto="prefeitura de pontes e lacerda varios cargos assistente administrativo assistente social assistente social educacional auxiliar de consultorio dentario bioquimico/farmaceutico enfermeiro enfermeiro zona rural fisioterapeuta fonoaudiologo medico 20h medico 40h nutricionista odontologo pedagogo professor - anos iniciais prefeitura de pontes e lacerda - mt abre processo seletivo com salarios de ate r$ 11.308,36">
   <h2>Prefeitura de Pontes e Lacerda</h2>
   <p class="linha">MT · 47 vagas até R$ 11.308,36 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -397,7 +403,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="ti" data-texto="prefeitura de estiva gerbi varios cargos auxiliar de desenvolvimento infantil cuidador de creche professor de educacao basica professor de educacao basica - artes professor de educacao basica - ciencias professor de educacao basica - educacao fisica professor de educacao basica - geografia professor de educacao basica - historia professor de educacao basica - informatica e tecnologia professor de educacao basica - lingua inglesa professor de educacao basica - lingua portuguesa professor de educacao basica - matematica prefeitura de estiva gerbi - sp abre processo seletivo para area da educacao">
+<article class="concurso" data-uf="SP" data-areas="ti" data-salario="3890.27" data-texto="prefeitura de estiva gerbi varios cargos auxiliar de desenvolvimento infantil cuidador de creche professor de educacao basica professor de educacao basica - artes professor de educacao basica - ciencias professor de educacao basica - educacao fisica professor de educacao basica - geografia professor de educacao basica - historia professor de educacao basica - informatica e tecnologia professor de educacao basica - lingua inglesa professor de educacao basica - lingua portuguesa professor de educacao basica - matematica prefeitura de estiva gerbi - sp abre processo seletivo para area da educacao">
   <h2>Prefeitura de Estiva Gerbi</h2>
   <p class="linha">SP · 12 vagas até R$ 3.890,27 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -410,7 +416,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="SP" data-areas="analise_sistemas ti" data-texto="prefeitura do municipio de santana de parnaiba varios cargos agente de atendimento agente de defesa civil agente de limpeza publica agente de servicos de alimentacao agente de servicos gerais agente de servicos publicos analista de tecnologia da informacao educador esportivo - atividades aquaticas educador esportivo - ginastica ritmica educador esportivo - jiu-jitsu educador esportivo - muay thai educador esportivo - tenis fonoaudiologo monitor assistencial motorista a/b prefeitura de santana de parnaiba - sp abre concurso publico com salarios de ate r$ 7.497,97">
+<article class="concurso" data-uf="SP" data-areas="analise_sistemas ti" data-salario="7497.97" data-texto="prefeitura do municipio de santana de parnaiba varios cargos agente de atendimento agente de defesa civil agente de limpeza publica agente de servicos de alimentacao agente de servicos gerais agente de servicos publicos analista de tecnologia da informacao educador esportivo - atividades aquaticas educador esportivo - ginastica ritmica educador esportivo - jiu-jitsu educador esportivo - muay thai educador esportivo - tenis fonoaudiologo monitor assistencial motorista a/b prefeitura de santana de parnaiba - sp abre concurso publico com salarios de ate r$ 7.497,97">
   <h2>Prefeitura do Município de Santana de Parnaíba</h2>
   <p class="linha">SP · 76 vagas até R$ 7.497,97 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -422,7 +428,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de taruma professor de educacao basica i, professor de educacao basica ii professor de educacao basica professor de educacao basica - educacao fisica professor de educacao basica - ingles prefeitura de taruma - sp abre processo seletivo para professores">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="0" data-texto="prefeitura de taruma professor de educacao basica i, professor de educacao basica ii professor de educacao basica professor de educacao basica - educacao fisica professor de educacao basica - ingles prefeitura de taruma - sp abre processo seletivo para professores">
   <h2>Prefeitura de Tarumã</h2>
   <p class="linha">SP · Vagas até R$ 25,90 por hora · Superior</p>
   <p><strong>Cargos:</strong> Professor de Educação Básica I, Professor de Educação Básica II</p>
@@ -434,7 +440,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura da estancia turistica de itu cuidador, educador social cuidador educador social prefeitura de itu - sp abre concurso publico com vagas para cuidador e educador social">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="2738.09" data-texto="prefeitura da estancia turistica de itu cuidador, educador social cuidador educador social prefeitura de itu - sp abre concurso publico com vagas para cuidador e educador social">
   <h2>Prefeitura da Estância Turística de Itu</h2>
   <p class="linha">SP · 5 vagas até R$ 2.738,09 · Ensino Médio</p>
   <p><strong>Cargos:</strong> Cuidador, Educador Social</p>
@@ -446,7 +452,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="procurador" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
+<article class="concurso" data-uf="SP" data-areas="procurador" data-salario="5217.7" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
   <h2>Prefeitura de Uru</h2>
   <p class="linha">SP · 6 vagas até R$ 5.217,70 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -458,7 +464,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="prefeitura de guabiju varios cargos agente administrativo agente de combate a endemias assistente social atendente de creche contador instalador monitor de escola e transporte escolar operario professor - anos iniciais professor - artes servente tecnico em contabilidade prefeitura de guabiju - rs abre concurso publico com salarios de ate r$ 6.483,36">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="6483.36" data-texto="prefeitura de guabiju varios cargos agente administrativo agente de combate a endemias assistente social atendente de creche contador instalador monitor de escola e transporte escolar operario professor - anos iniciais professor - artes servente tecnico em contabilidade prefeitura de guabiju - rs abre concurso publico com salarios de ate r$ 6.483,36">
   <h2>Prefeitura de Guabiju</h2>
   <p class="linha">RS · 5 vagas até R$ 6.483,36 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -470,7 +476,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="prefeitura de torres cuidador cuidador de pessoas com deficiencia prefeitura de torres - rs abre processo seletivo para cuidador de pessoas com deficiencia">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="2400" data-texto="prefeitura de torres cuidador cuidador de pessoas com deficiencia prefeitura de torres - rs abre processo seletivo para cuidador de pessoas com deficiencia">
   <h2>Prefeitura de Torres</h2>
   <p class="linha">RS · Vagas até R$ 2.400,00 · Ensino Médio</p>
   <p><strong>Cargos:</strong> Cuidador</p>
@@ -482,7 +488,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="prefeitura de igrejinha professor professor - aee prefeitura de igrejinha - rs abre selecao para professor de atendimento educacional especializado">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="2683.38" data-texto="prefeitura de igrejinha professor professor - aee prefeitura de igrejinha - rs abre selecao para professor de atendimento educacional especializado">
   <h2>Prefeitura de Igrejinha</h2>
   <p class="linha">RS · 1 vaga até R$ 2.683,38 · Superior</p>
   <p><strong>Cargos:</strong> Professor</p>
@@ -494,7 +500,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PR" data-areas="" data-texto="utfpr - universidade tecnologica federal do parana professor substituto professor substituto - administracao professor substituto - engenharia quimica utfpr abre selecao para professores substitutos em apucarana">
+<article class="concurso" data-uf="PR" data-areas="" data-salario="8340.33" data-texto="utfpr - universidade tecnologica federal do parana professor substituto professor substituto - administracao professor substituto - engenharia quimica utfpr abre selecao para professores substitutos em apucarana">
   <h2>UTFPR - Universidade Tecnológica Federal do Paraná</h2>
   <p class="linha">PR · 2 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -506,7 +512,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="prefeitura de sao martinho monitor de escola monitor de escola prefeitura de sao martinho - rs abre selecao para monitor de escola">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="1635.75" data-texto="prefeitura de sao martinho monitor de escola monitor de escola prefeitura de sao martinho - rs abre selecao para monitor de escola">
   <h2>Prefeitura de São Martinho</h2>
   <p class="linha">RS · Vagas até R$ 1.635,75 · Ensino Médio</p>
   <p><strong>Cargos:</strong> Monitor de Escola</p>
@@ -518,7 +524,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="" data-texto="ifc - instituto federal de educacao, ciencia e tecnologia catarinense professor substituto professor substituto - eletrica ifc - sc abre processo seletivo para professor na area de eletrica em blumenau">
+<article class="concurso" data-uf="SC" data-areas="" data-salario="8340.33" data-texto="ifc - instituto federal de educacao, ciencia e tecnologia catarinense professor substituto professor substituto - eletrica ifc - sc abre processo seletivo para professor na area de eletrica em blumenau">
   <h2>IFC - Instituto Federal de Educação, Ciência e Tecnologia Catarinense</h2>
   <p class="linha">SC · 2 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -531,7 +537,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="SC" data-areas="" data-texto="prefeitura de ibirama varios cargos merendeiro monitor escolar operador de maquina e veiculos professor - artes professor - danca professor - educacao fisica professor - educacao infantil e anos iniciais professor - ensino religioso professor - karate professor - lingua alema professor - lingua inglesa professor - musica professor - patinacao professor - taekwondo professor - xadrez prefeitura de ibirama - sc abre processo seletivo para cadastro de reserva">
+<article class="concurso" data-uf="SC" data-areas="" data-salario="4531.43" data-texto="prefeitura de ibirama varios cargos merendeiro monitor escolar operador de maquina e veiculos professor - artes professor - danca professor - educacao fisica professor - educacao infantil e anos iniciais professor - ensino religioso professor - karate professor - lingua alema professor - lingua inglesa professor - musica professor - patinacao professor - taekwondo professor - xadrez prefeitura de ibirama - sc abre processo seletivo para cadastro de reserva">
   <h2>Prefeitura de Ibirama</h2>
   <p class="linha">SC · Vagas até R$ 4.531,43 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -543,7 +549,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="enfermeiro" data-texto="prefeitura de piratini varios cargos agente administrativo assistente social auxiliar de saude bucal contador cuidador/educador enfermeiro farmaceutico fiscal tributario mecanico medico medico veterinario motorista odontologo operador de maquinas professor - anos iniciais prefeitura de piratini - rs abre concurso publico com salarios de ate r$ 7.462,95">
+<article class="concurso" data-uf="RS" data-areas="enfermeiro" data-salario="7462.95" data-texto="prefeitura de piratini varios cargos agente administrativo assistente social auxiliar de saude bucal contador cuidador/educador enfermeiro farmaceutico fiscal tributario mecanico medico medico veterinario motorista odontologo operador de maquinas professor - anos iniciais prefeitura de piratini - rs abre concurso publico com salarios de ate r$ 7.462,95">
   <h2>Prefeitura de Piratini</h2>
   <p class="linha">RS · 115 vagas até R$ 7.462,95 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -555,7 +561,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="ti" data-texto="fundacao escola tecnica liberato salzano vieira da cunha varios cargos agente administrativo orientador educacional professor - artes professor - ciencia da computacao professor - design de interiores professor - educacao fisica professor - eletronica professor - eletrotecnica professor - filosofia professor - fisica professor - geografia professor - gestao e empreendedorismo professor - historia professor - lingua portuguesa/inglesa professor - manutencao automotiva fundacao escola tecnica liberato salzano vieira da cunha - rs abre concurso publico para diversos cargos">
+<article class="concurso" data-uf="RS" data-areas="ti" data-salario="10370.94" data-texto="fundacao escola tecnica liberato salzano vieira da cunha varios cargos agente administrativo orientador educacional professor - artes professor - ciencia da computacao professor - design de interiores professor - educacao fisica professor - eletronica professor - eletrotecnica professor - filosofia professor - fisica professor - geografia professor - gestao e empreendedorismo professor - historia professor - lingua portuguesa/inglesa professor - manutencao automotiva fundacao escola tecnica liberato salzano vieira da cunha - rs abre concurso publico para diversos cargos">
   <h2>Fundação Escola Técnica Liberato Salzano Vieira da Cunha</h2>
   <p class="linha">RS · 34 vagas até R$ 10.370,94 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -567,7 +573,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="" data-texto="prefeitura de criciuma professor, professor bilingue/interprete, professor instrutor professor - anos iniciais professor - arte professor - ciencias professor - educacao fisica professor - educacao infantil professor - geografia professor - historia professor - instrutor de libras professor - lingua inglesa professor - lingua portuguesa professor - lingua portuguesa e lingua inglesa professor - matematica professor bilingue/interprete prefeitura de criciuma - sc abre processo seletivo para professores">
+<article class="concurso" data-uf="SC" data-areas="" data-salario="5765.6" data-texto="prefeitura de criciuma professor, professor bilingue/interprete, professor instrutor professor - anos iniciais professor - arte professor - ciencias professor - educacao fisica professor - educacao infantil professor - geografia professor - historia professor - instrutor de libras professor - lingua inglesa professor - lingua portuguesa professor - lingua portuguesa e lingua inglesa professor - matematica professor bilingue/interprete prefeitura de criciuma - sc abre processo seletivo para professores">
   <h2>Prefeitura de Criciúma</h2>
   <p class="linha">SC · 11 vagas até R$ 5.765,60 · Superior</p>
   <p><strong>Cargos:</strong> Professor, Professor Bilíngue/Intérprete, Professor Instrutor</p>
@@ -579,7 +585,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="engenheiro_civil" data-texto="prefeitura de faxinal dos guedes varios cargos agente de manutencao e conservacao agente de servicos gerais assistente social auxiliar de ensino cozinheiro engenheiro civil farmaceutico medico - especialista em endocrinologia motorista nutricionista operador de maquinas professor - anos iniciais professor - artes professor - ciencias professor - educacao especial prefeitura de faxinal dos guedes - sc abre concurso publico e processo seletivo com salarios de ate r$ 7.454,79">
+<article class="concurso" data-uf="SC" data-areas="engenheiro_civil" data-salario="7454.79" data-texto="prefeitura de faxinal dos guedes varios cargos agente de manutencao e conservacao agente de servicos gerais assistente social auxiliar de ensino cozinheiro engenheiro civil farmaceutico medico - especialista em endocrinologia motorista nutricionista operador de maquinas professor - anos iniciais professor - artes professor - ciencias professor - educacao especial prefeitura de faxinal dos guedes - sc abre concurso publico e processo seletivo com salarios de ate r$ 7.454,79">
   <h2>Prefeitura de Faxinal dos Guedes</h2>
   <p class="linha">SC · 12 vagas até R$ 7.454,79 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -591,7 +597,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="" data-texto="prefeitura de sao bonifacio varios cargos assistente social nutricionista professor - artes professor - artes nao habilitado professor - educacao especial professor - educacao fisica professor - educacao infantil e series iniciais - habilitado professor - educacao infantil e series iniciais - nao habilitado psicologo prefeitura de sao bonifacio - sc abre processo seletivo para formacao de cadastro de reserva">
+<article class="concurso" data-uf="SC" data-areas="" data-salario="5159.83" data-texto="prefeitura de sao bonifacio varios cargos assistente social nutricionista professor - artes professor - artes nao habilitado professor - educacao especial professor - educacao fisica professor - educacao infantil e series iniciais - habilitado professor - educacao infantil e series iniciais - nao habilitado psicologo prefeitura de sao bonifacio - sc abre processo seletivo para formacao de cadastro de reserva">
   <h2>Prefeitura de São Bonifácio</h2>
   <p class="linha">SC · Vagas até R$ 5.159,83 · Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -603,7 +609,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="enfermeiro" data-texto="prefeitura do municipio de rio rufino varios cargos assistente social auxiliar de servicos gerais auxiliar de transporte escolar enfermeiro farmaceutico merendeiro monitor de sala operador de equipamentos professor - arte professor - educacao fisica professor - pedagogia - nao habilitado professor - pedagogia habilitado psicologo tecnico em enfermagem vigia prefeitura de rio rufino - sc abre selecoes para cadastro de reserva em diversas areas">
+<article class="concurso" data-uf="SC" data-areas="enfermeiro" data-salario="5339.5" data-texto="prefeitura do municipio de rio rufino varios cargos assistente social auxiliar de servicos gerais auxiliar de transporte escolar enfermeiro farmaceutico merendeiro monitor de sala operador de equipamentos professor - arte professor - educacao fisica professor - pedagogia - nao habilitado professor - pedagogia habilitado psicologo tecnico em enfermagem vigia prefeitura de rio rufino - sc abre selecoes para cadastro de reserva em diversas areas">
   <h2>Prefeitura do Município de Rio Rufino</h2>
   <p class="linha">SC · Vagas até R$ 5.339,50 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -615,7 +621,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="ti" data-texto="prefeitura de aluminio varios cargos professor - informatica prefeitura de aluminio - sp abre processo seletivo na area da educacao">
+<article class="concurso" data-uf="SP" data-areas="ti" data-salario="7285.25" data-texto="prefeitura de aluminio varios cargos professor - informatica prefeitura de aluminio - sp abre processo seletivo na area da educacao">
   <h2>Prefeitura de Alumínio</h2>
   <p class="linha">SP · Cadastro de Reserva até R$ 7.285,25 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -627,7 +633,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="ti" data-texto="prefeitura de marapoama varios cargos monitor de informatica prefeitura de marapoama - sp abre processo seletivo com vagas imediatas e cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="ti" data-salario="3242" data-texto="prefeitura de marapoama varios cargos monitor de informatica prefeitura de marapoama - sp abre processo seletivo com vagas imediatas e cadastro de reserva">
   <h2>Prefeitura de Marapoama</h2>
   <p class="linha">SP · 34 vagas até R$ 3.242,00 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -639,7 +645,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="suporte ti" data-texto="prefeitura de oleo merendeira, professor de educacao basica, tecnico em informatica tecnico em informatica prefeitura de oleo - sp abre processo seletivo para diversos cargos">
+<article class="concurso" data-uf="SP" data-areas="suporte ti" data-salario="3951.25" data-texto="prefeitura de oleo merendeira, professor de educacao basica, tecnico em informatica tecnico em informatica prefeitura de oleo - sp abre processo seletivo para diversos cargos">
   <h2>Prefeitura de Óleo</h2>
   <p class="linha">SP · Vagas até R$ 3.951,25 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Merendeira, Professor de Educação Básica, Técnico em Informática</p>
@@ -652,7 +658,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="SP" data-areas="ti" data-texto="ifsp - instituto federal de educacao, ciencia e tecnologia de sao paulo professor do ensino basico, tecnico e tecnologico professor - informatica ifsp retifica edital de concurso publico para o cargo de professor do ensino basico, tecnico e tecnologico">
+<article class="concurso" data-uf="SP" data-areas="ti" data-salario="6397.19" data-texto="ifsp - instituto federal de educacao, ciencia e tecnologia de sao paulo professor do ensino basico, tecnico e tecnologico professor - informatica ifsp retifica edital de concurso publico para o cargo de professor do ensino basico, tecnico e tecnologico">
   <h2>IFSP - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</h2>
   <p class="linha">SP · 45 vagas até R$ 6.397,19 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Ensino Básico, Técnico e Tecnológico</p>
@@ -664,7 +670,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="redes ti" data-texto="ifsp - instituto federal de educacao, ciencia e tecnologia de sao paulo professor substituto professor substituto - informatica professor substituto - informatica - arquitetura de redes de computadores ifsp retifica processo seletivo com vagas para professores substitutos">
+<article class="concurso" data-uf="SP" data-areas="redes ti" data-salario="8340.33" data-texto="ifsp - instituto federal de educacao, ciencia e tecnologia de sao paulo professor substituto professor substituto - informatica professor substituto - informatica - arquitetura de redes de computadores ifsp retifica processo seletivo com vagas para professores substitutos">
   <h2>IFSP - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</h2>
   <p class="linha">SP · 79 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -676,7 +682,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="seguranca" data-texto="unifei - universidade federal de itajuba professor do magisterio superior professor - seguranca da informacao unifei - mg abre concurso publico para professores do magisterio superior">
+<article class="concurso" data-uf="MG" data-areas="seguranca" data-salario="13753.96" data-texto="unifei - universidade federal de itajuba professor do magisterio superior professor - seguranca da informacao unifei - mg abre concurso publico para professores do magisterio superior">
   <h2>UNIFEI - Universidade Federal de Itajubá</h2>
   <p class="linha">MG · 27 vagas até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Magistério Superior</p>
@@ -688,7 +694,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="usp - universidade de sao paulo professor titular professor titular - quimica geral usp abre vaga para professor titular no instituto de quimica de sao carlos">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="25261.98" data-texto="usp - universidade de sao paulo professor titular professor titular - quimica geral usp abre vaga para professor titular no instituto de quimica de sao carlos">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 25.261,98 · Superior</p>
   <p><strong>Cargos:</strong> Professor Titular</p>
@@ -700,7 +706,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="usp - universidade de sao paulo professor doutor professor doutor - empreendedorismo tecnologico com analise de investimento e estrategia usp abre concurso publico para professor doutor na escola de engenharia de sao carlos - sp">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="16994.01" data-texto="usp - universidade de sao paulo professor doutor professor doutor - empreendedorismo tecnologico com analise de investimento e estrategia usp abre concurso publico para professor doutor na escola de engenharia de sao carlos - sp">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 16.994,01 · Superior</p>
   <p><strong>Cargos:</strong> Professor Doutor</p>
@@ -712,7 +718,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de sao carlos varios cargos agente educacional auxiliar administrativo escolar coordenador pedagogico diretor adjunto de escola diretor de escola instrutor de libras interprete educacional de libras professor professor - educacao especial professor - educacao fisica professor - geografia professor - matematica supervisor de ensino prefeitura de sao carlos - sp abre concurso publico com salarios de ate r$ 9.701,00">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="9701" data-texto="prefeitura de sao carlos varios cargos agente educacional auxiliar administrativo escolar coordenador pedagogico diretor adjunto de escola diretor de escola instrutor de libras interprete educacional de libras professor professor - educacao especial professor - educacao fisica professor - geografia professor - matematica supervisor de ensino prefeitura de sao carlos - sp abre concurso publico com salarios de ate r$ 9.701,00">
   <h2>Prefeitura de São Carlos</h2>
   <p class="linha">SP · 21 vagas até R$ 9.701,00 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -724,7 +730,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="usp - universidade de sao paulo professor titular professor titular - planejamento urbano e regional usp abre concurso publico para o cargo de professor titular na fau">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="25261.98" data-texto="usp - universidade de sao paulo professor titular professor titular - planejamento urbano e regional usp abre concurso publico para o cargo de professor titular na fau">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 25.261,98 · Superior</p>
   <p><strong>Cargos:</strong> Professor Titular</p>
@@ -736,7 +742,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="usp - universidade de sao paulo professor titular professor titular - psicologia clinica professor titular - psicologia experimental usp abre concursos para professores titulares nas areas de psicologia clinica e experimental">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="25261.98" data-texto="usp - universidade de sao paulo professor titular professor titular - psicologia clinica professor titular - psicologia experimental usp abre concursos para professores titulares nas areas de psicologia clinica e experimental">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 2 vagas até R$ 25.261,98 · Superior</p>
   <p><strong>Cargos:</strong> Professor Titular</p>
@@ -748,7 +754,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="usp - universidade de sao paulo professor titular professor titular - lepidoptera e diptera usp abre concurso publico para professor titular nas areas de lepidoptera e diptera">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="24309.11" data-texto="usp - universidade de sao paulo professor titular professor titular - lepidoptera e diptera usp abre concurso publico para professor titular nas areas de lepidoptera e diptera">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 24.309,11 · Superior</p>
   <p><strong>Cargos:</strong> Professor Titular</p>
@@ -760,7 +766,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="usp - universidade de sao paulo professor doutor professor doutor - epidemiologia e farmacoepidemiologia usp abre concurso para professor doutor na faculdade de ciencias farmaceuticas">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="16994.01" data-texto="usp - universidade de sao paulo professor doutor professor doutor - epidemiologia e farmacoepidemiologia usp abre concurso para professor doutor na faculdade de ciencias farmaceuticas">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 16.994,01 · Superior</p>
   <p><strong>Cargos:</strong> Professor Doutor</p>
@@ -773,7 +779,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="SP" data-areas="" data-texto="usp - universidade de sao paulo professor titular professor titular - historia das relacoes internacionais usp abre concurso publico para o cargo de professor titular no instituto de relacoes internacionais">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="24309.11" data-texto="usp - universidade de sao paulo professor titular professor titular - historia das relacoes internacionais usp abre concurso publico para o cargo de professor titular no instituto de relacoes internacionais">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 24.309,11 · Superior</p>
   <p><strong>Cargos:</strong> Professor Titular</p>
@@ -785,7 +791,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="ti" data-texto="usp - universidade de sao paulo professor titular professor titular - sistemas de computacao usp - sp abre concurso publico para o cargo de professor titular na area de sistemas de computacao">
+<article class="concurso" data-uf="SP" data-areas="ti" data-salario="24309.11" data-texto="usp - universidade de sao paulo professor titular professor titular - sistemas de computacao usp - sp abre concurso publico para o cargo de professor titular na area de sistemas de computacao">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 24.309,11 · Superior</p>
   <p><strong>Cargos:</strong> Professor Titular</p>
@@ -797,7 +803,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="usp - universidade de sao paulo professor titular professor titular - ciencias sociais professor titular - educacao e humanidades professor titular - tecnologia usp abre concursos publicos para professores titulares em diversas areas de atuacao">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="24309.11" data-texto="usp - universidade de sao paulo professor titular professor titular - ciencias sociais professor titular - educacao e humanidades professor titular - tecnologia usp abre concursos publicos para professores titulares em diversas areas de atuacao">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 3 vagas até R$ 24.309,11 · Superior</p>
   <p><strong>Cargos:</strong> Professor Titular</p>
@@ -809,7 +815,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="usp - universidade de sao paulo professor de ensino fundamental e medio professor de ensino fundamental e medio - ensino fundamental polivalente usp abre concurso com duas vagas para professores de ensino fundamental e medio">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="11778.84" data-texto="usp - universidade de sao paulo professor de ensino fundamental e medio professor de ensino fundamental e medio - ensino fundamental polivalente usp abre concurso com duas vagas para professores de ensino fundamental e medio">
   <h2>USP - Universidade de São Paulo</h2>
   <p class="linha">SP · 2 vagas até R$ 11.778,84 · Superior</p>
   <p><strong>Cargos:</strong> Professor de Ensino Fundamental e Médio</p>
@@ -821,7 +827,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="unesp - universidade estadual paulista julio de mesquita filho professor substituto professor substituto - artes professor substituto - teatro unesp abre concursos para professores substitutos no instituto de artes">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="3511.9" data-texto="unesp - universidade estadual paulista julio de mesquita filho professor substituto professor substituto - artes professor substituto - teatro unesp abre concursos para professores substitutos no instituto de artes">
   <h2>UNESP - Universidade Estadual Paulista Júlio de Mesquita Filho</h2>
   <p class="linha">SP · 2 vagas até R$ 3.511,90 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -833,7 +839,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenharia_software" data-texto="faculdade sebrae professor adjunto professor adjunto - desenvolvimento e engenharia de software (sistemas da informacao) faculdade sebrae - sp prorroga inscricoes de processo seletivo para professor adjunto de engenharia de software">
+<article class="concurso" data-uf="SP" data-areas="engenharia_software" data-salario="19522.83" data-texto="faculdade sebrae professor adjunto professor adjunto - desenvolvimento e engenharia de software (sistemas da informacao) faculdade sebrae - sp prorroga inscricoes de processo seletivo para professor adjunto de engenharia de software">
   <h2>Faculdade Sebrae</h2>
   <p class="linha">SP · 1 vaga até R$ 19.522,83 · Superior</p>
   <p><strong>Cargos:</strong> Professor Adjunto</p>
@@ -845,7 +851,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de luzerna varios cargos monitor de informatica professor - informatica prefeitura de luzerna - sc abre concurso publico com salarios de ate r$ 14.004,25">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="14004.25" data-texto="prefeitura de luzerna varios cargos monitor de informatica professor - informatica prefeitura de luzerna - sc abre concurso publico com salarios de ate r$ 14.004,25">
   <h2>Prefeitura de Luzerna</h2>
   <p class="linha">SC · 4 vagas até R$ 14.004,25 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -857,7 +863,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="suporte ti" data-texto="prefeitura de guaruja do sul varios cargos professor - informatica tecnico em informatica prefeitura de guaruja do sul - sc abre concurso e selecoes com salarios de ate r$ 30,7 mil">
+<article class="concurso" data-uf="SC" data-areas="suporte ti" data-salario="30761.75" data-texto="prefeitura de guaruja do sul varios cargos professor - informatica tecnico em informatica prefeitura de guaruja do sul - sc abre concurso e selecoes com salarios de ate r$ 30,7 mil">
   <h2>Prefeitura de Guarujá do Sul</h2>
   <p class="linha">SC · 5 vagas até R$ 30.761,75 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -869,7 +875,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="suporte ti" data-texto="prefeitura de novo cabrais varios cargos professor - informatica tecnico em informatica prefeitura de novo cabrais - rs abre concurso publico com salarios de ate r$ 19.089,94">
+<article class="concurso" data-uf="RS" data-areas="suporte ti" data-salario="19089.94" data-texto="prefeitura de novo cabrais varios cargos professor - informatica tecnico em informatica prefeitura de novo cabrais - rs abre concurso publico com salarios de ate r$ 19.089,94">
   <h2>Prefeitura de Novo Cabrais</h2>
   <p class="linha">RS · 9 vagas até R$ 19.089,94 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -881,7 +887,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de praia grande e fundo municipal de saude varios cargos professor - informatica habilitado professor - informatica nao habilitado prefeitura de praia grande - sc abre selecoes com salarios de ate r$ 7.921,65">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="7921.65" data-texto="prefeitura de praia grande e fundo municipal de saude varios cargos professor - informatica habilitado professor - informatica nao habilitado prefeitura de praia grande - sc abre selecoes com salarios de ate r$ 7.921,65">
   <h2>Prefeitura de Praia Grande e Fundo Municipal de Saúde</h2>
   <p class="linha">SC · 79 vagas até R$ 7.921,65 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -894,7 +900,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MG" data-areas="ti" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - informatica ifmg abre processo seletivo para professores substitutos em sao joao evangelista">
+<article class="concurso" data-uf="MG" data-areas="ti" data-salario="15964.45" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - informatica ifmg abre processo seletivo para professores substitutos em sao joao evangelista">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 8 vagas até R$ 15.964,45 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -906,7 +912,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de xaxim varios cargos professor - informatica prefeitura de xaxim - sc abre processo seletivo para professores">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="5137.52" data-texto="prefeitura de xaxim varios cargos professor - informatica prefeitura de xaxim - sc abre processo seletivo para professores">
   <h2>Prefeitura de Xaxim</h2>
   <p class="linha">SC · Cadastro de reserva até R$ 5.137,52 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -918,7 +924,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PR" data-areas="ti" data-texto="ifpr - instituto federal de educacao, ciencia e tecnologia do parana professor substituto professor substituto - informatica ifpr abre processos seletivos para professor substituto no campus jacarezinho">
+<article class="concurso" data-uf="PR" data-areas="ti" data-salario="5037.78" data-texto="ifpr - instituto federal de educacao, ciencia e tecnologia do parana professor substituto professor substituto - informatica ifpr abre processos seletivos para professor substituto no campus jacarezinho">
   <h2>IFPR - Instituto Federal de Educação, Ciência e Tecnologia do Paraná</h2>
   <p class="linha">PR · 2 vagas até R$ 5.037,78 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -930,7 +936,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="ti" data-texto="prefeitura de teutonia varios cargos professor - informatica municipio de teutonia - rs abre concurso publico com salarios de ate r$ 13.844,56">
+<article class="concurso" data-uf="RS" data-areas="ti" data-salario="13844.56" data-texto="prefeitura de teutonia varios cargos professor - informatica municipio de teutonia - rs abre concurso publico com salarios de ate r$ 13.844,56">
   <h2>Prefeitura de Teutônia</h2>
   <p class="linha">RS · 12 vagas até R$ 13.844,56 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -942,7 +948,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de ipora do oeste varios cargos professor - informatica prefeitura de ipora do oeste - sc abre concurso publico e processos seletivos com salarios de ate r$ 19.265,80">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="19265.8" data-texto="prefeitura de ipora do oeste varios cargos professor - informatica prefeitura de ipora do oeste - sc abre concurso publico e processos seletivos com salarios de ate r$ 19.265,80">
   <h2>Prefeitura de Iporã do Oeste</h2>
   <p class="linha">SC · 5 vagas até R$ 19.265,80 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -954,7 +960,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de rodeio varios cargos professor - informatica prefeitura de rodeio - sc abre processos seletivos para diversos cargos">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="4299.34" data-texto="prefeitura de rodeio varios cargos professor - informatica prefeitura de rodeio - sc abre processos seletivos para diversos cargos">
   <h2>Prefeitura de Rodeio</h2>
   <p class="linha">SC · 4 vagas até R$ 4.299,34 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -966,7 +972,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="ti" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor do ensino basico, tecnico e tecnologico professor - informatica ifmg retifica concurso publico para o cargo de professor do ensino basico, tecnico e tecnologico">
+<article class="concurso" data-uf="MG" data-areas="ti" data-salario="14945.96" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor do ensino basico, tecnico e tecnologico professor - informatica ifmg retifica concurso publico para o cargo de professor do ensino basico, tecnico e tecnologico">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 33 vagas até R$ 14.945,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Ensino Básico, Técnico e Tecnológico</p>
@@ -978,7 +984,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de passo de torres varios cargos professor - informatica prefeitura de passo de torres - sc abre processo seletivo para diversos cargos na educacao">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="5959.62" data-texto="prefeitura de passo de torres varios cargos professor - informatica prefeitura de passo de torres - sc abre processo seletivo para diversos cargos na educacao">
   <h2>Prefeitura de Passo de Torres</h2>
   <p class="linha">SC · 181 vagas até R$ 5.959,62 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -990,7 +996,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RJ" data-areas="" data-texto="ufrrj - universidade federal rural do rio de janeiro professor do magisterio superior professor - anestesiologia e intensivismo veterinaria professor - arte e tecnologias e ilustracao professor - bovinocultura de leite professor - cartografia e geoprocessamento aplicados a engenharia de agrimensura professor - didatica professor - direito empresarial e direito do trabalho professor - educacao matematica professor - engenharia de materiais professor - financas corporativas professor - fitopatologia professor - forragicultura e pastagens professor - historia antiga professor - historia da america professor - lingua inglesa professor - matematica e educacao matematica professor - processos clinicos na contemporaneidade professor - processos na assistencia social e na justica professor - quimica geral professor - quimica geral e inorganica professor - servico social e fundamentos do trabalho profissional professor - tecnologia em educacao professor - teoria economica, microeconomia e economia industrial ufrrj abre concurso publico para professores do magisterio superior">
+<article class="concurso" data-uf="RJ" data-areas="" data-salario="13298.85" data-texto="ufrrj - universidade federal rural do rio de janeiro professor do magisterio superior professor - anestesiologia e intensivismo veterinaria professor - arte e tecnologias e ilustracao professor - bovinocultura de leite professor - cartografia e geoprocessamento aplicados a engenharia de agrimensura professor - didatica professor - direito empresarial e direito do trabalho professor - educacao matematica professor - engenharia de materiais professor - financas corporativas professor - fitopatologia professor - forragicultura e pastagens professor - historia antiga professor - historia da america professor - lingua inglesa professor - matematica e educacao matematica professor - processos clinicos na contemporaneidade professor - processos na assistencia social e na justica professor - quimica geral professor - quimica geral e inorganica professor - servico social e fundamentos do trabalho profissional professor - tecnologia em educacao professor - teoria economica, microeconomia e economia industrial ufrrj abre concurso publico para professores do magisterio superior">
   <h2>UFRRJ - Universidade Federal Rural do Rio de Janeiro</h2>
   <p class="linha">RJ · 23 vagas até R$ 13.298,85 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Magistério Superior</p>
@@ -1002,7 +1008,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - nutricao em esporte e exercicio fisico ufmg abre concurso para docente na area de nutricao em esporte e exercicio fisico">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - nutricao em esporte e exercicio fisico ufmg abre concurso para docente na area de nutricao em esporte e exercicio fisico">
   <h2>UFMG - Universidade Federal de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente</p>
@@ -1015,7 +1021,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufv - universidade federal de vicosa professor do magisterio superior professor do magisterio superior - ensino de geografia ufv - mg abre concurso publico para professor de ensino de geografia">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufv - universidade federal de vicosa professor do magisterio superior professor do magisterio superior - ensino de geografia ufv - mg abre concurso publico para professor de ensino de geografia">
   <h2>UFV - Universidade Federal de Viçosa</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Magistério Superior</p>
@@ -1027,7 +1033,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="unifesp - universidade federal de sao paulo professor assistente a substituto professor assistente substituto - terapia ocupacional unifesp - sp abre vaga para professor substituto de terapia ocupacional no campus da baixada santista">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="6157.29" data-texto="unifesp - universidade federal de sao paulo professor assistente a substituto professor assistente substituto - terapia ocupacional unifesp - sp abre vaga para professor substituto de terapia ocupacional no campus da baixada santista">
   <h2>Unifesp - Universidade Federal de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 6.157,29 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente A Substituto</p>
@@ -1039,7 +1045,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufv - universidade federal de vicosa professor de lingua brasileira de sinais professor - lingua brasileira de sinais ufv - mg abre concurso para docente na area de lingua brasileira de sinais">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufv - universidade federal de vicosa professor de lingua brasileira de sinais professor - lingua brasileira de sinais ufv - mg abre concurso para docente na area de lingua brasileira de sinais">
   <h2>UFV - Universidade Federal de Viçosa</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor de Língua Brasileira de Sinais</p>
@@ -1051,7 +1057,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="ti" data-texto="ufsm - universidade federal de santa maria professor assistente professor - ciencias exatas e da terra, ciencia da computacao, metodologia e tecnicas da computacao professor - ciencias exatas e da terra, fisica, fisica classica e fisica quantica, mecanica e campos professor - ciencias exatas e da terra, fisica, fisica estatistica e termodinamica professor - ciencias sociais aplicadas, economia, crescimento e desenvolvimento economico professor - linguistica, letras e artes, artes, artes plasticas, fotografia ufsm - rs abre concurso para professores do magisterio superior">
+<article class="concurso" data-uf="RS" data-areas="ti" data-salario="13753.98" data-texto="ufsm - universidade federal de santa maria professor assistente professor - ciencias exatas e da terra, ciencia da computacao, metodologia e tecnicas da computacao professor - ciencias exatas e da terra, fisica, fisica classica e fisica quantica, mecanica e campos professor - ciencias exatas e da terra, fisica, fisica estatistica e termodinamica professor - ciencias sociais aplicadas, economia, crescimento e desenvolvimento economico professor - linguistica, letras e artes, artes, artes plasticas, fotografia ufsm - rs abre concurso para professores do magisterio superior">
   <h2>UFSM - Universidade Federal de Santa Maria</h2>
   <p class="linha">RS · 6 vagas até R$ 13.753,98 · Superior</p>
   <p><strong>Cargos:</strong> Professor assistente</p>
@@ -1063,7 +1069,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor visitante professor visitante - artes professor visitante - enfermagem ifmg abre processo seletivo para professores visitantes em artes e enfermagem">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor visitante professor visitante - artes professor visitante - enfermagem ifmg abre processo seletivo para professores visitantes em artes e enfermagem">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 2 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor visitante</p>
@@ -1075,7 +1081,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - politica, planejamento e gestao em saude ufmg abre concurso publico para professor na faculdade de medicina">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - politica, planejamento e gestao em saude ufmg abre concurso publico para professor na faculdade de medicina">
   <h2>UFMG - Universidade Federal de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente</p>
@@ -1087,7 +1093,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufv - universidade federal de vicosa professor assistente a professor assistente - representacao grafica ufv - mg abre concurso publico para docente na area de representacao grafica">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13288.85" data-texto="ufv - universidade federal de vicosa professor assistente a professor assistente - representacao grafica ufv - mg abre concurso publico para docente na area de representacao grafica">
   <h2>UFV - Universidade Federal de Viçosa</h2>
   <p class="linha">MG · 1 vaga até R$ 13.288,85 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente A</p>
@@ -1099,7 +1105,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="unifesp - universidade federal de sao paulo professor assistente a substituto professor assistente substituto - ciencias ambientais/ecologia de paisagem unifesp - sp abre vaga para professor na area de ecologia de paisagem">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="8340.33" data-texto="unifesp - universidade federal de sao paulo professor assistente a substituto professor assistente substituto - ciencias ambientais/ecologia de paisagem unifesp - sp abre vaga para professor na area de ecologia de paisagem">
   <h2>Unifesp - Universidade Federal de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente A Substituto</p>
@@ -1111,7 +1117,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PR" data-areas="ti" data-texto="ufpr - universidade federal do parana professor professor - ciencia da computacao ufpr abre concurso publico para professor de ciencia da computacao">
+<article class="concurso" data-uf="PR" data-areas="ti" data-salario="3198.59" data-texto="ufpr - universidade federal do parana professor professor - ciencia da computacao ufpr abre concurso publico para professor de ciencia da computacao">
   <h2>UFPR - Universidade Federal do Paraná</h2>
   <p class="linha">PR · 1 vaga até R$ 3.198,59 · Superior</p>
   <p><strong>Cargos:</strong> Professor</p>
@@ -1123,7 +1129,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="unifal - universidade federal de alfenas professor substituto professor substituto - ciencias atuariais unifal - mg abre vaga para professor substituto de ciencias atuariais em varginha">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="unifal - universidade federal de alfenas professor substituto professor substituto - ciencias atuariais unifal - mg abre vaga para professor substituto de ciencias atuariais em varginha">
   <h2>UNIFAL - Universidade Federal de Alfenas</h2>
   <p class="linha">MG · 1 vaga até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -1136,7 +1142,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - psiquiatria geral ufmg abre concurso para professor de magisterio superior na area de medicina">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - psiquiatria geral ufmg abre concurso para professor de magisterio superior na area de medicina">
   <h2>UFMG - Universidade Federal de Minas Gerais</h2>
   <p class="linha">MG · 2 vagas até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente</p>
@@ -1148,7 +1154,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="unifei - universidade federal de itajuba professor substituto professor substituto - ciencias humanas professor substituto - engenharia mecanica professor substituto - ensino de ciencias e biologia professor substituto - quimica professor substituto - quimica geral e engenharia de materiais unifei - mg abre processo seletivo para professores substitutos">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="unifei - universidade federal de itajuba professor substituto professor substituto - ciencias humanas professor substituto - engenharia mecanica professor substituto - ensino de ciencias e biologia professor substituto - quimica professor substituto - quimica geral e engenharia de materiais unifei - mg abre processo seletivo para professores substitutos">
   <h2>UNIFEI - Universidade Federal de Itajubá</h2>
   <p class="linha">MG · 5 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -1160,7 +1166,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PR" data-areas="ti" data-texto="utfpr - universidade tecnologica federal do parana professor substituto professor substituto - ciencia da computacao professor substituto - ciencias exatas e da terra utfpr - pr abre processo seletivo para professores substitutos no campus pato branco">
+<article class="concurso" data-uf="PR" data-areas="ti" data-salario="8340.33" data-texto="utfpr - universidade tecnologica federal do parana professor substituto professor substituto - ciencia da computacao professor substituto - ciencias exatas e da terra utfpr - pr abre processo seletivo para professores substitutos no campus pato branco">
   <h2>UTFPR - Universidade Tecnológica Federal do Paraná</h2>
   <p class="linha">PR · 3 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -1172,7 +1178,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - lingua inglesa ufmg abre concurso publico para professor assistente na faculdade de letras">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - lingua inglesa ufmg abre concurso publico para professor assistente na faculdade de letras">
   <h2>UFMG - Universidade Federal de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente</p>
@@ -1184,7 +1190,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="ifsul - instituto federal de educacao, ciencia e tecnologia sul-rio-grandense professor substituto professor substituto - sociologia ifsul - rs abre selecao para professor substituto de sociologia em passo fundo">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="8340.33" data-texto="ifsul - instituto federal de educacao, ciencia e tecnologia sul-rio-grandense professor substituto professor substituto - sociologia ifsul - rs abre selecao para professor substituto de sociologia em passo fundo">
   <h2>IFSul - Instituto Federal de Educação, Ciência e Tecnologia Sul-rio-grandense</h2>
   <p class="linha">RS · 1 vaga até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -1196,7 +1202,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - engenharia eletrica e eletronica ifmg abre selecao para professor substituto de engenharia eletrica e eletronica em ibirite">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8840.74" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - engenharia eletrica e eletronica ifmg abre selecao para professor substituto de engenharia eletrica e eletronica em ibirite">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 8.840,74 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -1208,7 +1214,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - geografia ifmg abre processo seletivo para professor substituto de geografia no campus sabara">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8840.74" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - geografia ifmg abre processo seletivo para professor substituto de geografia no campus sabara">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 8.840,74 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -1220,7 +1226,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="unifesp - universidade federal de sao paulo professor assistente a substituto professor substituto - linguistica, letras e artes/ letras unifesp abre vaga para professor substituto na area de linguistica em guarulhos - sp">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="8340.33" data-texto="unifesp - universidade federal de sao paulo professor assistente a substituto professor substituto - linguistica, letras e artes/ letras unifesp abre vaga para professor substituto na area de linguistica em guarulhos - sp">
   <h2>UNIFESP - Universidade Federal de São Paulo</h2>
   <p class="linha">SP · 1 vaga até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente A Substituto</p>
@@ -1232,7 +1238,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - direito ifmg abre selecao para professor substituto de direito em arcos">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="15964.45" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - direito ifmg abre selecao para professor substituto de direito em arcos">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 15.964,45 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -1244,7 +1250,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="ufcspa - fundacao universidade federal de ciencias da saude de porto alegre professor professor - bioquimica clinica, uroanalises e controle de qualidade em analises clinicas e toxicologicas professor - farmacognosia professor - fisiologia humana professor - fisioterapia comunitaria e estagio supervisionado curricular obrigatorio professor - fonoaudiologia professor - gerenciamento em enfermagem professor - pediatria geral professor - toxicologia ambiental e toxicologia regulatoria ufcspa - rs abre concurso publico com vagas para professores do magisterio superior">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="13753.96" data-texto="ufcspa - fundacao universidade federal de ciencias da saude de porto alegre professor professor - bioquimica clinica, uroanalises e controle de qualidade em analises clinicas e toxicologicas professor - farmacognosia professor - fisiologia humana professor - fisioterapia comunitaria e estagio supervisionado curricular obrigatorio professor - fonoaudiologia professor - gerenciamento em enfermagem professor - pediatria geral professor - toxicologia ambiental e toxicologia regulatoria ufcspa - rs abre concurso publico com vagas para professores do magisterio superior">
   <h2>UFCSPA - Fundação Universidade Federal de Ciências da Saúde de Porto Alegre</h2>
   <p class="linha">RS · 10 vagas até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor</p>
@@ -1257,7 +1263,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="SP" data-areas="" data-texto="unifesp - universidade federal de sao paulo professor assistente a substituto professor assistente substituto - quimica/quimica analitica unifesp abre selecao para professor substituto de quimica analitica em diadema - sp">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="8340.33" data-texto="unifesp - universidade federal de sao paulo professor assistente a substituto professor assistente substituto - quimica/quimica analitica unifesp abre selecao para professor substituto de quimica analitica em diadema - sp">
   <h2>UNIFESP - Universidade Federal de São Paulo</h2>
   <p class="linha">SP · 2 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente A Substituto</p>
@@ -1269,7 +1275,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - matematica ifmg abre processo seletivo para professor substituto de matematica em itabirito">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="12536.98" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - matematica ifmg abre processo seletivo para professor substituto de matematica em itabirito">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 12.536,98 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -1281,7 +1287,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor visitante professor visitante - administracao ifmg abre vaga para professor visitante no campus ouro branco">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor visitante professor visitante - administracao ifmg abre vaga para professor visitante no campus ouro branco">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Visitante</p>
@@ -1293,7 +1299,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="cefet - centro federal de educacao tecnologica de minas gerais professor substituto professor substituto - engenharia mecatronica cefet-mg: processo seletivo abre vaga para professor substituto em divinopolis">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="0" data-texto="cefet - centro federal de educacao tecnologica de minas gerais professor substituto professor substituto - engenharia mecatronica cefet-mg: processo seletivo abre vaga para professor substituto em divinopolis">
   <h2>CEFET - Centro Federal de Educação Tecnológica de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -1305,7 +1311,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="iftm - instituto federal de educacao, ciencia e tecnologia do triangulo mineiro professor substituto professor substituto - administracao professor substituto - fisica iftm - mg abre selecao para professores substitutos no campus uberlandia centro">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="iftm - instituto federal de educacao, ciencia e tecnologia do triangulo mineiro professor substituto professor substituto - administracao professor substituto - fisica iftm - mg abre selecao para professores substitutos no campus uberlandia centro">
   <h2>IFTM - Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro</h2>
   <p class="linha">MG · 2 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -1317,7 +1323,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufv - universidade federal de vicosa professor classe a - assistente a professor - bases morfofuncionais da medicina professor - habilidades medicas, pratica interprofissional e trabalho em saude professor - jornalismo audiovisual e jornalismo de dados ufv - mg abre concursos publicos para professores de magisterio superior">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="14081.78" data-texto="ufv - universidade federal de vicosa professor classe a - assistente a professor - bases morfofuncionais da medicina professor - habilidades medicas, pratica interprofissional e trabalho em saude professor - jornalismo audiovisual e jornalismo de dados ufv - mg abre concursos publicos para professores de magisterio superior">
   <h2>UFV - Universidade Federal de Viçosa</h2>
   <p class="linha">MG · 3 vagas até R$ 14.081,78 · Superior</p>
   <p><strong>Cargos:</strong> Professor Classe A - Assistente A</p>
@@ -1329,7 +1335,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="ifsul - instituto federal de educacao, ciencia e tecnologia sul-rio-grandense professor substituto professor substituto - geografia professor substituto - recursos naturais ifsul - rs abre selecao para professores substitutos em bage">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="8340.33" data-texto="ifsul - instituto federal de educacao, ciencia e tecnologia sul-rio-grandense professor substituto professor substituto - geografia professor substituto - recursos naturais ifsul - rs abre selecao para professores substitutos em bage">
   <h2>IFSul - Instituto Federal de Educação, Ciência e Tecnologia Sul-rio-grandense</h2>
   <p class="linha">RS · 2 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -1341,7 +1347,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MS" data-areas="ti" data-texto="ufms - fundacao universidade federal de mato grosso do sul professor visitante professor visitante professor visitante - administracao professor visitante - agronomia professor visitante - antropologia social professor visitante - arquitetura e urbanismo professor visitante - biologia animal professor visitante - biologia vegetal professor visitante - biotecnologia professor visitante - ciencia animal professor visitante - ciencia da computacao professor visitante - ciencia dos materiais professor visitante - ciencias contabeis professor visitante - ciencias do movimento professor visitante - ciencias farmaceuticas professor visitante - ciencias veterinarias professor visitante - computacao aplicada professor visitante - comunicacao professor visitante - direito professor visitante - doencas infecciosas e parasitarias professor visitante - ecologia e conservacao professor visitante - educacao professor visitante - educacao matematica professor visitante - eficiencia energetica e sustentabilidade professor visitante - enfermagem professor visitante - engenharia de producao professor visitante - engenharia eletrica professor visitante - ensino de ciencias professor visitante - estudos culturais professor visitante - estudos de linguagens professor visitante - estudos fronteiricos professor visitante - filosofia professor visitante - geografia professor visitante - letras professor visitante - psicologia professor visitante - quimica professor visitante - recursos naturais professor visitante - saude da familia professor visitante - saude e desenvolvimento na regiao centro-oeste professor visitante - tecnologias ambientais ufms abre processos seletivos para professores visitantes">
+<article class="concurso" data-uf="MS" data-areas="ti" data-salario="13753.96" data-texto="ufms - fundacao universidade federal de mato grosso do sul professor visitante professor visitante professor visitante - administracao professor visitante - agronomia professor visitante - antropologia social professor visitante - arquitetura e urbanismo professor visitante - biologia animal professor visitante - biologia vegetal professor visitante - biotecnologia professor visitante - ciencia animal professor visitante - ciencia da computacao professor visitante - ciencia dos materiais professor visitante - ciencias contabeis professor visitante - ciencias do movimento professor visitante - ciencias farmaceuticas professor visitante - ciencias veterinarias professor visitante - computacao aplicada professor visitante - comunicacao professor visitante - direito professor visitante - doencas infecciosas e parasitarias professor visitante - ecologia e conservacao professor visitante - educacao professor visitante - educacao matematica professor visitante - eficiencia energetica e sustentabilidade professor visitante - enfermagem professor visitante - engenharia de producao professor visitante - engenharia eletrica professor visitante - ensino de ciencias professor visitante - estudos culturais professor visitante - estudos de linguagens professor visitante - estudos fronteiricos professor visitante - filosofia professor visitante - geografia professor visitante - letras professor visitante - psicologia professor visitante - quimica professor visitante - recursos naturais professor visitante - saude da familia professor visitante - saude e desenvolvimento na regiao centro-oeste professor visitante - tecnologias ambientais ufms abre processos seletivos para professores visitantes">
   <h2>UFMS - Fundação Universidade Federal de Mato Grosso do Sul</h2>
   <p class="linha">MS · 79 vagas até R$ 13753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Visitante</p>
@@ -1353,7 +1359,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufu - universidade federal de uberlandia professor substituto professor substituto - anatomia professor substituto - anestesiologia animal professor substituto - biodiversidade professor substituto - ciencias biologicas professor substituto - clinica cirurgica animal professor substituto - clinica odontologica professor substituto - criacao e praticas corporais professor substituto - danca professor substituto - educacao especial professor substituto - educacao fisica professor substituto - fisiologia professor substituto - geociencias professor substituto - geografia fisica professor substituto - medicina veterinaria professor substituto - morfologia professor substituto - obstetricia animal professor substituto - odontologia professor substituto - protese dentaria professor substituto - zoologia ufu - mg abre processos seletivos para professores substitutos">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.32" data-texto="ufu - universidade federal de uberlandia professor substituto professor substituto - anatomia professor substituto - anestesiologia animal professor substituto - biodiversidade professor substituto - ciencias biologicas professor substituto - clinica cirurgica animal professor substituto - clinica odontologica professor substituto - criacao e praticas corporais professor substituto - danca professor substituto - educacao especial professor substituto - educacao fisica professor substituto - fisiologia professor substituto - geociencias professor substituto - geografia fisica professor substituto - medicina veterinaria professor substituto - morfologia professor substituto - obstetricia animal professor substituto - odontologia professor substituto - protese dentaria professor substituto - zoologia ufu - mg abre processos seletivos para professores substitutos">
   <h2>UFU - Universidade Federal de Uberlândia</h2>
   <p class="linha">MG · 9 vagas até R$ 8.340,32 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -1365,7 +1371,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
+<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-salario="7991.27" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
   <h2>Prefeitura de Tapiraí</h2>
   <p class="linha">SP · 24 vagas até R$ 7.991,27 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -1378,7 +1384,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="SP" data-areas="enfermeiro" data-texto="prefeitura de cubatao varios cargos agente de cultura analista contabil analista de recursos humanos analista financeiro analista orcamentario educador fisico enfermeiro fisioterapeuta fonoaudiologo medico do trabalho nutricionista tecnico de defesa civil terapeuta ocupacional prefeitura de cubatao - sp abre concurso publico com salarios de ate r$ 5.565,00">
+<article class="concurso" data-uf="SP" data-areas="enfermeiro" data-salario="5565" data-texto="prefeitura de cubatao varios cargos agente de cultura analista contabil analista de recursos humanos analista financeiro analista orcamentario educador fisico enfermeiro fisioterapeuta fonoaudiologo medico do trabalho nutricionista tecnico de defesa civil terapeuta ocupacional prefeitura de cubatao - sp abre concurso publico com salarios de ate r$ 5.565,00">
   <h2>Prefeitura de Cubatão</h2>
   <p class="linha">SP · 19 vagas até R$ 5.565,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -1390,7 +1396,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-salario="6464.59" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
   <h2>Prefeitura de Pirapozinho</h2>
   <p class="linha">SP · Cadastro de reserva até R$ 6.464,59 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -1402,7 +1408,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="unesp - universidade estadual paulista &quot;julio de mesquita filho&quot; professor substituto professor substituto - engenharia civil professor substituto - matematica unesp abre tres concursos para professores substitutos no campus de guaratingueta - sp">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="3511.9" data-texto="unesp - universidade estadual paulista &quot;julio de mesquita filho&quot; professor substituto professor substituto - engenharia civil professor substituto - matematica unesp abre tres concursos para professores substitutos no campus de guaratingueta - sp">
   <h2>UNESP - Universidade Estadual Paulista &quot;Júlio de Mesquita Filho&quot;</h2>
   <p class="linha">SP · 6 vagas até R$ 3.511,90 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>

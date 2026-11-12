@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="SP" data-areas="advogado analise_sistemas enfermeiro ti" data-texto="prefeitura de leme varios cargos advogado do suas analista de tecnologia da informacao biologo biomedico enfermeiro - 180h engenheiro agrimensor engenheiro de seguranca do trabalho fiscal de rendas medico - psiquiatra medico - sanitarista medico do trabalho medico horista medico horista - ginecologista e obstetra medico horista - oftalmologista medico horista - psiquiatra infantil prefeitura de leme - sp abre concurso publico com salarios de ate r$ 13.359,44">
+  <div id="lista"><article class="concurso" data-uf="SP" data-areas="advogado analise_sistemas enfermeiro ti" data-salario="13359.44" data-texto="prefeitura de leme varios cargos advogado do suas analista de tecnologia da informacao biologo biomedico enfermeiro - 180h engenheiro agrimensor engenheiro de seguranca do trabalho fiscal de rendas medico - psiquiatra medico - sanitarista medico do trabalho medico horista medico horista - ginecologista e obstetra medico horista - oftalmologista medico horista - psiquiatra infantil prefeitura de leme - sp abre concurso publico com salarios de ate r$ 13.359,44">
   <h2>Prefeitura de Leme</h2>
   <p class="linha">SP · 29 vagas até R$ 13.359,44 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de matao varios cargos agente de fiscalizacao publica - fiscal de comercio, servicos e tributos agente de fiscalizacao publica - fiscal de meio ambiente agente de fiscalizacao publica - fiscal de obras agente de fiscalizacao publica - fiscal de saude publica agente de infraestrutura - agente de apoio ao canil agente de infraestrutura - auxiliar de servicos gerais agente de infraestrutura - coveiro agente de infraestrutura - desenhista projetista agente de infraestrutura - operador de maquina pesada agente de infraestrutura - operador de trator agricola agente de infraestrutura - pedreiro agente de infraestrutura - pintor agente de infraestrutura - topografo agente de mobilidade urbana - fiscal de transito agente de politicas sociais - salva-vidas prefeitura de matao - sp abre concurso publico com salarios de ate r$ 9.717,96">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="9717.96" data-texto="prefeitura de matao varios cargos agente de fiscalizacao publica - fiscal de comercio, servicos e tributos agente de fiscalizacao publica - fiscal de meio ambiente agente de fiscalizacao publica - fiscal de obras agente de fiscalizacao publica - fiscal de saude publica agente de infraestrutura - agente de apoio ao canil agente de infraestrutura - auxiliar de servicos gerais agente de infraestrutura - coveiro agente de infraestrutura - desenhista projetista agente de infraestrutura - operador de maquina pesada agente de infraestrutura - operador de trator agricola agente de infraestrutura - pedreiro agente de infraestrutura - pintor agente de infraestrutura - topografo agente de mobilidade urbana - fiscal de transito agente de politicas sociais - salva-vidas prefeitura de matao - sp abre concurso publico com salarios de ate r$ 9.717,96">
   <h2>Prefeitura de Matão</h2>
   <p class="linha">SP · 28 vagas até R$ 9.717,96 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-salario="10428.05" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
   <h2>SETEC - Serviços Técnicos Gerais de Campinas</h2>
   <p class="linha">SP · 39 vagas até R$ 10.428,05 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="redes ti" data-texto="ifsp - instituto federal de educacao, ciencia e tecnologia de sao paulo professor substituto professor substituto - informatica professor substituto - informatica - arquitetura de redes de computadores ifsp retifica processo seletivo com vagas para professores substitutos">
+<article class="concurso" data-uf="SP" data-areas="redes ti" data-salario="8340.33" data-texto="ifsp - instituto federal de educacao, ciencia e tecnologia de sao paulo professor substituto professor substituto - informatica professor substituto - informatica - arquitetura de redes de computadores ifsp retifica processo seletivo com vagas para professores substitutos">
   <h2>IFSP - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</h2>
   <p class="linha">SP · 79 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
+<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-salario="7991.27" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
   <h2>Prefeitura de Tapiraí</h2>
   <p class="linha">SP · 24 vagas até R$ 7.991,27 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-salario="6464.59" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
   <h2>Prefeitura de Pirapozinho</h2>
   <p class="linha">SP · Cadastro de reserva até R$ 6.464,59 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil" data-texto="cemmil - consorcio intermunicipal cemmil para o desenvolvimento sustentavel varios cargos auxiliar administrativo coveiro engenheiro civil jardineiro motorista operador de maquinas sepultador servicos gerais consorcio cemmil - sp abre processo seletivo com vagas em carapicuiba">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil" data-salario="6889.64" data-texto="cemmil - consorcio intermunicipal cemmil para o desenvolvimento sustentavel varios cargos auxiliar administrativo coveiro engenheiro civil jardineiro motorista operador de maquinas sepultador servicos gerais consorcio cemmil - sp abre processo seletivo com vagas em carapicuiba">
   <h2>Cemmil - Consórcio Intermunicipal Cemmil para o Desenvolvimento Sustentável</h2>
   <p class="linha">SP · 28 vagas até R$ 6.889,64 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>

@@ -1,18 +1,22 @@
 (function(){
 var busca=document.getElementById('busca'),uf=document.getElementById('uf'),area=document.getElementById('area');
+var salMin=document.getElementById('salMin'),salMax=document.getElementById('salMax');
 var cards=[].slice.call(document.querySelectorAll('.concurso')),ads=[].slice.call(document.querySelectorAll('#lista .anuncio'));
 var cont=document.getElementById('contagem'),vazio=document.getElementById('vazio');
 function dobra(s){return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();}
 function filtrar(){
   var termos=dobra(busca.value).split(/\s+/).filter(Boolean),u=uf?uf.value:'',a=area.value,n=0;
+  var min=salMin&&salMin.value?Number(salMin.value):0,max=salMax&&salMax.value?Number(salMax.value):0;
   cards.forEach(function(c){
-    var ok=(!u||c.dataset.uf===u)&&(!a||(' '+c.dataset.areas+' ').indexOf(' '+a+' ')>=0)&&termos.every(function(t){return c.dataset.texto.indexOf(t)>=0;});
+    var s=Number(c.dataset.salario||0);
+    var okSal=(!min||s>=min)&&(!max||(s>0&&s<=max));
+    var ok=okSal&&(!u||c.dataset.uf===u)&&(!a||(' '+c.dataset.areas+' ').indexOf(' '+a+' ')>=0)&&termos.every(function(t){return c.dataset.texto.indexOf(t)>=0;});
     c.hidden=!ok;if(ok)n++;
   });
-  var filtrado=termos.length||u||a;ads.forEach(function(x){x.hidden=!!filtrado;});
+  var filtrado=termos.length||u||a||min||max;ads.forEach(function(x){x.hidden=!!filtrado;});
   cont.textContent=filtrado?n+' concurso(s) com esse filtro':'';vazio.hidden=n>0;
 }
-[busca,uf,area].forEach(function(el){if(el)el.addEventListener('input',filtrar);});
+[busca,uf,area,salMin,salMax].forEach(function(el){if(el)el.addEventListener('input',filtrar);});
 var casa=[].slice.call(document.querySelectorAll('[data-casa]'));
 function semCasa(){casa.forEach(function(a){a.removeAttribute('href');a.classList.add('fora');a.textContent=a.getAttribute('data-casa')||'Cadastro de alertas indisponível agora, tente mais tarde';});}
 if(casa.length){var ctl=window.AbortController?new AbortController():null;var t=setTimeout(function(){if(ctl)ctl.abort();},4000);

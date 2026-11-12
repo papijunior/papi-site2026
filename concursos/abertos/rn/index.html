@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="RN" data-areas="analise_sistemas suporte ti" data-texto="camara de mossoro varios cargos agente administrativo analista de comunicacao analista de gestao documental analista de tecnologia da informacao consultor legislativo - financeiro-orcamentario consultor legislativo - processo legislativo jornalista revisor de textos tecnico de informatica camara de mossoro - rn abre concurso publico com salarios de ate r$ 8.810,69">
+  <div id="lista"><article class="concurso" data-uf="RN" data-areas="analise_sistemas suporte ti" data-salario="8810.69" data-texto="camara de mossoro varios cargos agente administrativo analista de comunicacao analista de gestao documental analista de tecnologia da informacao consultor legislativo - financeiro-orcamentario consultor legislativo - processo legislativo jornalista revisor de textos tecnico de informatica camara de mossoro - rn abre concurso publico com salarios de ate r$ 8.810,69">
   <h2>Câmara de Mossoró</h2>
   <p class="linha">RN · 24 vagas até R$ 8.810,69 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RN" data-areas="" data-texto="camara de alto do rodrigues varios cargos auxiliar administrativo auxiliar de servicos gerais copeiro cozinheiro motorista porteiro redator de atas camara de alto do rodrigues - rn abre concurso publico com 12 vagas">
+<article class="concurso" data-uf="RN" data-areas="" data-salario="2500" data-texto="camara de alto do rodrigues varios cargos auxiliar administrativo auxiliar de servicos gerais copeiro cozinheiro motorista porteiro redator de atas camara de alto do rodrigues - rn abre concurso publico com 12 vagas">
   <h2>Câmara de Alto do Rodrigues</h2>
   <p class="linha">RN · 12 vagas até R$ 2.500,00 · Fundamental / Médio</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RN" data-areas="advogado" data-texto="cref16/rn - conselho regional de educacao fisica da 16ª regiao advogado, contador, agente de licitacoes e contratos advogado cref16 - rn abre concurso publico para profissionais de nivel superior">
+<article class="concurso" data-uf="RN" data-areas="advogado" data-salario="4169.55" data-texto="cref16/rn - conselho regional de educacao fisica da 16ª regiao advogado, contador, agente de licitacoes e contratos advogado cref16 - rn abre concurso publico para profissionais de nivel superior">
   <h2>CREF16/RN - Conselho Regional de Educação Física da 16ª Região</h2>
   <p class="linha">RN · 3 vagas até R$ 4.169,55 · Superior</p>
   <p><strong>Cargos:</strong> Advogado, Contador, Agente de Licitações e Contratos</p>

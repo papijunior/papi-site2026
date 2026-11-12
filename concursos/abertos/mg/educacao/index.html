@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="MG" data-areas="seguranca" data-texto="unifei - universidade federal de itajuba professor do magisterio superior professor - seguranca da informacao unifei - mg abre concurso publico para professores do magisterio superior">
+  <div id="lista"><article class="concurso" data-uf="MG" data-areas="seguranca" data-salario="13753.96" data-texto="unifei - universidade federal de itajuba professor do magisterio superior professor - seguranca da informacao unifei - mg abre concurso publico para professores do magisterio superior">
   <h2>UNIFEI - Universidade Federal de Itajubá</h2>
   <p class="linha">MG · 27 vagas até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Magistério Superior</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="ti" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - informatica ifmg abre processo seletivo para professores substitutos em sao joao evangelista">
+<article class="concurso" data-uf="MG" data-areas="ti" data-salario="15964.45" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - informatica ifmg abre processo seletivo para professores substitutos em sao joao evangelista">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 8 vagas até R$ 15.964,45 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="ti" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor do ensino basico, tecnico e tecnologico professor - informatica ifmg retifica concurso publico para o cargo de professor do ensino basico, tecnico e tecnologico">
+<article class="concurso" data-uf="MG" data-areas="ti" data-salario="14945.96" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor do ensino basico, tecnico e tecnologico professor - informatica ifmg retifica concurso publico para o cargo de professor do ensino basico, tecnico e tecnologico">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 33 vagas até R$ 14.945,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Ensino Básico, Técnico e Tecnológico</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - nutricao em esporte e exercicio fisico ufmg abre concurso para docente na area de nutricao em esporte e exercicio fisico">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - nutricao em esporte e exercicio fisico ufmg abre concurso para docente na area de nutricao em esporte e exercicio fisico">
   <h2>UFMG - Universidade Federal de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufv - universidade federal de vicosa professor do magisterio superior professor do magisterio superior - ensino de geografia ufv - mg abre concurso publico para professor de ensino de geografia">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufv - universidade federal de vicosa professor do magisterio superior professor do magisterio superior - ensino de geografia ufv - mg abre concurso publico para professor de ensino de geografia">
   <h2>UFV - Universidade Federal de Viçosa</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Magistério Superior</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufv - universidade federal de vicosa professor de lingua brasileira de sinais professor - lingua brasileira de sinais ufv - mg abre concurso para docente na area de lingua brasileira de sinais">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufv - universidade federal de vicosa professor de lingua brasileira de sinais professor - lingua brasileira de sinais ufv - mg abre concurso para docente na area de lingua brasileira de sinais">
   <h2>UFV - Universidade Federal de Viçosa</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor de Língua Brasileira de Sinais</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor visitante professor visitante - artes professor visitante - enfermagem ifmg abre processo seletivo para professores visitantes em artes e enfermagem">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor visitante professor visitante - artes professor visitante - enfermagem ifmg abre processo seletivo para professores visitantes em artes e enfermagem">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 2 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor visitante</p>
@@ -131,7 +137,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - politica, planejamento e gestao em saude ufmg abre concurso publico para professor na faculdade de medicina">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - politica, planejamento e gestao em saude ufmg abre concurso publico para professor na faculdade de medicina">
   <h2>UFMG - Universidade Federal de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente</p>
@@ -143,7 +149,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufv - universidade federal de vicosa professor assistente a professor assistente - representacao grafica ufv - mg abre concurso publico para docente na area de representacao grafica">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13288.85" data-texto="ufv - universidade federal de vicosa professor assistente a professor assistente - representacao grafica ufv - mg abre concurso publico para docente na area de representacao grafica">
   <h2>UFV - Universidade Federal de Viçosa</h2>
   <p class="linha">MG · 1 vaga até R$ 13.288,85 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente A</p>
@@ -155,7 +161,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="unifal - universidade federal de alfenas professor substituto professor substituto - ciencias atuariais unifal - mg abre vaga para professor substituto de ciencias atuariais em varginha">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="unifal - universidade federal de alfenas professor substituto professor substituto - ciencias atuariais unifal - mg abre vaga para professor substituto de ciencias atuariais em varginha">
   <h2>UNIFAL - Universidade Federal de Alfenas</h2>
   <p class="linha">MG · 1 vaga até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -168,7 +174,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - psiquiatria geral ufmg abre concurso para professor de magisterio superior na area de medicina">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - psiquiatria geral ufmg abre concurso para professor de magisterio superior na area de medicina">
   <h2>UFMG - Universidade Federal de Minas Gerais</h2>
   <p class="linha">MG · 2 vagas até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente</p>
@@ -180,7 +186,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="unifei - universidade federal de itajuba professor substituto professor substituto - ciencias humanas professor substituto - engenharia mecanica professor substituto - ensino de ciencias e biologia professor substituto - quimica professor substituto - quimica geral e engenharia de materiais unifei - mg abre processo seletivo para professores substitutos">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="unifei - universidade federal de itajuba professor substituto professor substituto - ciencias humanas professor substituto - engenharia mecanica professor substituto - ensino de ciencias e biologia professor substituto - quimica professor substituto - quimica geral e engenharia de materiais unifei - mg abre processo seletivo para professores substitutos">
   <h2>UNIFEI - Universidade Federal de Itajubá</h2>
   <p class="linha">MG · 5 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -192,7 +198,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - lingua inglesa ufmg abre concurso publico para professor assistente na faculdade de letras">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="13753.96" data-texto="ufmg - universidade federal de minas gerais professor assistente professor assistente - lingua inglesa ufmg abre concurso publico para professor assistente na faculdade de letras">
   <h2>UFMG - Universidade Federal de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Assistente</p>
@@ -204,7 +210,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - engenharia eletrica e eletronica ifmg abre selecao para professor substituto de engenharia eletrica e eletronica em ibirite">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8840.74" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - engenharia eletrica e eletronica ifmg abre selecao para professor substituto de engenharia eletrica e eletronica em ibirite">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 8.840,74 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -216,7 +222,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - geografia ifmg abre processo seletivo para professor substituto de geografia no campus sabara">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8840.74" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - geografia ifmg abre processo seletivo para professor substituto de geografia no campus sabara">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 8.840,74 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -228,7 +234,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - direito ifmg abre selecao para professor substituto de direito em arcos">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="15964.45" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - direito ifmg abre selecao para professor substituto de direito em arcos">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 15.964,45 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -240,7 +246,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - matematica ifmg abre processo seletivo para professor substituto de matematica em itabirito">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="12536.98" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - matematica ifmg abre processo seletivo para professor substituto de matematica em itabirito">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 12.536,98 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -252,7 +258,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor visitante professor visitante - administracao ifmg abre vaga para professor visitante no campus ouro branco">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor visitante professor visitante - administracao ifmg abre vaga para professor visitante no campus ouro branco">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Visitante</p>
@@ -264,7 +270,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="cefet - centro federal de educacao tecnologica de minas gerais professor substituto professor substituto - engenharia mecatronica cefet-mg: processo seletivo abre vaga para professor substituto em divinopolis">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="0" data-texto="cefet - centro federal de educacao tecnologica de minas gerais professor substituto professor substituto - engenharia mecatronica cefet-mg: processo seletivo abre vaga para professor substituto em divinopolis">
   <h2>CEFET - Centro Federal de Educação Tecnológica de Minas Gerais</h2>
   <p class="linha">MG · 1 vaga · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -276,7 +282,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="iftm - instituto federal de educacao, ciencia e tecnologia do triangulo mineiro professor substituto professor substituto - administracao professor substituto - fisica iftm - mg abre selecao para professores substitutos no campus uberlandia centro">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.33" data-texto="iftm - instituto federal de educacao, ciencia e tecnologia do triangulo mineiro professor substituto professor substituto - administracao professor substituto - fisica iftm - mg abre selecao para professores substitutos no campus uberlandia centro">
   <h2>IFTM - Instituto Federal de Educação, Ciência e Tecnologia do Triângulo Mineiro</h2>
   <p class="linha">MG · 2 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -289,7 +295,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufv - universidade federal de vicosa professor classe a - assistente a professor - bases morfofuncionais da medicina professor - habilidades medicas, pratica interprofissional e trabalho em saude professor - jornalismo audiovisual e jornalismo de dados ufv - mg abre concursos publicos para professores de magisterio superior">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="14081.78" data-texto="ufv - universidade federal de vicosa professor classe a - assistente a professor - bases morfofuncionais da medicina professor - habilidades medicas, pratica interprofissional e trabalho em saude professor - jornalismo audiovisual e jornalismo de dados ufv - mg abre concursos publicos para professores de magisterio superior">
   <h2>UFV - Universidade Federal de Viçosa</h2>
   <p class="linha">MG · 3 vagas até R$ 14.081,78 · Superior</p>
   <p><strong>Cargos:</strong> Professor Classe A - Assistente A</p>
@@ -301,7 +307,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="ufu - universidade federal de uberlandia professor substituto professor substituto - anatomia professor substituto - anestesiologia animal professor substituto - biodiversidade professor substituto - ciencias biologicas professor substituto - clinica cirurgica animal professor substituto - clinica odontologica professor substituto - criacao e praticas corporais professor substituto - danca professor substituto - educacao especial professor substituto - educacao fisica professor substituto - fisiologia professor substituto - geociencias professor substituto - geografia fisica professor substituto - medicina veterinaria professor substituto - morfologia professor substituto - obstetricia animal professor substituto - odontologia professor substituto - protese dentaria professor substituto - zoologia ufu - mg abre processos seletivos para professores substitutos">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="8340.32" data-texto="ufu - universidade federal de uberlandia professor substituto professor substituto - anatomia professor substituto - anestesiologia animal professor substituto - biodiversidade professor substituto - ciencias biologicas professor substituto - clinica cirurgica animal professor substituto - clinica odontologica professor substituto - criacao e praticas corporais professor substituto - danca professor substituto - educacao especial professor substituto - educacao fisica professor substituto - fisiologia professor substituto - geociencias professor substituto - geografia fisica professor substituto - medicina veterinaria professor substituto - morfologia professor substituto - obstetricia animal professor substituto - odontologia professor substituto - protese dentaria professor substituto - zoologia ufu - mg abre processos seletivos para professores substitutos">
   <h2>UFU - Universidade Federal de Uberlândia</h2>
   <p class="linha">MG · 9 vagas até R$ 8.340,32 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>

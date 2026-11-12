@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="MG" data-areas="analise_sistemas ti" data-texto="prefeitura de contagem varios cargos analista de ti arquiteto arquivista assistente administrativo assistente social auditor de controle interno - ciencias contabeis auditor de controle interno - direito auditor de controle interno - engenharia civil auditor de controle interno - tecnologia da informacao biologo contador economista engenheiro agrimensor engenheiro agronomo engenheiro ambiental prefeitura de contagem - mg retifica edital de concurso publico">
+  <div id="lista"><article class="concurso" data-uf="MG" data-areas="analise_sistemas ti" data-salario="13305.57" data-texto="prefeitura de contagem varios cargos analista de ti arquiteto arquivista assistente administrativo assistente social auditor de controle interno - ciencias contabeis auditor de controle interno - direito auditor de controle interno - engenharia civil auditor de controle interno - tecnologia da informacao biologo contador economista engenheiro agrimensor engenheiro agronomo engenheiro ambiental prefeitura de contagem - mg retifica edital de concurso publico">
   <h2>Prefeitura de Contagem</h2>
   <p class="linha">MG · 272 vagas até R$ 13.305,57 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="seguranca" data-texto="unifei - universidade federal de itajuba professor do magisterio superior professor - seguranca da informacao unifei - mg abre concurso publico para professores do magisterio superior">
+<article class="concurso" data-uf="MG" data-areas="seguranca" data-salario="13753.96" data-texto="unifei - universidade federal de itajuba professor do magisterio superior professor - seguranca da informacao unifei - mg abre concurso publico para professores do magisterio superior">
   <h2>UNIFEI - Universidade Federal de Itajubá</h2>
   <p class="linha">MG · 27 vagas até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Magistério Superior</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="ti" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - informatica ifmg abre processo seletivo para professores substitutos em sao joao evangelista">
+<article class="concurso" data-uf="MG" data-areas="ti" data-salario="15964.45" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor substituto professor substituto - informatica ifmg abre processo seletivo para professores substitutos em sao joao evangelista">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 8 vagas até R$ 15.964,45 · Superior</p>
   <p><strong>Cargos:</strong> Professor substituto</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="suporte ti" data-texto="prefeitura de piracema varios cargos tecnico em informatica prefeitura de piracema - mg abre concurso e processo seletivo com diversas vagas">
+<article class="concurso" data-uf="MG" data-areas="suporte ti" data-salario="18647.01" data-texto="prefeitura de piracema varios cargos tecnico em informatica prefeitura de piracema - mg abre concurso e processo seletivo com diversas vagas">
   <h2>Prefeitura de Piracema</h2>
   <p class="linha">MG · 132 vagas até R$ 18.647,01 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="ti" data-texto="fumep - fundacao municipal de ensino profissionalizante de sete lagoas varios cargos auxiliar de laboratorio - informatica fumep de sete lagoas - mg retifica concurso publico para diversos niveis de escolaridade">
+<article class="concurso" data-uf="MG" data-areas="ti" data-salario="2530.56" data-texto="fumep - fundacao municipal de ensino profissionalizante de sete lagoas varios cargos auxiliar de laboratorio - informatica fumep de sete lagoas - mg retifica concurso publico para diversos niveis de escolaridade">
   <h2>FUMEP - Fundação Municipal de Ensino Profissionalizante de Sete Lagoas</h2>
   <p class="linha">MG · 39 vagas até R$ 2.530,56 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="ti" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor do ensino basico, tecnico e tecnologico professor - informatica ifmg retifica concurso publico para o cargo de professor do ensino basico, tecnico e tecnologico">
+<article class="concurso" data-uf="MG" data-areas="ti" data-salario="14945.96" data-texto="ifmg - instituto federal de educacao, ciencia e tecnologia de minas gerais professor do ensino basico, tecnico e tecnologico professor - informatica ifmg retifica concurso publico para o cargo de professor do ensino basico, tecnico e tecnologico">
   <h2>IFMG - Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais</h2>
   <p class="linha">MG · 33 vagas até R$ 14.945,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Ensino Básico, Técnico e Tecnológico</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="suporte ti" data-texto="prefeitura de confins varios cargos tecnico em informatica prefeitura de confins - mg divulga retificacoes de processo seletivo">
+<article class="concurso" data-uf="MG" data-areas="suporte ti" data-salario="23298.67" data-texto="prefeitura de confins varios cargos tecnico em informatica prefeitura de confins - mg divulga retificacoes de processo seletivo">
   <h2>Prefeitura de Confins</h2>
   <p class="linha">MG · 153 vagas até R$ 23.298,67 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>

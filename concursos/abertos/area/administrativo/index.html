@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     <select id="uf" aria-label="Estado"><option value="">Todos os estados</option><option value="AC">AC — Acre</option><option value="AP">AP — Amapá</option><option value="BA">BA — Bahia</option><option value="CE">CE — Ceará</option><option value="DF">DF — Distrito Federal</option><option value="ES">ES — Espírito Santo</option><option value="GO">GO — Goiás</option><option value="MA">MA — Maranhão</option><option value="MT">MT — Mato Grosso</option><option value="MS">MS — Mato Grosso do Sul</option><option value="MG">MG — Minas Gerais</option><option value="PA">PA — Pará</option><option value="PB">PB — Paraíba</option><option value="PR">PR — Paraná</option><option value="PE">PE — Pernambuco</option><option value="PI">PI — Piauí</option><option value="RJ">RJ — Rio de Janeiro</option><option value="RN">RN — Rio Grande do Norte</option><option value="RS">RS — Rio Grande do Sul</option><option value="RO">RO — Rondônia</option><option value="SC">SC — Santa Catarina</option><option value="SP">SP — São Paulo</option><option value="SE">SE — Sergipe</option><option value="TO">TO — Tocantins</option><option value="BR">Nacionais</option></select>
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
+  <div id="lista"><article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-salario="16210" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
   <h2>Prefeitura de Canto do Buriti</h2>
   <p class="linha">PI · 257 vagas até R$ 16.210,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="juridico" data-texto="prefeitura de louveira varios cargos assistente juridico contador escriturario fiscal municipal professor - artes professor - educacao fisica professor - ensino basico professor - ingles prefeitura de louveira - sp abre concursos com vagas imediatas e cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="juridico" data-salario="8738" data-texto="prefeitura de louveira varios cargos assistente juridico contador escriturario fiscal municipal professor - artes professor - educacao fisica professor - ensino basico professor - ingles prefeitura de louveira - sp abre concursos com vagas imediatas e cadastro de reserva">
   <h2>Prefeitura de Louveira</h2>
   <p class="linha">SP · 19 vagas até R$ 8.738,00 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RN" data-areas="analise_sistemas suporte ti" data-texto="camara de mossoro varios cargos agente administrativo analista de comunicacao analista de gestao documental analista de tecnologia da informacao consultor legislativo - financeiro-orcamentario consultor legislativo - processo legislativo jornalista revisor de textos tecnico de informatica camara de mossoro - rn abre concurso publico com salarios de ate r$ 8.810,69">
+<article class="concurso" data-uf="RN" data-areas="analise_sistemas suporte ti" data-salario="8810.69" data-texto="camara de mossoro varios cargos agente administrativo analista de comunicacao analista de gestao documental analista de tecnologia da informacao consultor legislativo - financeiro-orcamentario consultor legislativo - processo legislativo jornalista revisor de textos tecnico de informatica camara de mossoro - rn abre concurso publico com salarios de ate r$ 8.810,69">
   <h2>Câmara de Mossoró</h2>
   <p class="linha">RN · 24 vagas até R$ 8.810,69 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-salario="10428.05" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
   <h2>SETEC - Serviços Técnicos Gerais de Campinas</h2>
   <p class="linha">SP · 39 vagas até R$ 10.428,05 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="analise_sistemas ti" data-texto="prefeitura de contagem varios cargos analista de ti arquiteto arquivista assistente administrativo assistente social auditor de controle interno - ciencias contabeis auditor de controle interno - direito auditor de controle interno - engenharia civil auditor de controle interno - tecnologia da informacao biologo contador economista engenheiro agrimensor engenheiro agronomo engenheiro ambiental prefeitura de contagem - mg retifica edital de concurso publico">
+<article class="concurso" data-uf="MG" data-areas="analise_sistemas ti" data-salario="13305.57" data-texto="prefeitura de contagem varios cargos analista de ti arquiteto arquivista assistente administrativo assistente social auditor de controle interno - ciencias contabeis auditor de controle interno - direito auditor de controle interno - engenharia civil auditor de controle interno - tecnologia da informacao biologo contador economista engenheiro agrimensor engenheiro agronomo engenheiro ambiental prefeitura de contagem - mg retifica edital de concurso publico">
   <h2>Prefeitura de Contagem</h2>
   <p class="linha">MG · 272 vagas até R$ 13.305,57 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
+<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-salario="6000" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
   <h2>Prefeitura de Pedra Branca do Amapari</h2>
   <p class="linha">AP · 171 vagas até R$ 6.000,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="TO" data-areas="" data-texto="camara de oliveira de fatima auxiliar de servicos gerais, vigia, assistente administrativo assistente administrativo auxiliar de servicos gerais vigia camara de oliveira de fatima - to abre concurso publico com cinco vagas imediatas">
+<article class="concurso" data-uf="TO" data-areas="" data-salario="1800" data-texto="camara de oliveira de fatima auxiliar de servicos gerais, vigia, assistente administrativo assistente administrativo auxiliar de servicos gerais vigia camara de oliveira de fatima - to abre concurso publico com cinco vagas imediatas">
   <h2>Câmara de Oliveira de Fátima</h2>
   <p class="linha">TO · 5 vagas até R$ 1.800,00 · Fundamental / Médio</p>
   <p><strong>Cargos:</strong> Auxiliar de Serviços Gerais, Vigia, Assistente Administrativo</p>
@@ -131,7 +137,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PA" data-areas="advogado suporte ti" data-texto="camara de portel varios cargos advogado legislativo agente de copa e cozinha assistente administrativo assistente de plenario assistente social auxiliar de servicos gerais auxiliar tecnico de audio, video e sistemas condutor maritimo controlador interno guarda legislativo interprete de libras motorista ouvidor tecnico de informatica tecnico legislativo camara de portel - pa retifica edital de concurso publico">
+<article class="concurso" data-uf="PA" data-areas="advogado suporte ti" data-salario="4723.31" data-texto="camara de portel varios cargos advogado legislativo agente de copa e cozinha assistente administrativo assistente de plenario assistente social auxiliar de servicos gerais auxiliar tecnico de audio, video e sistemas condutor maritimo controlador interno guarda legislativo interprete de libras motorista ouvidor tecnico de informatica tecnico legislativo camara de portel - pa retifica edital de concurso publico">
   <h2>Câmara de Portel</h2>
   <p class="linha">PA · 27 vagas até R$ 4.723,31 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -143,7 +149,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PA" data-areas="" data-texto="camara de sao geraldo do araguaia varios cargos assistente administrativo auxiliar de servicos gerais chefe de controle interno tecnico em contabilidade camara de sao geraldo do araguaia - pa abre concurso publico com salarios de ate r$ 3.000,00">
+<article class="concurso" data-uf="PA" data-areas="" data-salario="3000" data-texto="camara de sao geraldo do araguaia varios cargos assistente administrativo auxiliar de servicos gerais chefe de controle interno tecnico em contabilidade camara de sao geraldo do araguaia - pa abre concurso publico com salarios de ate r$ 3.000,00">
   <h2>Câmara de São Geraldo do Araguaia</h2>
   <p class="linha">PA · 5 vagas até R$ 3.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -155,7 +161,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PA" data-areas="enfermeiro" data-texto="prefeitura de bujaru varios cargos agente administrativo assistente social auxiliar de servicos gerais auxiliar de servicos urbanos coveiro enfermeiro fisioterapeuta motorista nutricionista operador de maquinas leves operador de maquinas pesadas psicologo tecnico em enfermagem vigia prefeitura de bujaru - pa abre concurso publico com salarios de ate r$ 4.543,83">
+<article class="concurso" data-uf="PA" data-areas="enfermeiro" data-salario="4543.83" data-texto="prefeitura de bujaru varios cargos agente administrativo assistente social auxiliar de servicos gerais auxiliar de servicos urbanos coveiro enfermeiro fisioterapeuta motorista nutricionista operador de maquinas leves operador de maquinas pesadas psicologo tecnico em enfermagem vigia prefeitura de bujaru - pa abre concurso publico com salarios de ate r$ 4.543,83">
   <h2>Prefeitura de Bujaru</h2>
   <p class="linha">PA · 100 vagas até R$ 4.543,83 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -168,7 +174,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-texto="prefeitura de natuba varios cargos agente administrativo agente de vigilancia sanitaria assistente social atendente de consultorio dentario auxiliar administrativo auxiliar de servicos gerais bioquimico condutor de ambulancia eletricista enfermeiro enfermeiro plantonista farmaceutico fisioterapeuta fonoaudiologo gari prefeitura de natuba - pb abre concurso publico para diversos cargos">
+<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-salario="3988.96" data-texto="prefeitura de natuba varios cargos agente administrativo agente de vigilancia sanitaria assistente social atendente de consultorio dentario auxiliar administrativo auxiliar de servicos gerais bioquimico condutor de ambulancia eletricista enfermeiro enfermeiro plantonista farmaceutico fisioterapeuta fonoaudiologo gari prefeitura de natuba - pb abre concurso publico para diversos cargos">
   <h2>Prefeitura de Natuba</h2>
   <p class="linha">PB · 141 vagas até R$ 3.988,96 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -180,7 +186,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RN" data-areas="" data-texto="camara de alto do rodrigues varios cargos auxiliar administrativo auxiliar de servicos gerais copeiro cozinheiro motorista porteiro redator de atas camara de alto do rodrigues - rn abre concurso publico com 12 vagas">
+<article class="concurso" data-uf="RN" data-areas="" data-salario="2500" data-texto="camara de alto do rodrigues varios cargos auxiliar administrativo auxiliar de servicos gerais copeiro cozinheiro motorista porteiro redator de atas camara de alto do rodrigues - rn abre concurso publico com 12 vagas">
   <h2>Câmara de Alto do Rodrigues</h2>
   <p class="linha">RN · 12 vagas até R$ 2.500,00 · Fundamental / Médio</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -192,7 +198,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-texto="prefeitura de parari varios cargos agente administrativo agente de vigilancia sanitaria assistente social auxiliar de limpeza de vias publicas educador fisico enfermeiro farmaceutico fiscal de tributos e arrecadacao fisioterapeuta fonoaudiologo medico - clinica geral motorista d motorista d ambulancia nutricionista odontologo prefeitura de parari - pb abre concurso publico com salarios de ate r$ 10.000,00">
+<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-salario="10000" data-texto="prefeitura de parari varios cargos agente administrativo agente de vigilancia sanitaria assistente social auxiliar de limpeza de vias publicas educador fisico enfermeiro farmaceutico fiscal de tributos e arrecadacao fisioterapeuta fonoaudiologo medico - clinica geral motorista d motorista d ambulancia nutricionista odontologo prefeitura de parari - pb abre concurso publico com salarios de ate r$ 10.000,00">
   <h2>Prefeitura de Parari</h2>
   <p class="linha">PB · 29 vagas até R$ 10.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -204,7 +210,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="administrador advogado" data-texto="prefeitura de boa viagem varios cargos administrador advogado agente administrativo agente fiscal de tributos agente municipal de transito agente sanitarista analista ambiental analista de controle interno arquiteto assistente social assistente tecnico auxiliar de administracao auxiliar de gesso auxiliar de servicos gerais auxiliar em saude bucal prefeitura de boa viagem - ce abre concurso publico com vagas para diversas areas de atuacao">
+<article class="concurso" data-uf="CE" data-areas="administrador advogado" data-salario="14718.92" data-texto="prefeitura de boa viagem varios cargos administrador advogado agente administrativo agente fiscal de tributos agente municipal de transito agente sanitarista analista ambiental analista de controle interno arquiteto assistente social assistente tecnico auxiliar de administracao auxiliar de gesso auxiliar de servicos gerais auxiliar em saude bucal prefeitura de boa viagem - ce abre concurso publico com vagas para diversas areas de atuacao">
   <h2>Prefeitura de Boa Viagem</h2>
   <p class="linha">CE · 1001 vagas até R$ 14.718,92 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -216,7 +222,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MS" data-areas="suporte ti" data-texto="camara de aral moreira varios cargos agente legislativo - auxiliar de servicos gerais agente legislativo copeiro assistente legislativo recepcionista controlador interno tecnico em informatica tecnico legislativo camara de aral moreira - ms abre concurso publico com salarios de ate r$ 7.566,00">
+<article class="concurso" data-uf="MS" data-areas="suporte ti" data-salario="7566" data-texto="camara de aral moreira varios cargos agente legislativo - auxiliar de servicos gerais agente legislativo copeiro assistente legislativo recepcionista controlador interno tecnico em informatica tecnico legislativo camara de aral moreira - ms abre concurso publico com salarios de ate r$ 7.566,00">
   <h2>Câmara de Aral Moreira</h2>
   <p class="linha">MS · 4 vagas até R$ 7.566,00 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -228,7 +234,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="GO" data-areas="" data-texto="prefeitura de goianira varios cargos agente de apoio educacional agente de apoio educacional - interprete de libras assistente social auxiliar administrativo auxiliar de servicos gerais merendeiro monitor - cmei motorista de transporte escolar professor prefeitura de goianira - go abre selecao com remuneracoes de ate r$ 3.203,66">
+<article class="concurso" data-uf="GO" data-areas="" data-salario="3203.66" data-texto="prefeitura de goianira varios cargos agente de apoio educacional agente de apoio educacional - interprete de libras assistente social auxiliar administrativo auxiliar de servicos gerais merendeiro monitor - cmei motorista de transporte escolar professor prefeitura de goianira - go abre selecao com remuneracoes de ate r$ 3.203,66">
   <h2>Prefeitura de Goianira</h2>
   <p class="linha">GO · 140 vagas até R$ 3.203,66 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -240,7 +246,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="advogado enfermeiro" data-texto="prefeitura de mirassol d&#39;oeste varios cargos advogado - 20h agente administrativo arquiteto e urbanista assistente social atendente de farmacia auxiliar administrativo auxiliar de desenvolvimento infantil auxiliar de inspecao auxiliar de inspetoria de produtos de origem animal auxiliar de laboratorio auxiliar de manutencao bioquimico educador social para idosos eletricista enfermeiro prefeitura de mirassol d&#39;oeste - mt abre processo seletivo com salarios de ate r$ 27.645,05">
+<article class="concurso" data-uf="MT" data-areas="advogado enfermeiro" data-salario="27645.05" data-texto="prefeitura de mirassol d&#39;oeste varios cargos advogado - 20h agente administrativo arquiteto e urbanista assistente social atendente de farmacia auxiliar administrativo auxiliar de desenvolvimento infantil auxiliar de inspecao auxiliar de inspetoria de produtos de origem animal auxiliar de laboratorio auxiliar de manutencao bioquimico educador social para idosos eletricista enfermeiro prefeitura de mirassol d&#39;oeste - mt abre processo seletivo com salarios de ate r$ 27.645,05">
   <h2>Prefeitura de Mirassol d&#39;Oeste</h2>
   <p class="linha">MT · 205 vagas até R$ 27.645,05 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -252,7 +258,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="advogado" data-texto="camara de colider varios cargos advogado publico agente administrativo assistente tecnico - administrativo assistente tecnico legislativo auxiliar administrativo de pessoal auxiliar de copa e limpeza recepcionista tecnico arquivista telefonista camara de colider - mt abre concurso publico com salarios de ate r$ 4.778,09">
+<article class="concurso" data-uf="MT" data-areas="advogado" data-salario="4778.09" data-texto="camara de colider varios cargos advogado publico agente administrativo assistente tecnico - administrativo assistente tecnico legislativo auxiliar administrativo de pessoal auxiliar de copa e limpeza recepcionista tecnico arquivista telefonista camara de colider - mt abre concurso publico com salarios de ate r$ 4.778,09">
   <h2>Câmara de Colíder</h2>
   <p class="linha">MT · 1 vaga e CR até R$ 4.778,09 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -264,7 +270,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="GO" data-areas="analise_sistemas enfermeiro ti" data-texto="isg - instituto socrates guanaes varios cargos analista de gestao de gente analista de ti assistente social auxiliar administrativo auxiliar de farmacia auxiliar de lavanderia biomedico enfermeiro - scih enfermeiro de educacao continuada fonoaudiologo nutricionista tecnico de enfermagem do trabalho tecnico de nutricao tecnico de saude bucal tecnico de seguranca do trabalho instituto socrates guanaes - go abre processo seletivo para cadastro de reserva">
+<article class="concurso" data-uf="GO" data-areas="analise_sistemas enfermeiro ti" data-salario="4431.4" data-texto="isg - instituto socrates guanaes varios cargos analista de gestao de gente analista de ti assistente social auxiliar administrativo auxiliar de farmacia auxiliar de lavanderia biomedico enfermeiro - scih enfermeiro de educacao continuada fonoaudiologo nutricionista tecnico de enfermagem do trabalho tecnico de nutricao tecnico de saude bucal tecnico de seguranca do trabalho instituto socrates guanaes - go abre processo seletivo para cadastro de reserva">
   <h2>ISG - Instituto Sócrates Guanaes</h2>
   <p class="linha">GO · Cadastro de reserva até R$ 4.431,40 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -276,7 +282,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="enfermeiro" data-texto="prefeitura de pontes e lacerda varios cargos assistente administrativo assistente social assistente social educacional auxiliar de consultorio dentario bioquimico/farmaceutico enfermeiro enfermeiro zona rural fisioterapeuta fonoaudiologo medico 20h medico 40h nutricionista odontologo pedagogo professor - anos iniciais prefeitura de pontes e lacerda - mt abre processo seletivo com salarios de ate r$ 11.308,36">
+<article class="concurso" data-uf="MT" data-areas="enfermeiro" data-salario="11308.36" data-texto="prefeitura de pontes e lacerda varios cargos assistente administrativo assistente social assistente social educacional auxiliar de consultorio dentario bioquimico/farmaceutico enfermeiro enfermeiro zona rural fisioterapeuta fonoaudiologo medico 20h medico 40h nutricionista odontologo pedagogo professor - anos iniciais prefeitura de pontes e lacerda - mt abre processo seletivo com salarios de ate r$ 11.308,36">
   <h2>Prefeitura de Pontes e Lacerda</h2>
   <p class="linha">MT · 47 vagas até R$ 11.308,36 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -289,7 +295,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="SP" data-areas="procurador" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
+<article class="concurso" data-uf="SP" data-areas="procurador" data-salario="5217.7" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
   <h2>Prefeitura de Uru</h2>
   <p class="linha">SP · 6 vagas até R$ 5.217,70 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -301,7 +307,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="prefeitura de guabiju varios cargos agente administrativo agente de combate a endemias assistente social atendente de creche contador instalador monitor de escola e transporte escolar operario professor - anos iniciais professor - artes servente tecnico em contabilidade prefeitura de guabiju - rs abre concurso publico com salarios de ate r$ 6.483,36">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="6483.36" data-texto="prefeitura de guabiju varios cargos agente administrativo agente de combate a endemias assistente social atendente de creche contador instalador monitor de escola e transporte escolar operario professor - anos iniciais professor - artes servente tecnico em contabilidade prefeitura de guabiju - rs abre concurso publico com salarios de ate r$ 6.483,36">
   <h2>Prefeitura de Guabiju</h2>
   <p class="linha">RS · 5 vagas até R$ 6.483,36 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -313,7 +319,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="enfermeiro" data-texto="prefeitura de antonio prado varios cargos agente de manutencao e reparos agente de servicos gerais agente educacional auxiliar em saude bucal - 40h enfermeiro 20h escriturario mecanico medico - ginecologia medico - pediatria medico - psiquiatria motorista operador de maquinas e equipamentos rodoviarios prefeitura de antonio prado - rs abre concurso publico com salarios de ate r$ 10.352,30">
+<article class="concurso" data-uf="RS" data-areas="enfermeiro" data-salario="10352.3" data-texto="prefeitura de antonio prado varios cargos agente de manutencao e reparos agente de servicos gerais agente educacional auxiliar em saude bucal - 40h enfermeiro 20h escriturario mecanico medico - ginecologia medico - pediatria medico - psiquiatria motorista operador de maquinas e equipamentos rodoviarios prefeitura de antonio prado - rs abre concurso publico com salarios de ate r$ 10.352,30">
   <h2>Prefeitura de Antônio Prado</h2>
   <p class="linha">RS · 21 vagas até R$ 10.352,30 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -325,7 +331,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="camara de boa vista do incra agente administrativo, agente de apoio agente administrativo agente de apoio camara de boa vista do incra - rs abre concurso publico para agente administrativo e agente de apoio">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="2072.69" data-texto="camara de boa vista do incra agente administrativo, agente de apoio agente administrativo agente de apoio camara de boa vista do incra - rs abre concurso publico para agente administrativo e agente de apoio">
   <h2>Câmara de Boa Vista do Incra</h2>
   <p class="linha">RS · 2 vagas até R$ 2.072,69 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Agente Administrativo, Agente de Apoio</p>
@@ -337,7 +343,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="enfermeiro" data-texto="prefeitura de piratini varios cargos agente administrativo assistente social auxiliar de saude bucal contador cuidador/educador enfermeiro farmaceutico fiscal tributario mecanico medico medico veterinario motorista odontologo operador de maquinas professor - anos iniciais prefeitura de piratini - rs abre concurso publico com salarios de ate r$ 7.462,95">
+<article class="concurso" data-uf="RS" data-areas="enfermeiro" data-salario="7462.95" data-texto="prefeitura de piratini varios cargos agente administrativo assistente social auxiliar de saude bucal contador cuidador/educador enfermeiro farmaceutico fiscal tributario mecanico medico medico veterinario motorista odontologo operador de maquinas professor - anos iniciais prefeitura de piratini - rs abre concurso publico com salarios de ate r$ 7.462,95">
   <h2>Prefeitura de Piratini</h2>
   <p class="linha">RS · 115 vagas até R$ 7.462,95 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -349,7 +355,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="ti" data-texto="fundacao escola tecnica liberato salzano vieira da cunha varios cargos agente administrativo orientador educacional professor - artes professor - ciencia da computacao professor - design de interiores professor - educacao fisica professor - eletronica professor - eletrotecnica professor - filosofia professor - fisica professor - geografia professor - gestao e empreendedorismo professor - historia professor - lingua portuguesa/inglesa professor - manutencao automotiva fundacao escola tecnica liberato salzano vieira da cunha - rs abre concurso publico para diversos cargos">
+<article class="concurso" data-uf="RS" data-areas="ti" data-salario="10370.94" data-texto="fundacao escola tecnica liberato salzano vieira da cunha varios cargos agente administrativo orientador educacional professor - artes professor - ciencia da computacao professor - design de interiores professor - educacao fisica professor - eletronica professor - eletrotecnica professor - filosofia professor - fisica professor - geografia professor - gestao e empreendedorismo professor - historia professor - lingua portuguesa/inglesa professor - manutencao automotiva fundacao escola tecnica liberato salzano vieira da cunha - rs abre concurso publico para diversos cargos">
   <h2>Fundação Escola Técnica Liberato Salzano Vieira da Cunha</h2>
   <p class="linha">RS · 34 vagas até R$ 10.370,94 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -361,7 +367,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="advogado" data-texto="cau - conselho de arquitetura e urbanismo de santa catarina varios cargos advogado analista administrativo e financeiro analista de compras, contratos e licitacoes arquiteto e urbanista assistente administrativo tecnico em secretariado cau - sc abre concurso publico para cadastro de reserva em florianopolis">
+<article class="concurso" data-uf="SC" data-areas="advogado" data-salario="12383.88" data-texto="cau - conselho de arquitetura e urbanismo de santa catarina varios cargos advogado analista administrativo e financeiro analista de compras, contratos e licitacoes arquiteto e urbanista assistente administrativo tecnico em secretariado cau - sc abre concurso publico para cadastro de reserva em florianopolis">
   <h2>CAU - Conselho de Arquitetura e Urbanismo de Santa Catarina</h2>
   <p class="linha">SC · Vagas até R$ 12.383,88 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -373,7 +379,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de sao carlos varios cargos agente educacional auxiliar administrativo escolar coordenador pedagogico diretor adjunto de escola diretor de escola instrutor de libras interprete educacional de libras professor professor - educacao especial professor - educacao fisica professor - geografia professor - matematica supervisor de ensino prefeitura de sao carlos - sp abre concurso publico com salarios de ate r$ 9.701,00">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="9701" data-texto="prefeitura de sao carlos varios cargos agente educacional auxiliar administrativo escolar coordenador pedagogico diretor adjunto de escola diretor de escola instrutor de libras interprete educacional de libras professor professor - educacao especial professor - educacao fisica professor - geografia professor - matematica supervisor de ensino prefeitura de sao carlos - sp abre concurso publico com salarios de ate r$ 9.701,00">
   <h2>Prefeitura de São Carlos</h2>
   <p class="linha">SP · 21 vagas até R$ 9.701,00 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -385,7 +391,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-salario="6464.59" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
   <h2>Prefeitura de Pirapozinho</h2>
   <p class="linha">SP · Cadastro de reserva até R$ 6.464,59 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -397,7 +403,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil" data-texto="cemmil - consorcio intermunicipal cemmil para o desenvolvimento sustentavel varios cargos auxiliar administrativo coveiro engenheiro civil jardineiro motorista operador de maquinas sepultador servicos gerais consorcio cemmil - sp abre processo seletivo com vagas em carapicuiba">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil" data-salario="6889.64" data-texto="cemmil - consorcio intermunicipal cemmil para o desenvolvimento sustentavel varios cargos auxiliar administrativo coveiro engenheiro civil jardineiro motorista operador de maquinas sepultador servicos gerais consorcio cemmil - sp abre processo seletivo com vagas em carapicuiba">
   <h2>Cemmil - Consórcio Intermunicipal Cemmil para o Desenvolvimento Sustentável</h2>
   <p class="linha">SP · 28 vagas até R$ 6.889,64 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>

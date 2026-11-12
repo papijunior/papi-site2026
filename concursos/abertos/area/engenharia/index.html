@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     <select id="uf" aria-label="Estado"><option value="">Todos os estados</option><option value="AC">AC — Acre</option><option value="AP">AP — Amapá</option><option value="BA">BA — Bahia</option><option value="CE">CE — Ceará</option><option value="DF">DF — Distrito Federal</option><option value="ES">ES — Espírito Santo</option><option value="GO">GO — Goiás</option><option value="MA">MA — Maranhão</option><option value="MT">MT — Mato Grosso</option><option value="MS">MS — Mato Grosso do Sul</option><option value="MG">MG — Minas Gerais</option><option value="PA">PA — Pará</option><option value="PB">PB — Paraíba</option><option value="PR">PR — Paraná</option><option value="PE">PE — Pernambuco</option><option value="PI">PI — Piauí</option><option value="RJ">RJ — Rio de Janeiro</option><option value="RN">RN — Rio Grande do Norte</option><option value="RS">RS — Rio Grande do Sul</option><option value="RO">RO — Rondônia</option><option value="SC">SC — Santa Catarina</option><option value="SP">SP — São Paulo</option><option value="SE">SE — Sergipe</option><option value="TO">TO — Tocantins</option><option value="BR">Nacionais</option></select>
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="SP" data-areas="advogado analise_sistemas enfermeiro ti" data-texto="prefeitura de leme varios cargos advogado do suas analista de tecnologia da informacao biologo biomedico enfermeiro - 180h engenheiro agrimensor engenheiro de seguranca do trabalho fiscal de rendas medico - psiquiatra medico - sanitarista medico do trabalho medico horista medico horista - ginecologista e obstetra medico horista - oftalmologista medico horista - psiquiatra infantil prefeitura de leme - sp abre concurso publico com salarios de ate r$ 13.359,44">
+  <div id="lista"><article class="concurso" data-uf="SP" data-areas="advogado analise_sistemas enfermeiro ti" data-salario="13359.44" data-texto="prefeitura de leme varios cargos advogado do suas analista de tecnologia da informacao biologo biomedico enfermeiro - 180h engenheiro agrimensor engenheiro de seguranca do trabalho fiscal de rendas medico - psiquiatra medico - sanitarista medico do trabalho medico horista medico horista - ginecologista e obstetra medico horista - oftalmologista medico horista - psiquiatra infantil prefeitura de leme - sp abre concurso publico com salarios de ate r$ 13.359,44">
   <h2>Prefeitura de Leme</h2>
   <p class="linha">SP · 29 vagas até R$ 13.359,44 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="analista_judiciario trt" data-texto="trt 4 - tribunal regional do trabalho da 4ª regiao analista judiciario, tecnico judiciario analista judiciario analista judiciario - area administrativa analista judiciario - area judiciaria analista judiciario - arquitetura analista judiciario - biblioteconomia analista judiciario - comunicacao social analista judiciario - contabilidade analista judiciario - engenharia civil analista judiciario - engenharia de seguranca do trabalho analista judiciario - engenharia eletrica analista judiciario - estatistica analista judiciario - medicina (cardiologia) analista judiciario - medicina (psiquiatria) analista judiciario - medicina - clinica geral analista judiciario - medicina do trabalho trt4 - rs abre concurso publico para analistas e tecnicos judiciarios">
+<article class="concurso" data-uf="RS" data-areas="analista_judiciario trt" data-salario="16040.88" data-texto="trt 4 - tribunal regional do trabalho da 4ª regiao analista judiciario, tecnico judiciario analista judiciario analista judiciario - area administrativa analista judiciario - area judiciaria analista judiciario - arquitetura analista judiciario - biblioteconomia analista judiciario - comunicacao social analista judiciario - contabilidade analista judiciario - engenharia civil analista judiciario - engenharia de seguranca do trabalho analista judiciario - engenharia eletrica analista judiciario - estatistica analista judiciario - medicina (cardiologia) analista judiciario - medicina (psiquiatria) analista judiciario - medicina - clinica geral analista judiciario - medicina do trabalho trt4 - rs abre concurso publico para analistas e tecnicos judiciarios">
   <h2>TRT 4 - Tribunal Regional do Trabalho da 4ª Região</h2>
   <p class="linha">RS · Cadastro de reserva até R$ 16.040,88 · Superior</p>
   <p><strong>Cargos:</strong> Analista Judiciário, Técnico Judiciário</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
+<article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-salario="16210" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
   <h2>Prefeitura de Canto do Buriti</h2>
   <p class="linha">PI · 257 vagas até R$ 16.210,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de matao varios cargos agente de fiscalizacao publica - fiscal de comercio, servicos e tributos agente de fiscalizacao publica - fiscal de meio ambiente agente de fiscalizacao publica - fiscal de obras agente de fiscalizacao publica - fiscal de saude publica agente de infraestrutura - agente de apoio ao canil agente de infraestrutura - auxiliar de servicos gerais agente de infraestrutura - coveiro agente de infraestrutura - desenhista projetista agente de infraestrutura - operador de maquina pesada agente de infraestrutura - operador de trator agricola agente de infraestrutura - pedreiro agente de infraestrutura - pintor agente de infraestrutura - topografo agente de mobilidade urbana - fiscal de transito agente de politicas sociais - salva-vidas prefeitura de matao - sp abre concurso publico com salarios de ate r$ 9.717,96">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="9717.96" data-texto="prefeitura de matao varios cargos agente de fiscalizacao publica - fiscal de comercio, servicos e tributos agente de fiscalizacao publica - fiscal de meio ambiente agente de fiscalizacao publica - fiscal de obras agente de fiscalizacao publica - fiscal de saude publica agente de infraestrutura - agente de apoio ao canil agente de infraestrutura - auxiliar de servicos gerais agente de infraestrutura - coveiro agente de infraestrutura - desenhista projetista agente de infraestrutura - operador de maquina pesada agente de infraestrutura - operador de trator agricola agente de infraestrutura - pedreiro agente de infraestrutura - pintor agente de infraestrutura - topografo agente de mobilidade urbana - fiscal de transito agente de politicas sociais - salva-vidas prefeitura de matao - sp abre concurso publico com salarios de ate r$ 9.717,96">
   <h2>Prefeitura de Matão</h2>
   <p class="linha">SP · 28 vagas até R$ 9.717,96 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="BR" data-areas="redes" data-texto="camara dos deputados analista legislativo, engenheiro, museologo analista legislativo - arquivologia analista legislativo - biblioteconomia analista legislativo - divulgacao institucional analista legislativo - engenharia civil analista legislativo - engenharia eletrica analista legislativo - engenharia eletronica/telecomunicacoes analista legislativo - engenharia mecanica analista legislativo - jornalismo analista legislativo - museologo analista legislativo - registro e redacao analista legislativo - relacoes publicas camara dos deputados retifica concurso publico para analistas legislativos">
+<article class="concurso" data-uf="BR" data-areas="redes" data-salario="32070.88" data-texto="camara dos deputados analista legislativo, engenheiro, museologo analista legislativo - arquivologia analista legislativo - biblioteconomia analista legislativo - divulgacao institucional analista legislativo - engenharia civil analista legislativo - engenharia eletrica analista legislativo - engenharia eletronica/telecomunicacoes analista legislativo - engenharia mecanica analista legislativo - jornalismo analista legislativo - museologo analista legislativo - registro e redacao analista legislativo - relacoes publicas camara dos deputados retifica concurso publico para analistas legislativos">
   <h2>Câmara dos Deputados</h2>
   <p class="linha">Nacional · 184 vagas até R$ 32.070,88 · Superior</p>
   <p><strong>Cargos:</strong> Analista Legislativo, Engenheiro, Museólogo</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-salario="10428.05" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
   <h2>SETEC - Serviços Técnicos Gerais de Campinas</h2>
   <p class="linha">SP · 39 vagas até R$ 10.428,05 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="analise_sistemas ti" data-texto="prefeitura de contagem varios cargos analista de ti arquiteto arquivista assistente administrativo assistente social auditor de controle interno - ciencias contabeis auditor de controle interno - direito auditor de controle interno - engenharia civil auditor de controle interno - tecnologia da informacao biologo contador economista engenheiro agrimensor engenheiro agronomo engenheiro ambiental prefeitura de contagem - mg retifica edital de concurso publico">
+<article class="concurso" data-uf="MG" data-areas="analise_sistemas ti" data-salario="13305.57" data-texto="prefeitura de contagem varios cargos analista de ti arquiteto arquivista assistente administrativo assistente social auditor de controle interno - ciencias contabeis auditor de controle interno - direito auditor de controle interno - engenharia civil auditor de controle interno - tecnologia da informacao biologo contador economista engenheiro agrimensor engenheiro agronomo engenheiro ambiental prefeitura de contagem - mg retifica edital de concurso publico">
   <h2>Prefeitura de Contagem</h2>
   <p class="linha">MG · 272 vagas até R$ 13.305,57 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -131,7 +137,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="BA" data-areas="" data-texto="prefeitura de tucano varios cargos engenheiro ambiental fiscal de meio ambiente geologo professor prefeitura de tucano - ba abre processo seletivo com 83 vagas">
+<article class="concurso" data-uf="BA" data-areas="" data-salario="3000" data-texto="prefeitura de tucano varios cargos engenheiro ambiental fiscal de meio ambiente geologo professor prefeitura de tucano - ba abre processo seletivo com 83 vagas">
   <h2>Prefeitura de Tucano</h2>
   <p class="linha">BA · 83 vagas até R$ 3.000,00 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -143,7 +149,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="administrador advogado" data-texto="prefeitura de boa viagem varios cargos administrador advogado agente administrativo agente fiscal de tributos agente municipal de transito agente sanitarista analista ambiental analista de controle interno arquiteto assistente social assistente tecnico auxiliar de administracao auxiliar de gesso auxiliar de servicos gerais auxiliar em saude bucal prefeitura de boa viagem - ce abre concurso publico com vagas para diversas areas de atuacao">
+<article class="concurso" data-uf="CE" data-areas="administrador advogado" data-salario="14718.92" data-texto="prefeitura de boa viagem varios cargos administrador advogado agente administrativo agente fiscal de tributos agente municipal de transito agente sanitarista analista ambiental analista de controle interno arquiteto assistente social assistente tecnico auxiliar de administracao auxiliar de gesso auxiliar de servicos gerais auxiliar em saude bucal prefeitura de boa viagem - ce abre concurso publico com vagas para diversas areas de atuacao">
   <h2>Prefeitura de Boa Viagem</h2>
   <p class="linha">CE · 1001 vagas até R$ 14.718,92 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -155,7 +161,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="" data-texto="prefeitura de oros varios cargos agente de transito auxiliar de auditoria interna auxiliar de servicos gerais eletricista engenheiro de pesca fiscal de tributos guarda municipal medico veterinario pedreiro pintor professor - anos iniciais professor - artes professor - ciencias professor - educacao fisica professor - geografia prefeitura de oros - ce abre concurso publico com vagas para diversas areas">
+<article class="concurso" data-uf="CE" data-areas="" data-salario="3606.93" data-texto="prefeitura de oros varios cargos agente de transito auxiliar de auditoria interna auxiliar de servicos gerais eletricista engenheiro de pesca fiscal de tributos guarda municipal medico veterinario pedreiro pintor professor - anos iniciais professor - artes professor - ciencias professor - educacao fisica professor - geografia prefeitura de oros - ce abre concurso publico com vagas para diversas areas">
   <h2>Prefeitura de Orós</h2>
   <p class="linha">CE · 95 vagas até R$ 3.606,93 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -168,7 +174,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MT" data-areas="advogado enfermeiro" data-texto="prefeitura de mirassol d&#39;oeste varios cargos advogado - 20h agente administrativo arquiteto e urbanista assistente social atendente de farmacia auxiliar administrativo auxiliar de desenvolvimento infantil auxiliar de inspecao auxiliar de inspetoria de produtos de origem animal auxiliar de laboratorio auxiliar de manutencao bioquimico educador social para idosos eletricista enfermeiro prefeitura de mirassol d&#39;oeste - mt abre processo seletivo com salarios de ate r$ 27.645,05">
+<article class="concurso" data-uf="MT" data-areas="advogado enfermeiro" data-salario="27645.05" data-texto="prefeitura de mirassol d&#39;oeste varios cargos advogado - 20h agente administrativo arquiteto e urbanista assistente social atendente de farmacia auxiliar administrativo auxiliar de desenvolvimento infantil auxiliar de inspecao auxiliar de inspetoria de produtos de origem animal auxiliar de laboratorio auxiliar de manutencao bioquimico educador social para idosos eletricista enfermeiro prefeitura de mirassol d&#39;oeste - mt abre processo seletivo com salarios de ate r$ 27.645,05">
   <h2>Prefeitura de Mirassol d&#39;Oeste</h2>
   <p class="linha">MT · 205 vagas até R$ 27.645,05 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -180,7 +186,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="enfermeiro" data-texto="prefeitura de brasnorte varios cargos assistente de saude assistente social enfermeiro engenheiro florestal farmaceutico-bioquimico fisioterapeuta fonoaudiologo nutricionista odontologo psicologo tecnico agropecuario tecnico florestal terapeuta ocupacional prefeitura de brasnorte - mt abre processo seletivo para cadastro de reserva">
+<article class="concurso" data-uf="MT" data-areas="enfermeiro" data-salario="6697.17" data-texto="prefeitura de brasnorte varios cargos assistente de saude assistente social enfermeiro engenheiro florestal farmaceutico-bioquimico fisioterapeuta fonoaudiologo nutricionista odontologo psicologo tecnico agropecuario tecnico florestal terapeuta ocupacional prefeitura de brasnorte - mt abre processo seletivo para cadastro de reserva">
   <h2>Prefeitura de Brasnorte</h2>
   <p class="linha">MT · Cadastro de reserva até R$ 6.697,17 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -192,7 +198,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="programacao" data-texto="seciteci - secretaria de estado de ciencia, tecnologia e inovacao de mato grosso varios cargos professor - administracao e gestao professor - agricultura professor - agrimensura professor - agroecologia e producao vegetal professor - agroindustria professor - analise e desenvolvimento de sistemas professor - apicultura e meliponicultura professor - aquicultura professor - arquitetura e urbanismo professor - artes professor - automacao professor - biologia professor - biomedicina professor - bioquimica professor - comercio e marketing seciteci - mt abre selecao para formacao de cadastro de reserva">
+<article class="concurso" data-uf="MT" data-areas="programacao" data-salario="12937.29" data-texto="seciteci - secretaria de estado de ciencia, tecnologia e inovacao de mato grosso varios cargos professor - administracao e gestao professor - agricultura professor - agrimensura professor - agroecologia e producao vegetal professor - agroindustria professor - analise e desenvolvimento de sistemas professor - apicultura e meliponicultura professor - aquicultura professor - arquitetura e urbanismo professor - artes professor - automacao professor - biologia professor - biomedicina professor - bioquimica professor - comercio e marketing seciteci - mt abre selecao para formacao de cadastro de reserva">
   <h2>SECITECI - Secretaria de Estado de Ciência, Tecnologia e Inovação de Mato Grosso</h2>
   <p class="linha">MT · Cadastro de Reserva até R$ 12.937,29 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -204,7 +210,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="advogado" data-texto="cau - conselho de arquitetura e urbanismo de santa catarina varios cargos advogado analista administrativo e financeiro analista de compras, contratos e licitacoes arquiteto e urbanista assistente administrativo tecnico em secretariado cau - sc abre concurso publico para cadastro de reserva em florianopolis">
+<article class="concurso" data-uf="SC" data-areas="advogado" data-salario="12383.88" data-texto="cau - conselho de arquitetura e urbanismo de santa catarina varios cargos advogado analista administrativo e financeiro analista de compras, contratos e licitacoes arquiteto e urbanista assistente administrativo tecnico em secretariado cau - sc abre concurso publico para cadastro de reserva em florianopolis">
   <h2>CAU - Conselho de Arquitetura e Urbanismo de Santa Catarina</h2>
   <p class="linha">SC · Vagas até R$ 12.383,88 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -216,7 +222,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="engenheiro_civil" data-texto="prefeitura de faxinal dos guedes varios cargos agente de manutencao e conservacao agente de servicos gerais assistente social auxiliar de ensino cozinheiro engenheiro civil farmaceutico medico - especialista em endocrinologia motorista nutricionista operador de maquinas professor - anos iniciais professor - artes professor - ciencias professor - educacao especial prefeitura de faxinal dos guedes - sc abre concurso publico e processo seletivo com salarios de ate r$ 7.454,79">
+<article class="concurso" data-uf="SC" data-areas="engenheiro_civil" data-salario="7454.79" data-texto="prefeitura de faxinal dos guedes varios cargos agente de manutencao e conservacao agente de servicos gerais assistente social auxiliar de ensino cozinheiro engenheiro civil farmaceutico medico - especialista em endocrinologia motorista nutricionista operador de maquinas professor - anos iniciais professor - artes professor - ciencias professor - educacao especial prefeitura de faxinal dos guedes - sc abre concurso publico e processo seletivo com salarios de ate r$ 7.454,79">
   <h2>Prefeitura de Faxinal dos Guedes</h2>
   <p class="linha">SC · 12 vagas até R$ 7.454,79 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -228,7 +234,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="redes ti" data-texto="ifsp - instituto federal de educacao, ciencia e tecnologia de sao paulo professor substituto professor substituto - informatica professor substituto - informatica - arquitetura de redes de computadores ifsp retifica processo seletivo com vagas para professores substitutos">
+<article class="concurso" data-uf="SP" data-areas="redes ti" data-salario="8340.33" data-texto="ifsp - instituto federal de educacao, ciencia e tecnologia de sao paulo professor substituto professor substituto - informatica professor substituto - informatica - arquitetura de redes de computadores ifsp retifica processo seletivo com vagas para professores substitutos">
   <h2>IFSP - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</h2>
   <p class="linha">SP · 79 vagas até R$ 8.340,33 · Superior</p>
   <p><strong>Cargos:</strong> Professor Substituto</p>
@@ -240,7 +246,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MS" data-areas="ti" data-texto="ufms - fundacao universidade federal de mato grosso do sul professor visitante professor visitante professor visitante - administracao professor visitante - agronomia professor visitante - antropologia social professor visitante - arquitetura e urbanismo professor visitante - biologia animal professor visitante - biologia vegetal professor visitante - biotecnologia professor visitante - ciencia animal professor visitante - ciencia da computacao professor visitante - ciencia dos materiais professor visitante - ciencias contabeis professor visitante - ciencias do movimento professor visitante - ciencias farmaceuticas professor visitante - ciencias veterinarias professor visitante - computacao aplicada professor visitante - comunicacao professor visitante - direito professor visitante - doencas infecciosas e parasitarias professor visitante - ecologia e conservacao professor visitante - educacao professor visitante - educacao matematica professor visitante - eficiencia energetica e sustentabilidade professor visitante - enfermagem professor visitante - engenharia de producao professor visitante - engenharia eletrica professor visitante - ensino de ciencias professor visitante - estudos culturais professor visitante - estudos de linguagens professor visitante - estudos fronteiricos professor visitante - filosofia professor visitante - geografia professor visitante - letras professor visitante - psicologia professor visitante - quimica professor visitante - recursos naturais professor visitante - saude da familia professor visitante - saude e desenvolvimento na regiao centro-oeste professor visitante - tecnologias ambientais ufms abre processos seletivos para professores visitantes">
+<article class="concurso" data-uf="MS" data-areas="ti" data-salario="13753.96" data-texto="ufms - fundacao universidade federal de mato grosso do sul professor visitante professor visitante professor visitante - administracao professor visitante - agronomia professor visitante - antropologia social professor visitante - arquitetura e urbanismo professor visitante - biologia animal professor visitante - biologia vegetal professor visitante - biotecnologia professor visitante - ciencia animal professor visitante - ciencia da computacao professor visitante - ciencia dos materiais professor visitante - ciencias contabeis professor visitante - ciencias do movimento professor visitante - ciencias farmaceuticas professor visitante - ciencias veterinarias professor visitante - computacao aplicada professor visitante - comunicacao professor visitante - direito professor visitante - doencas infecciosas e parasitarias professor visitante - ecologia e conservacao professor visitante - educacao professor visitante - educacao matematica professor visitante - eficiencia energetica e sustentabilidade professor visitante - enfermagem professor visitante - engenharia de producao professor visitante - engenharia eletrica professor visitante - ensino de ciencias professor visitante - estudos culturais professor visitante - estudos de linguagens professor visitante - estudos fronteiricos professor visitante - filosofia professor visitante - geografia professor visitante - letras professor visitante - psicologia professor visitante - quimica professor visitante - recursos naturais professor visitante - saude da familia professor visitante - saude e desenvolvimento na regiao centro-oeste professor visitante - tecnologias ambientais ufms abre processos seletivos para professores visitantes">
   <h2>UFMS - Fundação Universidade Federal de Mato Grosso do Sul</h2>
   <p class="linha">MS · 79 vagas até R$ 13753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor Visitante</p>
@@ -252,7 +258,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
+<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-salario="7991.27" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
   <h2>Prefeitura de Tapiraí</h2>
   <p class="linha">SP · 24 vagas até R$ 7.991,27 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -264,7 +270,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-salario="6464.59" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
   <h2>Prefeitura de Pirapozinho</h2>
   <p class="linha">SP · Cadastro de reserva até R$ 6.464,59 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -276,7 +282,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil" data-texto="cemmil - consorcio intermunicipal cemmil para o desenvolvimento sustentavel varios cargos auxiliar administrativo coveiro engenheiro civil jardineiro motorista operador de maquinas sepultador servicos gerais consorcio cemmil - sp abre processo seletivo com vagas em carapicuiba">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil" data-salario="6889.64" data-texto="cemmil - consorcio intermunicipal cemmil para o desenvolvimento sustentavel varios cargos auxiliar administrativo coveiro engenheiro civil jardineiro motorista operador de maquinas sepultador servicos gerais consorcio cemmil - sp abre processo seletivo com vagas em carapicuiba">
   <h2>Cemmil - Consórcio Intermunicipal Cemmil para o Desenvolvimento Sustentável</h2>
   <p class="linha">SP · 28 vagas até R$ 6.889,64 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -289,7 +295,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="SC" data-areas="engenheiro_civil" data-texto="prefeitura de ibirama varios cargos engenheiro civil prefeitura de ibirama - sc abre concurso publico com salarios de ate r$ 20.364,15">
+<article class="concurso" data-uf="SC" data-areas="engenheiro_civil" data-salario="20364.15" data-texto="prefeitura de ibirama varios cargos engenheiro civil prefeitura de ibirama - sc abre concurso publico com salarios de ate r$ 20.364,15">
   <h2>Prefeitura de Ibirama</h2>
   <p class="linha">SC · 10 vagas até R$ 20.364,15 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -301,7 +307,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="engenheiro_civil" data-texto="prefeitura de bom retiro varios cargos engenheiro civil prefeitura de bom retiro - sc abre concurso publico com salarios de ate r$ 20.138,46">
+<article class="concurso" data-uf="SC" data-areas="engenheiro_civil" data-salario="20138.46" data-texto="prefeitura de bom retiro varios cargos engenheiro civil prefeitura de bom retiro - sc abre concurso publico com salarios de ate r$ 20.138,46">
   <h2>Prefeitura de Bom Retiro</h2>
   <p class="linha">SC · 66 vagas até R$ 20.138,46 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -313,7 +319,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PE" data-areas="engenheiro_civil" data-texto="prefeitura de goiana varios cargos engenheiro civil prefeitura de goiana - pe retifica edital de selecao publica">
+<article class="concurso" data-uf="PE" data-areas="engenheiro_civil" data-salario="8926.43" data-texto="prefeitura de goiana varios cargos engenheiro civil prefeitura de goiana - pe retifica edital de selecao publica">
   <h2>Prefeitura de Goiana</h2>
   <p class="linha">PE · 166 vagas até R$ 8.926,43 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -325,7 +331,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="engenheiro_civil" data-texto="sudecap - superintendencia de desenvolvimento da capital varios cargos engenheiro civil engenheiro de producao civil sudecap - mg abre processo seletivo com salarios de ate r$ 9.375,06">
+<article class="concurso" data-uf="MG" data-areas="engenheiro_civil" data-salario="9375.06" data-texto="sudecap - superintendencia de desenvolvimento da capital varios cargos engenheiro civil engenheiro de producao civil sudecap - mg abre processo seletivo com salarios de ate r$ 9.375,06">
   <h2>SUDECAP - Superintendência de Desenvolvimento da Capital</h2>
   <p class="linha">MG · 27 vagas até R$ 9.375,06 · Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -337,7 +343,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="engenheiro_civil" data-texto="prefeitura de aracuai varios cargos engenheiro civil prefeitura de aracuai - mg abre processo seletivo para diversos cargos">
+<article class="concurso" data-uf="MG" data-areas="engenheiro_civil" data-salario="5122.14" data-texto="prefeitura de aracuai varios cargos engenheiro civil prefeitura de aracuai - mg abre processo seletivo para diversos cargos">
   <h2>Prefeitura de Araçuaí</h2>
   <p class="linha">MG · 13 vagas até R$ 5.122,14 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -349,7 +355,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="engenheiro_civil" data-texto="prefeitura de sao joao del-rei e damae - departamento autonomo municipal de agua e esgoto varios cargos engenheiro civil prefeitura de sao joao del-rei e damae - mg abrem concursos com salarios de ate r$ 6.469,28">
+<article class="concurso" data-uf="MG" data-areas="engenheiro_civil" data-salario="6469.28" data-texto="prefeitura de sao joao del-rei e damae - departamento autonomo municipal de agua e esgoto varios cargos engenheiro civil prefeitura de sao joao del-rei e damae - mg abrem concursos com salarios de ate r$ 6.469,28">
   <h2>Prefeitura de São João del-Rei e DAMAE - Departamento Autônomo Municipal de Água e Esgoto</h2>
   <p class="linha">MG · 116 vagas até R$ 6.469,28 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>

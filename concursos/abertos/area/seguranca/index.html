@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     <select id="uf" aria-label="Estado"><option value="">Todos os estados</option><option value="AC">AC — Acre</option><option value="AP">AP — Amapá</option><option value="BA">BA — Bahia</option><option value="CE">CE — Ceará</option><option value="DF">DF — Distrito Federal</option><option value="ES">ES — Espírito Santo</option><option value="GO">GO — Goiás</option><option value="MA">MA — Maranhão</option><option value="MT">MT — Mato Grosso</option><option value="MS">MS — Mato Grosso do Sul</option><option value="MG">MG — Minas Gerais</option><option value="PA">PA — Pará</option><option value="PB">PB — Paraíba</option><option value="PR">PR — Paraná</option><option value="PE">PE — Pernambuco</option><option value="PI">PI — Piauí</option><option value="RJ">RJ — Rio de Janeiro</option><option value="RN">RN — Rio Grande do Norte</option><option value="RS">RS — Rio Grande do Sul</option><option value="RO">RO — Rondônia</option><option value="SC">SC — Santa Catarina</option><option value="SP">SP — São Paulo</option><option value="SE">SE — Sergipe</option><option value="TO">TO — Tocantins</option><option value="BR">Nacionais</option></select>
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de nova odessa guarda municipal - 3ª classe guarda municipal - 3ª classe concurso publico - 01/2026 - prefeitura municipal de nova odessa">
+  <div id="lista"><article class="concurso" data-uf="SP" data-areas="" data-salario="3788.37" data-texto="prefeitura de nova odessa guarda municipal - 3ª classe guarda municipal - 3ª classe concurso publico - 01/2026 - prefeitura municipal de nova odessa">
   <h2>Prefeitura de Nova Odessa</h2>
   <p class="linha">SP · 6 vagas até R$ 3.788,37 · Médio</p>
   <p><strong>Cargos:</strong> Guarda Municipal - 3ª Classe</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de suzano varios cargos agente de seguranca escolar agente escolar auxiliar de atividades escolares auxiliar de secretaria contador cozinheiro escolar diretor de escola medico - ginecologia (10h) medico - ginecologia (20h) medico - neurologia 10h medico - neurologia 20h medico - pediatria (10h) medico - pediatria (20h) medico - pediatria plantonista 24h medico - urologia 20h prefeitura de suzano - sp abre concurso publico com salarios de ate r$ 12.062,91">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="12062.91" data-texto="prefeitura de suzano varios cargos agente de seguranca escolar agente escolar auxiliar de atividades escolares auxiliar de secretaria contador cozinheiro escolar diretor de escola medico - ginecologia (10h) medico - ginecologia (20h) medico - neurologia 10h medico - neurologia 20h medico - pediatria (10h) medico - pediatria (20h) medico - pediatria plantonista 24h medico - urologia 20h prefeitura de suzano - sp abre concurso publico com salarios de ate r$ 12.062,91">
   <h2>Prefeitura de Suzano</h2>
   <p class="linha">SP · 73 vagas até R$ 12.062,91 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
+<article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-salario="16210" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
   <h2>Prefeitura de Canto do Buriti</h2>
   <p class="linha">PI · 257 vagas até R$ 16.210,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PE" data-areas="" data-texto="pc - policia civil agente de policia, delegado de policia, escrivao de policia agente de policia delegado de policia escrivao de policia secretaria de defesa social e de administracao - pe retificam concurso para a policia civil">
+<article class="concurso" data-uf="PE" data-areas="" data-salario="13560" data-texto="pc - policia civil agente de policia, delegado de policia, escrivao de policia agente de policia delegado de policia escrivao de policia secretaria de defesa social e de administracao - pe retificam concurso para a policia civil">
   <h2>PC - Polícia Civil</h2>
   <p class="linha">PE · 1.315 vagas até R$ 13.560,00 · Superior</p>
   <p><strong>Cargos:</strong> Agente de Polícia, Delegado de Polícia, Escrivão de Polícia</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PE" data-areas="" data-texto="cbm - corpo de bombeiros militar soldado, 2º tenente 2º tenente do corpo de bombeiros militar soldado do corpo de bombeiros militar secretaria de defesa social - pe retifica concurso com 570 vagas para bombeiros">
+<article class="concurso" data-uf="PE" data-areas="" data-salario="12937.33" data-texto="cbm - corpo de bombeiros militar soldado, 2º tenente 2º tenente do corpo de bombeiros militar soldado do corpo de bombeiros militar secretaria de defesa social - pe retifica concurso com 570 vagas para bombeiros">
   <h2>CBM - Corpo de Bombeiros Militar</h2>
   <p class="linha">PE · 570 vagas até R$ 12.937,33 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Soldado, 2º Tenente</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PE" data-areas="" data-texto="pmpe - policia militar de pernambuco soldado, 2º tenente 2º tenente 2º tenente - cirurgia geral 2º tenente - clinica geral 2º tenente - dentista soldado pmpe altera periodo de inscricao para concurso publico de soldados e oficiais">
+<article class="concurso" data-uf="PE" data-areas="" data-salario="12937.33" data-texto="pmpe - policia militar de pernambuco soldado, 2º tenente 2º tenente 2º tenente - cirurgia geral 2º tenente - clinica geral 2º tenente - dentista soldado pmpe altera periodo de inscricao para concurso publico de soldados e oficiais">
   <h2>PMPE - Polícia Militar de Pernambuco</h2>
   <p class="linha">PE · 1320 vagas até R$ 12.937,33 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Soldado, 2º Tenente</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RJ" data-areas="" data-texto="prefeitura de sao goncalo guarda municipal nivel ii, guarda municipal nivel iii - psicologo guarda municipal guarda municipal - psicologo prefeitura de sao goncalo - rj abre concursos para guardas municipais">
+<article class="concurso" data-uf="RJ" data-areas="" data-salario="4535.54" data-texto="prefeitura de sao goncalo guarda municipal nivel ii, guarda municipal nivel iii - psicologo guarda municipal guarda municipal - psicologo prefeitura de sao goncalo - rj abre concursos para guardas municipais">
   <h2>Prefeitura de São Gonçalo</h2>
   <p class="linha">RJ · 101 vagas até R$ 4.535,54 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Guarda Municipal Nível II, Guarda Municipal Nível III - Psicólogo</p>
@@ -131,7 +137,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MG" data-areas="" data-texto="pmmg - policia militar de minas gerais cadete do curso de formacao de oficiais cadete do curso de formacao de oficiais da pmmg pmmg abre concurso com 90 vagas para o curso de formacao de oficiais">
+<article class="concurso" data-uf="MG" data-areas="" data-salario="12170.61" data-texto="pmmg - policia militar de minas gerais cadete do curso de formacao de oficiais cadete do curso de formacao de oficiais da pmmg pmmg abre concurso com 90 vagas para o curso de formacao de oficiais">
   <h2>PMMG - Polícia Militar de Minas Gerais</h2>
   <p class="linha">MG · 90 vagas até R$ 12.170,61 · Superior</p>
   <p><strong>Cargos:</strong> Cadete do Curso de Formação de Oficiais</p>
@@ -143,7 +149,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
+<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-salario="6000" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
   <h2>Prefeitura de Pedra Branca do Amapari</h2>
   <p class="linha">AP · 171 vagas até R$ 6.000,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -155,7 +161,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="AC" data-areas="ti" data-texto="pcac - policia civil do estado do acre varios cargos auxiliar de necropsia delegado de policia civil oficial investigador de policia papiloscopista policial perito criminal - ciencias biologicas perito criminal - engenharia civil perito criminal - informatica forense perito criminal - medicina veterinaria perito criminal - quimica perito criminal ambiental perito medico legista - psiquiatria perito medico-legista - medicina legal geral policia civil do estado do acre (pcac) e sead - ac abrem concurso publico com salarios de ate r$ 19.505,66">
+<article class="concurso" data-uf="AC" data-areas="ti" data-salario="19505.66" data-texto="pcac - policia civil do estado do acre varios cargos auxiliar de necropsia delegado de policia civil oficial investigador de policia papiloscopista policial perito criminal - ciencias biologicas perito criminal - engenharia civil perito criminal - informatica forense perito criminal - medicina veterinaria perito criminal - quimica perito criminal ambiental perito medico legista - psiquiatria perito medico-legista - medicina legal geral policia civil do estado do acre (pcac) e sead - ac abrem concurso publico com salarios de ate r$ 19.505,66">
   <h2>PCAC - Polícia Civil do Estado do Acre</h2>
   <p class="linha">AC · 139 vagas até R$ 19.505,66 · Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -168,7 +174,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="PA" data-areas="" data-texto="prefeitura de marituba guarda civil municipal guarda civil municipal prefeitura de marituba - pa reabre inscricoes de concurso publico para guarda civil">
+<article class="concurso" data-uf="PA" data-areas="" data-salario="1800" data-texto="prefeitura de marituba guarda civil municipal guarda civil municipal prefeitura de marituba - pa reabre inscricoes de concurso publico para guarda civil">
   <h2>Prefeitura de Marituba</h2>
   <p class="linha">PA · 60 vagas até R$ 1.800,00 · Ensino Médio</p>
   <p><strong>Cargos:</strong> Guarda Civil Municipal</p>
@@ -180,7 +186,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="BA" data-areas="" data-texto="camara de santa rita de cassia varios cargos auxiliar de servicos gerais auxiliar legislativo motorista porteiro redator de debates vigilante camara de santa rita de cassia - ba abre concurso publico com 12 vagas">
+<article class="concurso" data-uf="BA" data-areas="" data-salario="1728" data-texto="camara de santa rita de cassia varios cargos auxiliar de servicos gerais auxiliar legislativo motorista porteiro redator de debates vigilante camara de santa rita de cassia - ba abre concurso publico com 12 vagas">
   <h2>Câmara de Santa Rita de Cássia</h2>
   <p class="linha">BA · 12 vagas até R$ 1.728,00 · Fundamental / Médio</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -192,7 +198,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PE" data-areas="" data-texto="seap - secretaria de administracao penitenciaria e ressocializacao policial penal policial penal seap - pe abre concurso publico com 700 vagas para policial penal">
+<article class="concurso" data-uf="PE" data-areas="" data-salario="5667.92" data-texto="seap - secretaria de administracao penitenciaria e ressocializacao policial penal policial penal seap - pe abre concurso publico com 700 vagas para policial penal">
   <h2>SEAP - Secretaria de Administração Penitenciária e Ressocialização</h2>
   <p class="linha">PE · 700 vagas até R$ 5.667,92 · Superior</p>
   <p><strong>Cargos:</strong> Policial Penal</p>
@@ -204,7 +210,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="" data-texto="prefeitura de oros varios cargos agente de transito auxiliar de auditoria interna auxiliar de servicos gerais eletricista engenheiro de pesca fiscal de tributos guarda municipal medico veterinario pedreiro pintor professor - anos iniciais professor - artes professor - ciencias professor - educacao fisica professor - geografia prefeitura de oros - ce abre concurso publico com vagas para diversas areas">
+<article class="concurso" data-uf="CE" data-areas="" data-salario="3606.93" data-texto="prefeitura de oros varios cargos agente de transito auxiliar de auditoria interna auxiliar de servicos gerais eletricista engenheiro de pesca fiscal de tributos guarda municipal medico veterinario pedreiro pintor professor - anos iniciais professor - artes professor - ciencias professor - educacao fisica professor - geografia prefeitura de oros - ce abre concurso publico com vagas para diversas areas">
   <h2>Prefeitura de Orós</h2>
   <p class="linha">CE · 95 vagas até R$ 3.606,93 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -216,7 +222,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="pm - policia militar do estado de sao paulo aluno-soldado pm aluno soldado pm policia militar - sp abre 2.000 vagas para aluno-soldado">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="5482.21" data-texto="pm - policia militar do estado de sao paulo aluno-soldado pm aluno soldado pm policia militar - sp abre 2.000 vagas para aluno-soldado">
   <h2>PM - Polícia Militar do Estado de São Paulo</h2>
   <p class="linha">SP · 2.000 vagas até R$ 5.482,21 · Ensino Médio</p>
   <p><strong>Cargos:</strong> Aluno-Soldado PM</p>
@@ -228,7 +234,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="" data-texto="pmsc - policia militar de santa catarina soldado do quadro de pracas policial militar soldado do quadro de pracas policial militar pmsc retifica concurso para soldados do quadro de pracas policial militar">
+<article class="concurso" data-uf="SC" data-areas="" data-salario="8505" data-texto="pmsc - policia militar de santa catarina soldado do quadro de pracas policial militar soldado do quadro de pracas policial militar pmsc retifica concurso para soldados do quadro de pracas policial militar">
   <h2>PMSC - Polícia Militar de Santa Catarina</h2>
   <p class="linha">SC · 500 vagas até R$ 8.505,00 · Superior</p>
   <p><strong>Cargos:</strong> Soldado do Quadro de Praças Policial Militar</p>
@@ -240,7 +246,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura da estancia turistica de sao roque guarda civil municipal de 3ª classe guarda civil municipal prefeitura de sao roque - sp prorroga inscricoes de concurso publico para guarda civil municipal">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="2220.94" data-texto="prefeitura da estancia turistica de sao roque guarda civil municipal de 3ª classe guarda civil municipal prefeitura de sao roque - sp prorroga inscricoes de concurso publico para guarda civil municipal">
   <h2>Prefeitura da Estância Turística de São Roque</h2>
   <p class="linha">SP · 30 vagas até R$ 2.220,94 · Ensino Médio</p>
   <p><strong>Cargos:</strong> Guarda Civil Municipal de 3ª Classe</p>

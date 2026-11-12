@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="SP" data-areas="juridico" data-texto="prefeitura de louveira varios cargos assistente juridico contador escriturario fiscal municipal professor - artes professor - educacao fisica professor - ensino basico professor - ingles prefeitura de louveira - sp abre concursos com vagas imediatas e cadastro de reserva">
+  <div id="lista"><article class="concurso" data-uf="SP" data-areas="juridico" data-salario="8738" data-texto="prefeitura de louveira varios cargos assistente juridico contador escriturario fiscal municipal professor - artes professor - educacao fisica professor - ensino basico professor - ingles prefeitura de louveira - sp abre concursos com vagas imediatas e cadastro de reserva">
   <h2>Prefeitura de Louveira</h2>
   <p class="linha">SP · 19 vagas até R$ 8.738,00 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-salario="10428.05" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
   <h2>SETEC - Serviços Técnicos Gerais de Campinas</h2>
   <p class="linha">SP · 39 vagas até R$ 10.428,05 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="procurador" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
+<article class="concurso" data-uf="SP" data-areas="procurador" data-salario="5217.7" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
   <h2>Prefeitura de Uru</h2>
   <p class="linha">SP · 6 vagas até R$ 5.217,70 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de sao carlos varios cargos agente educacional auxiliar administrativo escolar coordenador pedagogico diretor adjunto de escola diretor de escola instrutor de libras interprete educacional de libras professor professor - educacao especial professor - educacao fisica professor - geografia professor - matematica supervisor de ensino prefeitura de sao carlos - sp abre concurso publico com salarios de ate r$ 9.701,00">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="9701" data-texto="prefeitura de sao carlos varios cargos agente educacional auxiliar administrativo escolar coordenador pedagogico diretor adjunto de escola diretor de escola instrutor de libras interprete educacional de libras professor professor - educacao especial professor - educacao fisica professor - geografia professor - matematica supervisor de ensino prefeitura de sao carlos - sp abre concurso publico com salarios de ate r$ 9.701,00">
   <h2>Prefeitura de São Carlos</h2>
   <p class="linha">SP · 21 vagas até R$ 9.701,00 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-salario="6464.59" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
   <h2>Prefeitura de Pirapozinho</h2>
   <p class="linha">SP · Cadastro de reserva até R$ 6.464,59 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil" data-texto="cemmil - consorcio intermunicipal cemmil para o desenvolvimento sustentavel varios cargos auxiliar administrativo coveiro engenheiro civil jardineiro motorista operador de maquinas sepultador servicos gerais consorcio cemmil - sp abre processo seletivo com vagas em carapicuiba">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil" data-salario="6889.64" data-texto="cemmil - consorcio intermunicipal cemmil para o desenvolvimento sustentavel varios cargos auxiliar administrativo coveiro engenheiro civil jardineiro motorista operador de maquinas sepultador servicos gerais consorcio cemmil - sp abre processo seletivo com vagas em carapicuiba">
   <h2>Cemmil - Consórcio Intermunicipal Cemmil para o Desenvolvimento Sustentável</h2>
   <p class="linha">SP · 28 vagas até R$ 6.889,64 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>

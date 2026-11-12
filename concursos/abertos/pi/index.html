@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
+  <div id="lista"><article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-salario="16210" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
   <h2>Prefeitura de Canto do Buriti</h2>
   <p class="linha">PI · 257 vagas até R$ 16.210,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="suporte ti" data-texto="prefeitura de belem do piaui varios cargos tecnico de informatica prefeitura de belem do piaui - pi abre concurso com remuneracoes de ate r$ 12.000,00">
+<article class="concurso" data-uf="PI" data-areas="suporte ti" data-salario="12000" data-texto="prefeitura de belem do piaui varios cargos tecnico de informatica prefeitura de belem do piaui - pi abre concurso com remuneracoes de ate r$ 12.000,00">
   <h2>Prefeitura de Belém do Piauí</h2>
   <p class="linha">PI · 49 vagas até R$ 12.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="enfermeiro" data-texto="prefeitura de campo grande do piaui varios cargos enfermeiro prefeitura de campo grande do piaui - pi abre concurso publico para diversos cargos e cadastro de reserva">
+<article class="concurso" data-uf="PI" data-areas="enfermeiro" data-salario="8257" data-texto="prefeitura de campo grande do piaui varios cargos enfermeiro prefeitura de campo grande do piaui - pi abre concurso publico para diversos cargos e cadastro de reserva">
   <h2>Prefeitura de Campo Grande do Piauí</h2>
   <p class="linha">PI · 90 vagas até R$ 8.257,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="enfermeiro" data-texto="prefeitura de cristalandia do piaui varios cargos enfermeiro prefeitura de cristalandia do piaui - pi abre concurso publico para diversos cargos">
+<article class="concurso" data-uf="PI" data-areas="enfermeiro" data-salario="4750" data-texto="prefeitura de cristalandia do piaui varios cargos enfermeiro prefeitura de cristalandia do piaui - pi abre concurso publico para diversos cargos">
   <h2>Prefeitura de Cristalândia do Piauí</h2>
   <p class="linha">PI · 50 vagas até R$ 4.750,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="enfermeiro" data-texto="prefeitura de monsenhor gil varios cargos enfermeiro prefeitura de monsenhor gil - pi abre concurso publico com salarios de ate r$ 8.000,00">
+<article class="concurso" data-uf="PI" data-areas="enfermeiro" data-salario="8000" data-texto="prefeitura de monsenhor gil varios cargos enfermeiro prefeitura de monsenhor gil - pi abre concurso publico com salarios de ate r$ 8.000,00">
   <h2>Prefeitura de Monsenhor Gil</h2>
   <p class="linha">PI · 101 vagas até R$ 8.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="enfermeiro" data-texto="prefeitura de francisco macedo varios cargos enfermeiro prefeitura de francisco macedo - pi abre concurso publico com vagas imediatas e cadastro de reserva">
+<article class="concurso" data-uf="PI" data-areas="enfermeiro" data-salario="4318.18" data-texto="prefeitura de francisco macedo varios cargos enfermeiro prefeitura de francisco macedo - pi abre concurso publico com vagas imediatas e cadastro de reserva">
   <h2>Prefeitura de Francisco Macedo</h2>
   <p class="linha">PI · 49 vagas até R$ 4.318,18 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="procurador" data-texto="camara de joca marques varios cargos procurador camara de joca marques - pi abre concurso publico com oito vagas imediatas">
+<article class="concurso" data-uf="PI" data-areas="procurador" data-salario="3800" data-texto="camara de joca marques varios cargos procurador camara de joca marques - pi abre concurso publico com oito vagas imediatas">
   <h2>Câmara de Joca Marques</h2>
   <p class="linha">PI · 8 vagas até R$ 3.800,00 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -131,7 +137,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="procurador" data-texto="camara de dom inocencio varios cargos procurador legislativo camara de dom inocencio - pi abre concurso publico com salarios de ate r$ 6.000,00">
+<article class="concurso" data-uf="PI" data-areas="procurador" data-salario="6000" data-texto="camara de dom inocencio varios cargos procurador legislativo camara de dom inocencio - pi abre concurso publico com salarios de ate r$ 6.000,00">
   <h2>Câmara de Dom Inocêncio</h2>
   <p class="linha">PI · 6 vagas até R$ 6.000,00 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>

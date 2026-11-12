@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de luzerna varios cargos monitor de informatica professor - informatica prefeitura de luzerna - sc abre concurso publico com salarios de ate r$ 14.004,25">
+  <div id="lista"><article class="concurso" data-uf="SC" data-areas="ti" data-salario="14004.25" data-texto="prefeitura de luzerna varios cargos monitor de informatica professor - informatica prefeitura de luzerna - sc abre concurso publico com salarios de ate r$ 14.004,25">
   <h2>Prefeitura de Luzerna</h2>
   <p class="linha">SC · 4 vagas até R$ 14.004,25 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="suporte ti" data-texto="prefeitura de guaruja do sul varios cargos professor - informatica tecnico em informatica prefeitura de guaruja do sul - sc abre concurso e selecoes com salarios de ate r$ 30,7 mil">
+<article class="concurso" data-uf="SC" data-areas="suporte ti" data-salario="30761.75" data-texto="prefeitura de guaruja do sul varios cargos professor - informatica tecnico em informatica prefeitura de guaruja do sul - sc abre concurso e selecoes com salarios de ate r$ 30,7 mil">
   <h2>Prefeitura de Guarujá do Sul</h2>
   <p class="linha">SC · 5 vagas até R$ 30.761,75 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="suporte ti" data-texto="prefeitura de nova trento varios cargos tecnico de informatica municipio de nova trento - sc abre tres novos processos seletivos com salarios de ate r$ 14.189,97">
+<article class="concurso" data-uf="SC" data-areas="suporte ti" data-salario="14189.97" data-texto="prefeitura de nova trento varios cargos tecnico de informatica municipio de nova trento - sc abre tres novos processos seletivos com salarios de ate r$ 14.189,97">
   <h2>Prefeitura de Nova Trento</h2>
   <p class="linha">SC · Cadastro de reserva até R$ 14.189,97 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de luiz alves varios cargos tecnico em manutencao e suporte de informatica prefeitura de luiz alves - sc abre concurso publico com salarios de ate r$ 8.889,30">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="8889.3" data-texto="prefeitura de luiz alves varios cargos tecnico em manutencao e suporte de informatica prefeitura de luiz alves - sc abre concurso publico com salarios de ate r$ 8.889,30">
   <h2>Prefeitura de Luiz Alves</h2>
   <p class="linha">SC · 63 vagas até R$ 8.889,30 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de praia grande e fundo municipal de saude varios cargos professor - informatica habilitado professor - informatica nao habilitado prefeitura de praia grande - sc abre selecoes com salarios de ate r$ 7.921,65">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="7921.65" data-texto="prefeitura de praia grande e fundo municipal de saude varios cargos professor - informatica habilitado professor - informatica nao habilitado prefeitura de praia grande - sc abre selecoes com salarios de ate r$ 7.921,65">
   <h2>Prefeitura de Praia Grande e Fundo Municipal de Saúde</h2>
   <p class="linha">SC · 79 vagas até R$ 7.921,65 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de xaxim varios cargos professor - informatica prefeitura de xaxim - sc abre processo seletivo para professores">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="5137.52" data-texto="prefeitura de xaxim varios cargos professor - informatica prefeitura de xaxim - sc abre processo seletivo para professores">
   <h2>Prefeitura de Xaxim</h2>
   <p class="linha">SC · Cadastro de reserva até R$ 5.137,52 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de ipora do oeste varios cargos professor - informatica prefeitura de ipora do oeste - sc abre concurso publico e processos seletivos com salarios de ate r$ 19.265,80">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="19265.8" data-texto="prefeitura de ipora do oeste varios cargos professor - informatica prefeitura de ipora do oeste - sc abre concurso publico e processos seletivos com salarios de ate r$ 19.265,80">
   <h2>Prefeitura de Iporã do Oeste</h2>
   <p class="linha">SC · 5 vagas até R$ 19.265,80 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -131,7 +137,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de ilhota varios cargos instrutor de informatica prefeitura de ilhota - sc publica edital de concurso publico com salarios de ate r$ 21.113,16">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="21113.16" data-texto="prefeitura de ilhota varios cargos instrutor de informatica prefeitura de ilhota - sc publica edital de concurso publico com salarios de ate r$ 21.113,16">
   <h2>Prefeitura de Ilhota</h2>
   <p class="linha">SC · 36 vagas até R$ 21.113,16 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -143,7 +149,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de rodeio varios cargos professor - informatica prefeitura de rodeio - sc abre processos seletivos para diversos cargos">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="4299.34" data-texto="prefeitura de rodeio varios cargos professor - informatica prefeitura de rodeio - sc abre processos seletivos para diversos cargos">
   <h2>Prefeitura de Rodeio</h2>
   <p class="linha">SC · 4 vagas até R$ 4.299,34 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -155,7 +161,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SC" data-areas="ti" data-texto="prefeitura de passo de torres varios cargos professor - informatica prefeitura de passo de torres - sc abre processo seletivo para diversos cargos na educacao">
+<article class="concurso" data-uf="SC" data-areas="ti" data-salario="5959.62" data-texto="prefeitura de passo de torres varios cargos professor - informatica prefeitura de passo de torres - sc abre processo seletivo para diversos cargos na educacao">
   <h2>Prefeitura de Passo de Torres</h2>
   <p class="linha">SC · 181 vagas até R$ 5.959,62 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>

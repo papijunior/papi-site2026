@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     <select id="uf" aria-label="Estado"><option value="">Todos os estados</option><option value="AC">AC — Acre</option><option value="AP">AP — Amapá</option><option value="BA">BA — Bahia</option><option value="CE">CE — Ceará</option><option value="DF">DF — Distrito Federal</option><option value="ES">ES — Espírito Santo</option><option value="GO">GO — Goiás</option><option value="MA">MA — Maranhão</option><option value="MT">MT — Mato Grosso</option><option value="MS">MS — Mato Grosso do Sul</option><option value="MG">MG — Minas Gerais</option><option value="PA">PA — Pará</option><option value="PB">PB — Paraíba</option><option value="PR">PR — Paraná</option><option value="PE">PE — Pernambuco</option><option value="PI">PI — Piauí</option><option value="RJ">RJ — Rio de Janeiro</option><option value="RN">RN — Rio Grande do Norte</option><option value="RS">RS — Rio Grande do Sul</option><option value="RO">RO — Rondônia</option><option value="SC">SC — Santa Catarina</option><option value="SP">SP — São Paulo</option><option value="SE">SE — Sergipe</option><option value="TO">TO — Tocantins</option><option value="BR">Nacionais</option></select>
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="SP" data-areas="advogado analise_sistemas enfermeiro ti" data-texto="prefeitura de leme varios cargos advogado do suas analista de tecnologia da informacao biologo biomedico enfermeiro - 180h engenheiro agrimensor engenheiro de seguranca do trabalho fiscal de rendas medico - psiquiatra medico - sanitarista medico do trabalho medico horista medico horista - ginecologista e obstetra medico horista - oftalmologista medico horista - psiquiatra infantil prefeitura de leme - sp abre concurso publico com salarios de ate r$ 13.359,44">
+  <div id="lista"><article class="concurso" data-uf="SP" data-areas="advogado analise_sistemas enfermeiro ti" data-salario="13359.44" data-texto="prefeitura de leme varios cargos advogado do suas analista de tecnologia da informacao biologo biomedico enfermeiro - 180h engenheiro agrimensor engenheiro de seguranca do trabalho fiscal de rendas medico - psiquiatra medico - sanitarista medico do trabalho medico horista medico horista - ginecologista e obstetra medico horista - oftalmologista medico horista - psiquiatra infantil prefeitura de leme - sp abre concurso publico com salarios de ate r$ 13.359,44">
   <h2>Prefeitura de Leme</h2>
   <p class="linha">SP · 29 vagas até R$ 13.359,44 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MT" data-areas="ti" data-texto="camara de cuiaba varios cargos analista legislativo analista legislativo - assistente social analista legislativo - jornalismo analista legislativo - psicologo analista legislativo - seguranca do trabalho analista legislativo - tecnologia da informacao contador controlador interno tecnico legislativo tecnico legislativo - cerimonial tecnico legislativo - sonorizacao camara de cuiaba - mt abre concurso publico com salarios de ate r$ 11.629,67">
+<article class="concurso" data-uf="MT" data-areas="ti" data-salario="11629.67" data-texto="camara de cuiaba varios cargos analista legislativo analista legislativo - assistente social analista legislativo - jornalismo analista legislativo - psicologo analista legislativo - seguranca do trabalho analista legislativo - tecnologia da informacao contador controlador interno tecnico legislativo tecnico legislativo - cerimonial tecnico legislativo - sonorizacao camara de cuiaba - mt abre concurso publico com salarios de ate r$ 11.629,67">
   <h2>Câmara de Cuiabá</h2>
   <p class="linha">MT · 26 vagas até R$ 11.629,67 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de suzano varios cargos agente de seguranca escolar agente escolar auxiliar de atividades escolares auxiliar de secretaria contador cozinheiro escolar diretor de escola medico - ginecologia (10h) medico - ginecologia (20h) medico - neurologia 10h medico - neurologia 20h medico - pediatria (10h) medico - pediatria (20h) medico - pediatria plantonista 24h medico - urologia 20h prefeitura de suzano - sp abre concurso publico com salarios de ate r$ 12.062,91">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="12062.91" data-texto="prefeitura de suzano varios cargos agente de seguranca escolar agente escolar auxiliar de atividades escolares auxiliar de secretaria contador cozinheiro escolar diretor de escola medico - ginecologia (10h) medico - ginecologia (20h) medico - neurologia 10h medico - neurologia 20h medico - pediatria (10h) medico - pediatria (20h) medico - pediatria plantonista 24h medico - urologia 20h prefeitura de suzano - sp abre concurso publico com salarios de ate r$ 12.062,91">
   <h2>Prefeitura de Suzano</h2>
   <p class="linha">SP · 73 vagas até R$ 12.062,91 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -83,7 +89,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="analista_judiciario trt" data-texto="trt 4 - tribunal regional do trabalho da 4ª regiao analista judiciario, tecnico judiciario analista judiciario analista judiciario - area administrativa analista judiciario - area judiciaria analista judiciario - arquitetura analista judiciario - biblioteconomia analista judiciario - comunicacao social analista judiciario - contabilidade analista judiciario - engenharia civil analista judiciario - engenharia de seguranca do trabalho analista judiciario - engenharia eletrica analista judiciario - estatistica analista judiciario - medicina (cardiologia) analista judiciario - medicina (psiquiatria) analista judiciario - medicina - clinica geral analista judiciario - medicina do trabalho trt4 - rs abre concurso publico para analistas e tecnicos judiciarios">
+<article class="concurso" data-uf="RS" data-areas="analista_judiciario trt" data-salario="16040.88" data-texto="trt 4 - tribunal regional do trabalho da 4ª regiao analista judiciario, tecnico judiciario analista judiciario analista judiciario - area administrativa analista judiciario - area judiciaria analista judiciario - arquitetura analista judiciario - biblioteconomia analista judiciario - comunicacao social analista judiciario - contabilidade analista judiciario - engenharia civil analista judiciario - engenharia de seguranca do trabalho analista judiciario - engenharia eletrica analista judiciario - estatistica analista judiciario - medicina (cardiologia) analista judiciario - medicina (psiquiatria) analista judiciario - medicina - clinica geral analista judiciario - medicina do trabalho trt4 - rs abre concurso publico para analistas e tecnicos judiciarios">
   <h2>TRT 4 - Tribunal Regional do Trabalho da 4ª Região</h2>
   <p class="linha">RS · Cadastro de reserva até R$ 16.040,88 · Superior</p>
   <p><strong>Cargos:</strong> Analista Judiciário, Técnico Judiciário</p>
@@ -95,7 +101,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PR" data-areas="enfermeiro" data-texto="prefeitura de quedas do iguacu varios cargos assistente social auxiliar de saude bucal biologo contador cuidador social enfermeiro farmaceutico fisioterapeuta fonoaudiologo medico - ginecologista e obstetra nutricionista odontologo professor professor - educacao fisica professor - educacao infantil prefeitura de quedas do iguacu - pr retifica edital de concurso publico">
+<article class="concurso" data-uf="PR" data-areas="enfermeiro" data-salario="11998.88" data-texto="prefeitura de quedas do iguacu varios cargos assistente social auxiliar de saude bucal biologo contador cuidador social enfermeiro farmaceutico fisioterapeuta fonoaudiologo medico - ginecologista e obstetra nutricionista odontologo professor professor - educacao fisica professor - educacao infantil prefeitura de quedas do iguacu - pr retifica edital de concurso publico">
   <h2>Prefeitura de Quedas do Iguaçu</h2>
   <p class="linha">PR · 140 vagas até R$ 11.998,88 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -107,7 +113,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
+<article class="concurso" data-uf="PI" data-areas="engenheiro_civil" data-salario="16210" data-texto="prefeitura de canto do buriti varios cargos agente administrativo agente comunitario de saude agente de fiscalizacao ambiental agente de transito agente de vigilancia sanitaria assistente social atendente de farmacia basica auxiliar de servicos gerais cirurgiao-dentista condutor de ambulancia educador fisico eletricista engenheiro civil farmaceutico-bioquimico fiscal de inspecao sanitaria prefeitura de canto do buriti - pi retifica edital de concurso publico">
   <h2>Prefeitura de Canto do Buriti</h2>
   <p class="linha">PI · 257 vagas até R$ 16.210,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -119,7 +125,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="juridico" data-texto="prefeitura de louveira varios cargos assistente juridico contador escriturario fiscal municipal professor - artes professor - educacao fisica professor - ensino basico professor - ingles prefeitura de louveira - sp abre concursos com vagas imediatas e cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="juridico" data-salario="8738" data-texto="prefeitura de louveira varios cargos assistente juridico contador escriturario fiscal municipal professor - artes professor - educacao fisica professor - ensino basico professor - ingles prefeitura de louveira - sp abre concursos com vagas imediatas e cadastro de reserva">
   <h2>Prefeitura de Louveira</h2>
   <p class="linha">SP · 19 vagas até R$ 8.738,00 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -131,7 +137,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="prefeitura de matao varios cargos agente de fiscalizacao publica - fiscal de comercio, servicos e tributos agente de fiscalizacao publica - fiscal de meio ambiente agente de fiscalizacao publica - fiscal de obras agente de fiscalizacao publica - fiscal de saude publica agente de infraestrutura - agente de apoio ao canil agente de infraestrutura - auxiliar de servicos gerais agente de infraestrutura - coveiro agente de infraestrutura - desenhista projetista agente de infraestrutura - operador de maquina pesada agente de infraestrutura - operador de trator agricola agente de infraestrutura - pedreiro agente de infraestrutura - pintor agente de infraestrutura - topografo agente de mobilidade urbana - fiscal de transito agente de politicas sociais - salva-vidas prefeitura de matao - sp abre concurso publico com salarios de ate r$ 9.717,96">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="9717.96" data-texto="prefeitura de matao varios cargos agente de fiscalizacao publica - fiscal de comercio, servicos e tributos agente de fiscalizacao publica - fiscal de meio ambiente agente de fiscalizacao publica - fiscal de obras agente de fiscalizacao publica - fiscal de saude publica agente de infraestrutura - agente de apoio ao canil agente de infraestrutura - auxiliar de servicos gerais agente de infraestrutura - coveiro agente de infraestrutura - desenhista projetista agente de infraestrutura - operador de maquina pesada agente de infraestrutura - operador de trator agricola agente de infraestrutura - pedreiro agente de infraestrutura - pintor agente de infraestrutura - topografo agente de mobilidade urbana - fiscal de transito agente de politicas sociais - salva-vidas prefeitura de matao - sp abre concurso publico com salarios de ate r$ 9.717,96">
   <h2>Prefeitura de Matão</h2>
   <p class="linha">SP · 28 vagas até R$ 9.717,96 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -143,7 +149,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="juridico programacao redes seguranca" data-texto="dpe - defensoria publica do estado da paraiba varios cargos analista da defensoria - assistente juridico analista da defensoria - assistente social analista da defensoria - auditor interno analista da defensoria - desenvolvimento de sistemas analista da defensoria - psicologo analista da defensoria - seguranca da informacao analista da defensoria - sem especialidade analista da defensoria - suporte e infraestrutura de redes tecnico da defensoria - sem especialidade dpe - pb abre concurso publico com salarios de ate r$ 5.197,50">
+<article class="concurso" data-uf="PB" data-areas="juridico programacao redes seguranca" data-salario="5197.5" data-texto="dpe - defensoria publica do estado da paraiba varios cargos analista da defensoria - assistente juridico analista da defensoria - assistente social analista da defensoria - auditor interno analista da defensoria - desenvolvimento de sistemas analista da defensoria - psicologo analista da defensoria - seguranca da informacao analista da defensoria - sem especialidade analista da defensoria - suporte e infraestrutura de redes tecnico da defensoria - sem especialidade dpe - pb abre concurso publico com salarios de ate r$ 5.197,50">
   <h2>DPE - Defensoria Pública do Estado da Paraíba</h2>
   <p class="linha">PB · 20 vagas até R$ 5.197,50 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -155,7 +161,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil suporte ti" data-salario="10428.05" data-texto="setec - servicos tecnicos gerais de campinas varios cargos agente administrativo agente de apoio operacional agente de fiscalizacao agente de suporte funerario agente de suporte tecnico agente funerario analista tecnico - informatica assistente de s.v.o assistente social condutor de veiculos e maquinas engenheiro civil motorista especializado oficial de servicos tecnico em seguranca do trabalho setec campinas - sp abre concurso publico com salarios de ate r$ 10.428,05">
   <h2>SETEC - Serviços Técnicos Gerais de Campinas</h2>
   <p class="linha">SP · 39 vagas até R$ 10.428,05 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -168,7 +174,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="MG" data-areas="analise_sistemas ti" data-texto="prefeitura de contagem varios cargos analista de ti arquiteto arquivista assistente administrativo assistente social auditor de controle interno - ciencias contabeis auditor de controle interno - direito auditor de controle interno - engenharia civil auditor de controle interno - tecnologia da informacao biologo contador economista engenheiro agrimensor engenheiro agronomo engenheiro ambiental prefeitura de contagem - mg retifica edital de concurso publico">
+<article class="concurso" data-uf="MG" data-areas="analise_sistemas ti" data-salario="13305.57" data-texto="prefeitura de contagem varios cargos analista de ti arquiteto arquivista assistente administrativo assistente social auditor de controle interno - ciencias contabeis auditor de controle interno - direito auditor de controle interno - engenharia civil auditor de controle interno - tecnologia da informacao biologo contador economista engenheiro agrimensor engenheiro agronomo engenheiro ambiental prefeitura de contagem - mg retifica edital de concurso publico">
   <h2>Prefeitura de Contagem</h2>
   <p class="linha">MG · 272 vagas até R$ 13.305,57 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -180,7 +186,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
+<article class="concurso" data-uf="AP" data-areas="advogado enfermeiro juridico" data-salario="6000" data-texto="prefeitura de pedra branca do amapari varios cargos advogado analista juridico assistente administrativo assistente social auxiliar de servicos gerais auxiliar docente biomedico cuidador enfermeiro farmaceutico fiscal de tributos guarda municipal massoterapeuta medico professor - aee prefeitura de pedra branca do amapari - ap abre concurso publico com salarios de ate r$ 6.000,00">
   <h2>Prefeitura de Pedra Branca do Amapari</h2>
   <p class="linha">AP · 171 vagas até R$ 6.000,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -192,7 +198,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RO" data-areas="enfermeiro ti" data-texto="ipam - instituto de previdencia e assistencia dos servidores do municipio de porto velho tecnico autarquico, analista autarquico analista autarquico - administracao analista autarquico - administrativo analista autarquico - auditor de controle interno analista autarquico - auditor enfermeiro analista autarquico - auditor medico analista autarquico - auditor odontologico analista autarquico - ciencias atuariais analista autarquico - ciencias contabeis analista autarquico - direito analista autarquico - gestao financeira analista autarquico - medico perito analista autarquico - servico social analista autarquico - tecnologia da informacao tecnico autarquico - administrativa tecnico autarquico - informatica ipam de porto velho - ro abre concurso publico com salarios de ate r$ 5.000,00">
+<article class="concurso" data-uf="RO" data-areas="enfermeiro ti" data-salario="5000" data-texto="ipam - instituto de previdencia e assistencia dos servidores do municipio de porto velho tecnico autarquico, analista autarquico analista autarquico - administracao analista autarquico - administrativo analista autarquico - auditor de controle interno analista autarquico - auditor enfermeiro analista autarquico - auditor medico analista autarquico - auditor odontologico analista autarquico - ciencias atuariais analista autarquico - ciencias contabeis analista autarquico - direito analista autarquico - gestao financeira analista autarquico - medico perito analista autarquico - servico social analista autarquico - tecnologia da informacao tecnico autarquico - administrativa tecnico autarquico - informatica ipam de porto velho - ro abre concurso publico com salarios de ate r$ 5.000,00">
   <h2>IPAM - Instituto de Previdência e Assistência dos Servidores do Município de Porto Velho</h2>
   <p class="linha">RO · 71 vagas até R$ 5.000,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Técnico Autárquico, Analista Autárquico</p>
@@ -204,7 +210,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PA" data-areas="advogado suporte ti" data-texto="camara de portel varios cargos advogado legislativo agente de copa e cozinha assistente administrativo assistente de plenario assistente social auxiliar de servicos gerais auxiliar tecnico de audio, video e sistemas condutor maritimo controlador interno guarda legislativo interprete de libras motorista ouvidor tecnico de informatica tecnico legislativo camara de portel - pa retifica edital de concurso publico">
+<article class="concurso" data-uf="PA" data-areas="advogado suporte ti" data-salario="4723.31" data-texto="camara de portel varios cargos advogado legislativo agente de copa e cozinha assistente administrativo assistente de plenario assistente social auxiliar de servicos gerais auxiliar tecnico de audio, video e sistemas condutor maritimo controlador interno guarda legislativo interprete de libras motorista ouvidor tecnico de informatica tecnico legislativo camara de portel - pa retifica edital de concurso publico">
   <h2>Câmara de Portel</h2>
   <p class="linha">PA · 27 vagas até R$ 4.723,31 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -216,7 +222,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PA" data-areas="" data-texto="camara de sao geraldo do araguaia varios cargos assistente administrativo auxiliar de servicos gerais chefe de controle interno tecnico em contabilidade camara de sao geraldo do araguaia - pa abre concurso publico com salarios de ate r$ 3.000,00">
+<article class="concurso" data-uf="PA" data-areas="" data-salario="3000" data-texto="camara de sao geraldo do araguaia varios cargos assistente administrativo auxiliar de servicos gerais chefe de controle interno tecnico em contabilidade camara de sao geraldo do araguaia - pa abre concurso publico com salarios de ate r$ 3.000,00">
   <h2>Câmara de São Geraldo do Araguaia</h2>
   <p class="linha">PA · 5 vagas até R$ 3.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -228,7 +234,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="BA" data-areas="" data-texto="prefeitura de tucano varios cargos engenheiro ambiental fiscal de meio ambiente geologo professor prefeitura de tucano - ba abre processo seletivo com 83 vagas">
+<article class="concurso" data-uf="BA" data-areas="" data-salario="3000" data-texto="prefeitura de tucano varios cargos engenheiro ambiental fiscal de meio ambiente geologo professor prefeitura de tucano - ba abre processo seletivo com 83 vagas">
   <h2>Prefeitura de Tucano</h2>
   <p class="linha">BA · 83 vagas até R$ 3.000,00 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -240,7 +246,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="" data-texto="unilab - universidade da integracao internacional da lusofonia afro-brasileira professor do magisterio superior professor do magisterio superior - anatomia humana professor do magisterio superior - bases biologicas, neurociencias e linguagem aplicadas a fonoaudiologia professor do magisterio superior - bases morfofuncionais e oncologia professor do magisterio superior - biologia celular e molecular, histologia e imunologia basica professor do magisterio superior - bioquimica professor do magisterio superior - circuitos eletroeletronicos e sistemas digitais professor do magisterio superior - contabilidade societaria professor do magisterio superior - contabilidade tributaria e pratica contabil professor do magisterio superior - fisiologia humana professor do magisterio superior - fundamentos do servico social, instrumentalidade e processo de trabalho professor do magisterio superior - histologia e embriologia humana professor do magisterio superior - metodos de imagem professor do magisterio superior - neurociencias, cinesiologia e biomecanica aplicadas a terapia ocupacional professor do magisterio superior - nutricao em saude coletiva e comportamento alimentar unilab - ce abre concurso publico com vagas para professores do magisterio superior">
+<article class="concurso" data-uf="CE" data-areas="" data-salario="13753.96" data-texto="unilab - universidade da integracao internacional da lusofonia afro-brasileira professor do magisterio superior professor do magisterio superior - anatomia humana professor do magisterio superior - bases biologicas, neurociencias e linguagem aplicadas a fonoaudiologia professor do magisterio superior - bases morfofuncionais e oncologia professor do magisterio superior - biologia celular e molecular, histologia e imunologia basica professor do magisterio superior - bioquimica professor do magisterio superior - circuitos eletroeletronicos e sistemas digitais professor do magisterio superior - contabilidade societaria professor do magisterio superior - contabilidade tributaria e pratica contabil professor do magisterio superior - fisiologia humana professor do magisterio superior - fundamentos do servico social, instrumentalidade e processo de trabalho professor do magisterio superior - histologia e embriologia humana professor do magisterio superior - metodos de imagem professor do magisterio superior - neurociencias, cinesiologia e biomecanica aplicadas a terapia ocupacional professor do magisterio superior - nutricao em saude coletiva e comportamento alimentar unilab - ce abre concurso publico com vagas para professores do magisterio superior">
   <h2>Unilab - Universidade da Integração Internacional da Lusofonia Afro-Brasileira</h2>
   <p class="linha">CE · 16 vagas até R$ 13.753,96 · Superior</p>
   <p><strong>Cargos:</strong> Professor do Magistério Superior</p>
@@ -252,7 +258,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-texto="prefeitura de parari varios cargos agente administrativo agente de vigilancia sanitaria assistente social auxiliar de limpeza de vias publicas educador fisico enfermeiro farmaceutico fiscal de tributos e arrecadacao fisioterapeuta fonoaudiologo medico - clinica geral motorista d motorista d ambulancia nutricionista odontologo prefeitura de parari - pb abre concurso publico com salarios de ate r$ 10.000,00">
+<article class="concurso" data-uf="PB" data-areas="enfermeiro" data-salario="10000" data-texto="prefeitura de parari varios cargos agente administrativo agente de vigilancia sanitaria assistente social auxiliar de limpeza de vias publicas educador fisico enfermeiro farmaceutico fiscal de tributos e arrecadacao fisioterapeuta fonoaudiologo medico - clinica geral motorista d motorista d ambulancia nutricionista odontologo prefeitura de parari - pb abre concurso publico com salarios de ate r$ 10.000,00">
   <h2>Prefeitura de Parari</h2>
   <p class="linha">PB · 29 vagas até R$ 10.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -264,7 +270,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="administrador advogado" data-texto="prefeitura de boa viagem varios cargos administrador advogado agente administrativo agente fiscal de tributos agente municipal de transito agente sanitarista analista ambiental analista de controle interno arquiteto assistente social assistente tecnico auxiliar de administracao auxiliar de gesso auxiliar de servicos gerais auxiliar em saude bucal prefeitura de boa viagem - ce abre concurso publico com vagas para diversas areas de atuacao">
+<article class="concurso" data-uf="CE" data-areas="administrador advogado" data-salario="14718.92" data-texto="prefeitura de boa viagem varios cargos administrador advogado agente administrativo agente fiscal de tributos agente municipal de transito agente sanitarista analista ambiental analista de controle interno arquiteto assistente social assistente tecnico auxiliar de administracao auxiliar de gesso auxiliar de servicos gerais auxiliar em saude bucal prefeitura de boa viagem - ce abre concurso publico com vagas para diversas areas de atuacao">
   <h2>Prefeitura de Boa Viagem</h2>
   <p class="linha">CE · 1001 vagas até R$ 14.718,92 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -276,7 +282,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="CE" data-areas="procurador" data-texto="conscensul - consorcio publico da regiao sertao centro sul varios cargos analista fiscal tecnico ambiental gestor procurador autarquico conscensul - ce abre concurso publico com vagas de nivel superior em lavras da mangabeira">
+<article class="concurso" data-uf="CE" data-areas="procurador" data-salario="5500" data-texto="conscensul - consorcio publico da regiao sertao centro sul varios cargos analista fiscal tecnico ambiental gestor procurador autarquico conscensul - ce abre concurso publico com vagas de nivel superior em lavras da mangabeira">
   <h2>CONSCENSUL - Consórcio Público da Região Sertão Centro Sul</h2>
   <p class="linha">CE · 9 vagas até R$ 5.500,00 · Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -289,7 +295,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="CE" data-areas="" data-texto="prefeitura de oros varios cargos agente de transito auxiliar de auditoria interna auxiliar de servicos gerais eletricista engenheiro de pesca fiscal de tributos guarda municipal medico veterinario pedreiro pintor professor - anos iniciais professor - artes professor - ciencias professor - educacao fisica professor - geografia prefeitura de oros - ce abre concurso publico com vagas para diversas areas">
+<article class="concurso" data-uf="CE" data-areas="" data-salario="3606.93" data-texto="prefeitura de oros varios cargos agente de transito auxiliar de auditoria interna auxiliar de servicos gerais eletricista engenheiro de pesca fiscal de tributos guarda municipal medico veterinario pedreiro pintor professor - anos iniciais professor - artes professor - ciencias professor - educacao fisica professor - geografia prefeitura de oros - ce abre concurso publico com vagas para diversas areas">
   <h2>Prefeitura de Orós</h2>
   <p class="linha">CE · 95 vagas até R$ 3.606,93 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -301,7 +307,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="MS" data-areas="suporte ti" data-texto="camara de aral moreira varios cargos agente legislativo - auxiliar de servicos gerais agente legislativo copeiro assistente legislativo recepcionista controlador interno tecnico em informatica tecnico legislativo camara de aral moreira - ms abre concurso publico com salarios de ate r$ 7.566,00">
+<article class="concurso" data-uf="MS" data-areas="suporte ti" data-salario="7566" data-texto="camara de aral moreira varios cargos agente legislativo - auxiliar de servicos gerais agente legislativo copeiro assistente legislativo recepcionista controlador interno tecnico em informatica tecnico legislativo camara de aral moreira - ms abre concurso publico com salarios de ate r$ 7.566,00">
   <h2>Câmara de Aral Moreira</h2>
   <p class="linha">MS · 4 vagas até R$ 7.566,00 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -313,7 +319,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="ES" data-areas="analise_sistemas programacao seguranca ti" data-texto="banestes - banco do estado do espirito santo varios cargos analista de comunicacao analista de tecnologia da informacao - desenvolvimento de sistemas analista de tecnologia da informacao - seguranca da informacao analista de tecnologia da informacao - suporte e infraestrutura analista economico financeiro - gestao contabil analista economico financeiro - gestao estatistica analista economico financeiro - gestao financeira assistente social banestes - es abre concurso publico para cargos de nivel superior">
+<article class="concurso" data-uf="ES" data-areas="analise_sistemas programacao seguranca ti" data-salario="6393.38" data-texto="banestes - banco do estado do espirito santo varios cargos analista de comunicacao analista de tecnologia da informacao - desenvolvimento de sistemas analista de tecnologia da informacao - seguranca da informacao analista de tecnologia da informacao - suporte e infraestrutura analista economico financeiro - gestao contabil analista economico financeiro - gestao estatistica analista economico financeiro - gestao financeira assistente social banestes - es abre concurso publico para cargos de nivel superior">
   <h2>Banestes - Banco do Estado do Espírito Santo</h2>
   <p class="linha">ES · Vagas até R$ 6.393,38 · Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -325,7 +331,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="procurador" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
+<article class="concurso" data-uf="SP" data-areas="procurador" data-salario="5217.7" data-texto="prefeitura de uru varios cargos cozinheiro escriturario motorista procurador municipal professor de educacao basica tesoureiro prefeitura de uru - sp abre concurso publico com vagas em diversas areas de atuacao">
   <h2>Prefeitura de Uru</h2>
   <p class="linha">SP · 6 vagas até R$ 5.217,70 · Fundamental / Médio / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -337,7 +343,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="" data-texto="prefeitura de guabiju varios cargos agente administrativo agente de combate a endemias assistente social atendente de creche contador instalador monitor de escola e transporte escolar operario professor - anos iniciais professor - artes servente tecnico em contabilidade prefeitura de guabiju - rs abre concurso publico com salarios de ate r$ 6.483,36">
+<article class="concurso" data-uf="RS" data-areas="" data-salario="6483.36" data-texto="prefeitura de guabiju varios cargos agente administrativo agente de combate a endemias assistente social atendente de creche contador instalador monitor de escola e transporte escolar operario professor - anos iniciais professor - artes servente tecnico em contabilidade prefeitura de guabiju - rs abre concurso publico com salarios de ate r$ 6.483,36">
   <h2>Prefeitura de Guabiju</h2>
   <p class="linha">RS · 5 vagas até R$ 6.483,36 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -349,7 +355,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RS" data-areas="enfermeiro" data-texto="prefeitura de piratini varios cargos agente administrativo assistente social auxiliar de saude bucal contador cuidador/educador enfermeiro farmaceutico fiscal tributario mecanico medico medico veterinario motorista odontologo operador de maquinas professor - anos iniciais prefeitura de piratini - rs abre concurso publico com salarios de ate r$ 7.462,95">
+<article class="concurso" data-uf="RS" data-areas="enfermeiro" data-salario="7462.95" data-texto="prefeitura de piratini varios cargos agente administrativo assistente social auxiliar de saude bucal contador cuidador/educador enfermeiro farmaceutico fiscal tributario mecanico medico medico veterinario motorista odontologo operador de maquinas professor - anos iniciais prefeitura de piratini - rs abre concurso publico com salarios de ate r$ 7.462,95">
   <h2>Prefeitura de Piratini</h2>
   <p class="linha">RS · 115 vagas até R$ 7.462,95 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -361,7 +367,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PB" data-areas="analista_judiciario seguranca ti" data-texto="tjpb - tribunal de justica do estado da paraiba analista judiciario, contabilidade analista judiciario - ti seguranca da informacao tjpb retifica concurso publico para analistas judiciarios">
+<article class="concurso" data-uf="PB" data-areas="analista_judiciario seguranca ti" data-salario="7526.14" data-texto="tjpb - tribunal de justica do estado da paraiba analista judiciario, contabilidade analista judiciario - ti seguranca da informacao tjpb retifica concurso publico para analistas judiciarios">
   <h2>TJPB - Tribunal de Justiça do Estado da Paraíba</h2>
   <p class="linha">PB · 50 vagas até R$ 7.526,14 · Superior</p>
   <p><strong>Cargos:</strong> Analista Judiciário, Contabilidade</p>
@@ -373,7 +379,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="" data-texto="fjpo - fundacao jose pedro de oliveira varios cargos agente de apoio operacional analista administrativo contador tecnico ambiental fundacao jose pedro de oliveira - sp abre concurso publico com salarios de ate r$ 8.991,96">
+<article class="concurso" data-uf="SP" data-areas="" data-salario="8991.96" data-texto="fjpo - fundacao jose pedro de oliveira varios cargos agente de apoio operacional analista administrativo contador tecnico ambiental fundacao jose pedro de oliveira - sp abre concurso publico com salarios de ate r$ 8.991,96">
   <h2>FJPO - Fundação José Pedro de Oliveira</h2>
   <p class="linha">SP · 4 vagas até R$ 8.991,96 · Fundamental / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -385,7 +391,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
+<article class="concurso" data-uf="SP" data-areas="advogado enfermeiro engenheiro_civil" data-salario="7991.27" data-texto="prefeitura de tapirai varios cargos advogado agente de limpeza analista de patrimonio assistente social auxiliar de consultorio dentario coletor de residuos coveiro enfermeiro engenheiro civil farmaceutico fiscal ambiental fiscal de obras e posturas fiscal sanitario fonoaudiologo gari mecanico medico medico - ginecologista medico veterinario motorista oficial de manutencao operador de maquinas professor de educacao basica - ingles professor de educacao especial psicologo tecnico eletricista terapeuta ocupacional tesoureiro turismologo prefeitura de tapirai - sp abre concurso publico com salarios de ate r$ 7.991,27">
   <h2>Prefeitura de Tapiraí</h2>
   <p class="linha">SP · 24 vagas até R$ 7.991,27 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -397,7 +403,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="SP" data-areas="enfermeiro" data-texto="prefeitura de cubatao varios cargos agente de cultura analista contabil analista de recursos humanos analista financeiro analista orcamentario educador fisico enfermeiro fisioterapeuta fonoaudiologo medico do trabalho nutricionista tecnico de defesa civil terapeuta ocupacional prefeitura de cubatao - sp abre concurso publico com salarios de ate r$ 5.565,00">
+<article class="concurso" data-uf="SP" data-areas="enfermeiro" data-salario="5565" data-texto="prefeitura de cubatao varios cargos agente de cultura analista contabil analista de recursos humanos analista financeiro analista orcamentario educador fisico enfermeiro fisioterapeuta fonoaudiologo medico do trabalho nutricionista tecnico de defesa civil terapeuta ocupacional prefeitura de cubatao - sp abre concurso publico com salarios de ate r$ 5.565,00">
   <h2>Prefeitura de Cubatão</h2>
   <p class="linha">SP · 19 vagas até R$ 5.565,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -410,7 +416,7 @@
   </p>
 </article>
 
-<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
+<article class="concurso" data-uf="SP" data-areas="engenheiro_civil juridico procurador" data-salario="6464.59" data-texto="prefeitura de pirapozinho varios cargos agente comunitario de saude agente de combate as endemias almoxarife assistente social auxiliar administrativo coletor de lixo contador coveiro dentista diretor de escola engenheiro civil farmaceutico fonoaudiologo monitor de transporte escolar motorista de ambulancia operador de maquina operario pedreiro procurador juridico municipal professor - arte professor - bordado a maquina professor - educacao basica professor - educacao fisica professor - ingles professor auxiliar de educacao infantil servicos gerais supervisor administrativo tecnico de farmacia tecnico de seguranca do trabalho tecnico em enfermagem tecnico em radiologia terapeuta ocupacional varredor vigia prefeitura de pirapozinho - sp abre concurso publico para formacao de cadastro de reserva">
   <h2>Prefeitura de Pirapozinho</h2>
   <p class="linha">SP · Cadastro de reserva até R$ 6.464,59 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -422,7 +428,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PR" data-areas="juridico procurador" data-texto="prefeitura de realeza controlador interno, procurador juridico procurador juridico prefeitura de realeza - pr abre concurso publico para controlador interno e procurador juridico">
+<article class="concurso" data-uf="PR" data-areas="juridico procurador" data-salario="8800" data-texto="prefeitura de realeza controlador interno, procurador juridico procurador juridico prefeitura de realeza - pr abre concurso publico para controlador interno e procurador juridico">
   <h2>Prefeitura de Realeza</h2>
   <p class="linha">PR · 2 vagas até R$ 8.800,00 · Superior</p>
   <p><strong>Cargos:</strong> Controlador Interno, Procurador Jurídico</p>
@@ -434,7 +440,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="RN" data-areas="advogado" data-texto="cref16/rn - conselho regional de educacao fisica da 16ª regiao advogado, contador, agente de licitacoes e contratos advogado cref16 - rn abre concurso publico para profissionais de nivel superior">
+<article class="concurso" data-uf="RN" data-areas="advogado" data-salario="4169.55" data-texto="cref16/rn - conselho regional de educacao fisica da 16ª regiao advogado, contador, agente de licitacoes e contratos advogado cref16 - rn abre concurso publico para profissionais de nivel superior">
   <h2>CREF16/RN - Conselho Regional de Educação Física da 16ª Região</h2>
   <p class="linha">RN · 3 vagas até R$ 4.169,55 · Superior</p>
   <p><strong>Cargos:</strong> Advogado, Contador, Agente de Licitações e Contratos</p>

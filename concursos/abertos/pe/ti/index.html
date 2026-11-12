@@ -44,10 +44,16 @@
     <input type="search" id="busca" placeholder="Filtrar: cargo, órgão, cidade… (ex.: enfermeiro, prefeitura de campinas)" aria-label="Filtrar">
     
     <select id="area" aria-label="Área"><option value="">Todas as áreas</option><option value="administrador">Administrador</option><option value="advogado">advogado</option><option value="analise_sistemas">Análise de sistemas</option><option value="analista_judiciario">analista judiciário</option><option value="assessor_juridico">assessor jurídico</option><option value="banco_dados">Banco de dados</option><option value="ciencia_dados">Ciência de dados</option><option value="enfermeiro">enfermeiro</option><option value="engenharia_software">Engenharia de software</option><option value="engenheiro_civil">Engenheiro civil</option><option value="juridico">jurídico</option><option value="petrobras">Petrobras</option><option value="procurador">procurador</option><option value="programacao">Programação</option><option value="redes">Redes</option><option value="seguranca">Segurança da informação (cibersegurança)</option><option value="suporte">Suporte técnico</option><option value="ti">TI (geral)</option><option value="trt">TRT</option><option value="tst">TST</option><option value="web">Web</option></select>
+    <select id="salMin" aria-label="Salário mínimo"><option value="">Salário a partir de…</option>
+      <option value="2000">R$ 2.000</option><option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option>
+    </select>
+    <select id="salMax" aria-label="Salário máximo"><option value="">Salário até…</option>
+      <option value="3000">R$ 3.000</option><option value="4000">R$ 4.000</option><option value="5000">R$ 5.000</option><option value="6000">R$ 6.000</option><option value="8000">R$ 8.000</option><option value="10000">R$ 10.000</option><option value="12000">R$ 12.000</option><option value="15000">R$ 15.000</option><option value="20000">R$ 20.000</option><option value="30000">R$ 30.000</option>
+    </select>
   </form>
   <p class="contagem" id="contagem"></p>
   
-  <div id="lista"><article class="concurso" data-uf="PE" data-areas="procurador ti" data-texto="camara de petrolina analista legislativo, procurador, tecnico legislativo analista legislativo - produtor multimidia analista legislativo - redator de atas e termos analista legislativo - revisor de textos analista legislativo - tecnologia da informacao analista legislativo - tradutor e interprete de libras procurador tecnico legislativo - area administrativa tecnico legislativo - area legislativa camara de petrolina - pe abre concurso publico com salarios de ate r$ 8.561,42">
+  <div id="lista"><article class="concurso" data-uf="PE" data-areas="procurador ti" data-salario="8561.42" data-texto="camara de petrolina analista legislativo, procurador, tecnico legislativo analista legislativo - produtor multimidia analista legislativo - redator de atas e termos analista legislativo - revisor de textos analista legislativo - tecnologia da informacao analista legislativo - tradutor e interprete de libras procurador tecnico legislativo - area administrativa tecnico legislativo - area legislativa camara de petrolina - pe abre concurso publico com salarios de ate r$ 8.561,42">
   <h2>Câmara de Petrolina</h2>
   <p class="linha">PE · 17 vagas até R$ 8.561,42 · Médio / Superior</p>
   <p><strong>Cargos:</strong> Analista Legislativo, Procurador, Técnico Legislativo</p>
@@ -59,7 +65,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PE" data-areas="suporte ti" data-texto="prefeitura de moreilandia varios cargos tecnico em informatica prefeitura de moreilandia - pe retifica dois concursos publicos">
+<article class="concurso" data-uf="PE" data-areas="suporte ti" data-salario="10000" data-texto="prefeitura de moreilandia varios cargos tecnico em informatica prefeitura de moreilandia - pe retifica dois concursos publicos">
   <h2>Prefeitura de Moreilândia</h2>
   <p class="linha">PE · 381 vagas até R$ 10.000,00 · Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
@@ -71,7 +77,7 @@
     
   </p>
 </article>
-<article class="concurso" data-uf="PE" data-areas="suporte ti" data-texto="prefeitura de floresta varios cargos tecnico em informatica prefeitura de floresta - pe publica retificacao de concurso publico">
+<article class="concurso" data-uf="PE" data-areas="suporte ti" data-salario="8000" data-texto="prefeitura de floresta varios cargos tecnico em informatica prefeitura de floresta - pe publica retificacao de concurso publico">
   <h2>Prefeitura de Floresta</h2>
   <p class="linha">PE · 431 vagas até R$ 8.000,00 · Fundamental / Médio / Técnico / Superior</p>
   <p><strong>Cargos:</strong> Vários Cargos</p>
